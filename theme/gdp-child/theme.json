@@ -12,42 +12,42 @@
         {
           "slug": "base",
           "name": "base",
-          "color": "#ffffff"
+          "color": "#faf8f2"
         },
         {
           "slug": "contrast",
           "name": "contrast",
-          "color": "#20272b"
+          "color": "#232721"
         },
         {
           "slug": "primary",
           "name": "primary",
-          "color": "#b8420b"
+          "color": "#22503a"
         },
         {
           "slug": "secondary",
           "name": "secondary",
-          "color": "#525f65"
+          "color": "#5a6254"
         },
         {
           "slug": "surface",
           "name": "surface",
-          "color": "#f3f5f4"
+          "color": "#efede3"
         },
         {
           "slug": "line",
           "name": "line",
-          "color": "#c9d0cf"
+          "color": "#c8ccbd"
         },
         {
           "slug": "success",
           "name": "success",
-          "color": "#25613c"
+          "color": "#285638"
         },
         {
           "slug": "warning",
           "name": "warning",
-          "color": "#7b4c12"
+          "color": "#7a4b0d"
         }
       ]
     },
@@ -59,12 +59,12 @@
         {
           "slug": "heading",
           "name": "Nagłówki",
-          "fontFamily": "'IBM Plex Sans', sans-serif"
+          "fontFamily": "'Source Serif 4', serif"
         },
         {
           "slug": "body",
           "name": "Tekst",
-          "fontFamily": "'IBM Plex Sans', sans-serif"
+          "fontFamily": "'Source Sans 3', sans-serif"
         }
       ],
       "fontSizes": [
