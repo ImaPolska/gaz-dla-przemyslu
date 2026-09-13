@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""Build the shared P1.1 content export using only Python's standard library.
+"""Build the P1.2 direction C content export using only Python's standard library.
 
 Run from any directory: python3 scripts/build-wxr.py
 Source of truth: content/pages, content/posts, content/patterns.
@@ -35,7 +35,7 @@ BASE_URL = "https://gazdlaprzemyslu.example.invalid"
 TECHNICAL_DATE = "2000-01-01 00:00:00"
 SOURCE_SPEC = (
     "gazdlaprzemyslu_etap1_instrukcja_agenta.md, "
-    "sections 1.3, 5, 7, 8, 9, 10, 16; scoped to P1.1"
+    "sections 1.3, 5, 7, 8, 9, 10, 14, 16; P1.2 direction C"
 )
 NS = {
     "excerpt": "http://wordpress.org/export/1.2/excerpt/",
@@ -55,6 +55,9 @@ ITEMS = [
     (105, "wp_block", "segments", "Wzorzec: segmenty", 0),
     (106, "wp_block", "trust", "Pasek zaufania", 0),
     (107, "wp_block", "faq-product", "FAQ: produkt", 0),
+    (108, "wp_block", "calculator", "Slot: kalkulator wypowiedzenia", 0),
+    (109, "wp_block", "analysis", "Slot: analiza umowy", 0),
+    (110, "wp_block", "advisor", "Slot: formularz doradcy", 0),
     (201, "page", "start", "Start", 0),
     (202, "page", "oferta", "Oferta", 0),
     (203, "page", "cena-stala", "Cena stała", 202),
@@ -62,9 +65,51 @@ ITEMS = [
     (205, "page", "wiedza", "Wiedza", 0),
     (206, "page", "wgraj-fakture", "Wgraj fakturę", 0),
     (207, "page", "polityka-prywatnosci", "Polityka prywatności", 0),
+    (208, "page", "cena-indeksowana-tge", "Cena indeksowana TGE", 202),
+    (209, "page", "model-transzowy", "Model transzowy", 202),
+    (210, "page", "umowa-kompleksowa-msp", "Umowa kompleksowa dla MŚP", 202),
+    (211, "page", "biometan", "Biometan — wkrótce", 202),
+    (212, "page", "ceny-orientacyjne", "Ceny orientacyjne", 0),
+    (213, "page", "kalkulator-wypowiedzenia", "Kalkulator terminu wypowiedzenia", 0),
+    (214, "page", "analiza-umowy", "Analiza umowy", 0),
+    (215, "page", "dla-kogo", "Gaz dla Twojej firmy", 0),
+    (216, "page", "przemysl", "Gaz dla przemysłu", 215),
+    (217, "page", "msp", "Gaz dla MŚP", 215),
+    (218, "page", "dla-doradcow", "Dla doradców energetycznych", 0),
+    (219, "page", "dla-agentow-ai", "Dla agentów AI", 0),
+    (220, "page", "komentarz-rynkowy", "Komentarz rynkowy", 0),
+    (221, "page", "o-nas", "O nas", 0),
+    (222, "page", "dokumenty", "Dokumenty", 0),
+    (223, "page", "regulamin", "Regulamin serwisu", 0),
+    (224, "page", "blad-404", "Nie znaleziono strony", 0),
+    (225, "page", "archiwum-kategorii", "Archiwum kategorii — szablon", 0),
+    (226, "page", "wyniki-wyszukiwania", "Wyniki wyszukiwania", 0),
     (301, "post", "komentarz-rynkowy-szablon", "[[tytuł komentarza]]", 0),
     (302, "post", "perspektywa-rynku-szablon", "[[tytuł komentarza]]", 0),
+    (303, "post", "jak-zmienic-sprzedawce-gazu-w-firmie", "Jak zmienić sprzedawcę gazu w firmie: kolejność kroków i terminy", 0),
+    (304, "post", "okres-wypowiedzenia-klauzula-prolongacyjna", "Okres wypowiedzenia i klauzula prolongacyjna w umowie na gaz: jak policzyć termin", 0),
+    (305, "post", "sprzedaz-rezerwowa-gazu", "Sprzedaż rezerwowa gazu: kiedy grozi i ile kosztuje", 0),
+    (306, "post", "cena-stala-czy-indeksowana-tge", "Cena stała czy indeksowana do TGE: dla jakiego profilu zużycia", 0),
+    (307, "post", "art-4j-ust-3b-ms-p-kary", "Co zmienia art. 4j ust. 3b Prawa energetycznego dla MŚP (od 21.07.2026): kary za wcześniejsze rozwiązanie umowy — do weryfikacji prawnej", 0),
 ]
+CATEGORIES = [
+    (50, "komentarz-rynkowy", "Komentarz rynkowy"),
+    (51, "zmiana-sprzedawcy", "Zmiana sprzedawcy"),
+    (52, "umowy-i-wypowiedzenia", "Umowy i wypowiedzenia"),
+    (53, "ceny-i-rynek", "Ceny i rynek"),
+    (54, "biometan-i-raportowanie", "Biometan i raportowanie (CSRD/ETS)"),
+    (55, "sprzedaz-rezerwowa", "Sprzedaż rezerwowa"),
+]
+POST_CATEGORIES = {
+    301: ["komentarz-rynkowy"], 302: ["komentarz-rynkowy"],
+    303: ["zmiana-sprzedawcy"], 304: ["umowy-i-wypowiedzenia"],
+    305: ["sprzedaz-rezerwowa"], 306: ["ceny-i-rynek"],
+    307: ["umowy-i-wypowiedzenia"],
+}
+CATEGORY_ROUTES = {
+    slug: "/komentarz-rynkowy/" if slug == "komentarz-rynkowy" else f"/category/{slug}/"
+    for _, slug, _ in CATEGORIES
+}
 FOLDERS = {"wp_block": "patterns", "page": "pages", "post": "posts"}
 TOKEN = re.compile(
     r"<!--\s*(/?)wp:([a-zA-Z0-9_/-]+)"
@@ -95,8 +140,11 @@ def public_path(kind: str, slug: str, parent: int = 0) -> str:
         return f"/?post_type=wp_block&name={slug}"
     if slug == "start":
         return "/"
-    if parent == 202:
-        return f"/oferta/{slug}/"
+    if kind == "post":
+        return f"/wiedza/{slug}/"
+    if parent:
+        item = next(i for i in ITEMS if i[0] == parent)
+        return public_path(item[1], item[2], item[4]) + slug + "/"
     return f"/{slug}/"
 
 
@@ -129,7 +177,8 @@ def check_markup(path: Path, markup: str, kind: str) -> dict:
             top_sections.append(attrs.get("metadata", {}).get("name"))
             if name != "core/group":
                 errors.append("Top-level section is not core/group")
-            if attrs.get("templateLock") != "contentOnly":
+            article_body = kind == "post" and attrs.get("metadata", {}).get("name") == "Treść artykułu" and attrs.get("templateLock") is False
+            if attrs.get("templateLock") != "contentOnly" and not article_body:
                 errors.append("Top-level section is not contentOnly")
             if not attrs.get("metadata", {}).get("name"):
                 errors.append("Top-level section has no metadata.name")
@@ -146,6 +195,9 @@ def check_markup(path: Path, markup: str, kind: str) -> dict:
     if not counts:
         errors.append("No blocks")
     h1_count = len(re.findall(r"<h1(?:\s|>)", markup))
+    h1_count += sum(1 for t in TOKEN.finditer(markup)
+                    if t.group(2) == "query-title" and not t.group(1)
+                    and json.loads(t.group(3) or "{}").get("level", 1) == 1)
     if kind in {"page", "post"} and h1_count != 1:
         errors.append(f"Expected one h1, found {h1_count}")
     if kind == "wp_block" and h1_count:
@@ -222,7 +274,7 @@ def main() -> int:
     )
     args = parser.parse_args()
     report = {
-        "scope": "P1.1 only; identical content for A/B/C",
+        "scope": "P1.2 full content; direction C",
         "source_specification": SOURCE_SPEC,
         "technical_timestamp": TECHNICAL_DATE,
         "timestamp_note": (
@@ -235,15 +287,16 @@ def main() -> int:
         ),
         "notes": [
             "Home Query Loop requests three posts; only two placeholder market posts exist.",
-            "No starter knowledge articles are included in P1.1.",
-            "FAQ answers support per-instance paragraph pattern overrides. "
-            "Questions use native Details summary and remain globally editable "
-            "in the synced pattern, rather than claiming unsupported summary overrides.",
+            "Five draft knowledge articles; legal facts/terms remain explicit placeholders.",
+            "FAQ answers use paragraph pattern overrides. FAQ questions bind native "
+            "Details summary via core/pattern-overrides; main theme supplies "
+            "block_bindings_supported_attributes_core/details ['summary'] support "
+            "for the WordPress 7.1 runtime. Runtime edit/reload test is required.",
             "Existing IDs can be remapped by an importer. Remap nested core/block refs.",
-            "All main CTAs point to /kontakt/ and never upload or submit data.",
+            "Acquisition navigation points to product/tool landings. Inactive module actions point to /kontakt/; no data is submitted.",
             "ct_page_title=no is set for pages and posts to avoid duplicate visible titles.",
-            "Wiedza content is a supporting stub. If set as page_for_posts, WordPress "
-            "uses the theme archive instead of this page's post_content.",
+            "Render page_for_posts post_content through home.php. Market archive body is page source 220.",
+            "Article prose group Treść artykułu has templateLock false: narrow exception required by editing test 14.",
         ],
         "items": [],
     }
@@ -255,7 +308,7 @@ def main() -> int:
         "<channel>",
         tag("title", "Gaz dla Przemysłu"),
         tag("link", BASE_URL),
-        tag("description", "PBM Sp. z o.o., Grupa IMA Polska. Prototyp P1.1."),
+        tag("description", "PBM Sp. z o.o., Grupa IMA Polska. Prototyp P1.2, kierunek C."),
         tag("language", "pl-PL"),
         tag("wp:wxr_version", "1.2"),
         tag("wp:base_site_url", BASE_URL),
@@ -268,15 +321,14 @@ def main() -> int:
         tag("wp:author_first_name", "", True),
         tag("wp:author_last_name", "", True),
         "</wp:author>",
-        "<wp:category>",
-        tag("wp:term_id", 50),
-        tag("wp:category_nicename", "komentarz-rynkowy", True),
-        tag("wp:category_parent", "", True),
-        tag("wp:cat_name", "Komentarz rynkowy", True),
-        "</wp:category>",
     ]
+    for term_id, slug, name in CATEGORIES:
+        parts.extend(["<wp:category>", tag("wp:term_id", term_id),
+                      tag("wp:category_nicename", slug, True),
+                      tag("wp:category_parent", "", True),
+                      tag("wp:cat_name", name, True), "</wp:category>"])
     all_ids = {item[0] for item in ITEMS}
-    all_paths = {public_path(kind, slug, parent) for _, kind, slug, _, parent in ITEMS}
+    all_paths = {public_path(kind, slug, parent) for _, kind, slug, _, parent in ITEMS} | set(CATEGORY_ROUTES.values())
     for import_id, kind, slug, title, parent in ITEMS:
         path = source_path(kind, slug)
         markup = path.read_text(encoding="utf-8").strip() + "\n"
@@ -287,7 +339,7 @@ def main() -> int:
         for href in re.findall(r'\bhref="([^"]+)"', markup):
             path_only = href.split("#", 1)[0]
             if path_only.startswith("/") and path_only not in all_paths:
-                raise ValueError(f"Local link has no P1.1 destination: {href} in {path}")
+                raise ValueError(f"Local link has no P1.2 destination: {href} in {path}")
         result.update({
             "import_id": import_id,
             "post_type": kind,
@@ -295,6 +347,7 @@ def main() -> int:
             "title": title,
             "parent_import_id": parent,
             "public_path": public_path(kind, slug, parent),
+            "categories": POST_CATEGORIES.get(import_id, []),
         })
         report["items"].append(result)
         parts.extend([
@@ -305,7 +358,7 @@ def main() -> int:
             f'<guid isPermaLink="false">{BASE_URL}/?p={import_id}</guid>',
             tag("description", ""),
             tag("content:encoded", markup, True),
-            tag("excerpt:encoded", "[[komentarz]]" if kind == "post" else "", True),
+            tag("excerpt:encoded", "[[komentarz]]" if import_id in (301, 302) else "", True),
             tag("wp:post_id", import_id),
             tag("wp:import_id", import_id),
             tag("wp:post_date", TECHNICAL_DATE, True),
@@ -327,11 +380,10 @@ def main() -> int:
         if kind in {"page", "post"}:
             parts.append(postmeta("ct_page_title", "no"))
         if kind == "post":
-            parts.append(
-                '<category domain="category" nicename="komentarz-rynkowy">'
-                + cdata("Komentarz rynkowy")
-                + "</category>"
-            )
+            category_names = {slug: name for _, slug, name in CATEGORIES}
+            for category in POST_CATEGORIES[import_id]:
+                parts.append(f'<category domain="category" nicename="{category}">'
+                             + cdata(category_names[category]) + "</category>")
         # wp_block without wp_pattern_sync_status=unsynced is a synced pattern.
         parts.append("</item>")
     parts.extend(["</channel>", "</rss>"])
@@ -360,6 +412,43 @@ def main() -> int:
         json.dumps(report, ensure_ascii=False, indent=2) + "\n",
         encoding="utf-8",
     )
+    manifest = {
+        "stage": "P1.2", "direction": "C", "schema_version": 1,
+        "items": [{"source_id": i[0], "import_id": i[0], "kind": i[1],
+                   "slug": i[2], "title": i[3], "parent": i[4],
+                   "parent_import_id": i[4], "path": public_path(i[1], i[2], i[4]),
+                   "public_path": public_path(i[1], i[2], i[4]),
+                   "source_file": str(source_path(i[1], i[2]).relative_to(ROOT)),
+                   "categories": POST_CATEGORIES.get(i[0], [])} for i in ITEMS],
+        "map_paths": sorted(p for p in all_paths if not p.startswith("/?")),
+        "categories": [{"source_id": tid, "slug": slug, "name": name,
+                        "route": CATEGORY_ROUTES[slug]} for tid, slug, name in CATEGORIES],
+        "category_routes": CATEGORY_ROUTES,
+        "front_page": {"source_id": 201, "slug": "start"},
+        "posts_page": {"source_id": 205, "slug": "wiedza", "render_post_content": True},
+        "not_found": {"source_id": 224, "slug": "blad-404", "http_status": 404,
+                      "note": "Render this source page content from 404.php; source page itself has normal import path."},
+        "category_archive_template": {"source_id": 225, "slug": "archiwum-kategorii",
+                                      "dynamic_h1": "core/query-title level 1", "query_inherit": True},
+        "market_archive": {"source_id": 220, "slug": "komentarz-rynkowy",
+                           "category_source_id": 50, "route": "/komentarz-rynkowy/",
+                           "note": "Actual category archive; use page 220 post_content as body. Remap query.taxQuery.category IDs."},
+        "post_permalink": "/wiedza/%postname%/",
+        "query_term_remapping": "Remap every nested core/query attrs.query.taxQuery.category source term ID after import, including home and archive body.",
+        "article_editing_exception": {"group_metadata_name": "Treść artykułu",
+                                      "templateLock": False, "post_source_ids": [303,304,305,306,307],
+                                      "reason": "Required editing test 14: Editor inserts paragraph and 3×3 table under second body heading. Article layout/header/sources/CTA remain contentOnly."},
+        "overrides": {"faq_answers": "core/paragraph bindings.__default core/pattern-overrides",
+                       "faq_questions": "Pytanie FAQ 1..6: native core/details summary bound via __default core/pattern-overrides. Requires main theme block_bindings_supported_attributes_core/details ['summary']; verify in WordPress 7.1 edit/reload.",
+                       "cta": ["Tytuł CTA", "Podtytuł CTA"],
+                       "pricing": ["Data aktualizacji cen"],
+                       "segment_trust": "Named heading/paragraph bindings in pattern sources."},
+        "technical_dates": "WXR 2000-01-01 is import bookkeeping, never visible; content uses [[data]] and [[autor]].",
+        "legal_validation": "Article 307 target date/law/scope/consequences not verified. Explicit [[do weryfikacji prawnej]] retained; not legal advice.",
+        "inactive_slots": "Only core blocks; actions /kontakt/; no upload, calculator, newsletter, CRM, endpoint or PDF download is active.",
+        "preserved": ["C homepage core structure/content", "cena-stala core structure/content"],
+    }
+    (CONTENT / "p12-manifest.json").write_text(json.dumps(manifest, ensure_ascii=False, indent=2) + "\n", encoding="utf-8")
     print(f"Built {args.output} ({len(ITEMS)} items)")
     print(f"Saved structural validation and import map: {args.report}")
     return 0

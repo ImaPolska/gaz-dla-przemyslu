@@ -1,0 +1,50 @@
+{
+  "status": "READY_FOR_MAIN_BUILD_AND_RUNTIME_QA",
+  "scope": "Content P1.2 C complete; no theme/setup/config/docs/git edits",
+  "counts": {"pages": 25, "posts": 7, "synced_patterns": 10, "wxr_items": 42},
+  "rebuild": [
+    "python3 scripts/generate-content.py",
+    "python3 scripts/build-wxr.py"
+  ],
+  "contract": "content/p12-manifest.json",
+  "evidence": ["content/build-report.json", "content/p12-article-review.json"],
+  "structural_checks": {
+    "result": "PASS",
+    "forbidden_core_html_freeform_shortcode_noncore": 0,
+    "inline_styles": 0,
+    "real_form_tags": 0,
+    "tables_without_thead": 0,
+    "missing_local_destinations": 0,
+    "missing_same_page_anchors": 0,
+    "generation_idempotent": true
+  },
+  "main_runtime_tasks": [
+    "Use manifest parent/source IDs, map post permalinks to /wiedza/%postname%/.",
+    "Render source 205 wiedza post_content in home.php.",
+    "Actual market category /komentarz-rynkowy/ renders source page 220, not that page as final route.",
+    "Other category archives render source page 225 archiwum-kategorii; dynamic H1 query-title and inherit:true QueryLoop.",
+    "404 template renders source 224 blad-404 with HTTP 404.",
+    "Remap core/query taxQuery.category IDs for all knowledge filters; market also contains gdpCategory:komentarz-rynkowy.",
+    "Remap nested synced pattern refs as before.",
+    "FAQ Details question overrides require parent's supported-attribute summary filter and runtime edit/reload test.",
+    "Test14: only top-level article group named Treść artykułu is templateLock false; allow Editor to insert blocks there.",
+    "Disable visible native WXR dates/authors; date 2000-01-01 is import bookkeeping only.",
+    "Run Gutenberg JS save/reload validation, runtime routes and screenshots; source checks are not equivalent to runtime acceptance."
+  ],
+  "article_review": {
+    "count": 5,
+    "visible_word_counts": [487, 492, 532, 531, 600],
+    "lead_word_counts": [38, 33, 39, 41, 45],
+    "all_have_toc_anchorlinks_lists_tables_sources_and_metadata": true,
+    "law_article": "Target title preserved, date/law/scope/consequences explicitly unverified. No claim of free early exit or verified commencement date."
+  },
+  "prototype_notes": [
+    "Navigation CTAs lead to real acquisition/tool/segment landing pages. Inactive module actions always /kontakt/.",
+    "All form-like slots contain literal consent placeholder and privacy link. No data submission.",
+    "No numerical prices, fabricated customers, promises of savings, regulatory eligibility or biometane delivery dates.",
+    "24h only as user-brief unconfirmed service target, never guarantee.",
+    "Public TGE homepage link supplied on indexed product and comparison article; source-specific facts remain placeholders.",
+    "Home and fixed-price accepted C structure retained; links corrected, price caveats added to price prose sections.",
+    "Generic category page and /dla-kogo/ are supporting pages beyond minimum map."
+  ]
+}

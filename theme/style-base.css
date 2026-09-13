@@ -3,6 +3,7 @@ html { scroll-padding-top: 110px; }
 body { background: var(--wp--preset--color--base); color: var(--wp--preset--color--contrast); }
 body, input, button, select, textarea { font-family: var(--wp--preset--font-family--body); }
 h1,h2,h3,h4,.site-title { font-family: var(--wp--preset--font-family--heading); color: inherit; }
+.editor-styles-wrapper .gdp-section :is(h1,h2,h3,h4) { font-family:var(--wp--preset--font-family--heading); }
 *,*::before,*::after { box-sizing: border-box; }
 a { text-underline-offset: .2em; }
 a:focus-visible,button:focus-visible,summary:focus-visible { outline: 3px solid var(--wp--preset--color--primary); outline-offset: 5px; }
@@ -163,3 +164,8 @@ body.page .entry-content > .gdp-section { width:100%; max-width:none; margin-inl
  #header .ct-container { width:calc(100% - 32px); }
 }
 @media(prefers-reduced-motion:reduce) { * { scroll-behavior:auto !important; transition:none !important; } }
+.single-post .gdp-section:not(.gdp-final) > * { max-width:760px; margin-inline:auto; }
+.single-post .gdp-section:first-child h1 { max-width:960px; font-size:clamp(36px,4vw,56px); }
+.single-post .gdp-section:not(.gdp-final) { padding-block:40px; }
+.single-post .gdp-article-body > h2:not(:first-child) { margin-top:48px; }
+.gdp-price-table td:not(:first-child),.gdp-price-table th:not(:first-child) { text-align:right; }

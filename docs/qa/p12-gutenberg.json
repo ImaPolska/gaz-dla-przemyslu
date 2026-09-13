@@ -1,0 +1,266 @@
+{
+  "items": [
+    {
+      "id": 39,
+      "type": "pages",
+      "slug": "wyniki-wyszukiwania",
+      "invalid": []
+    },
+    {
+      "id": 38,
+      "type": "pages",
+      "slug": "archiwum-kategorii",
+      "invalid": []
+    },
+    {
+      "id": 37,
+      "type": "pages",
+      "slug": "blad-404",
+      "invalid": []
+    },
+    {
+      "id": 36,
+      "type": "pages",
+      "slug": "regulamin",
+      "invalid": []
+    },
+    {
+      "id": 35,
+      "type": "pages",
+      "slug": "dokumenty",
+      "invalid": []
+    },
+    {
+      "id": 34,
+      "type": "pages",
+      "slug": "o-nas",
+      "invalid": []
+    },
+    {
+      "id": 33,
+      "type": "pages",
+      "slug": "komentarz-rynkowy",
+      "invalid": []
+    },
+    {
+      "id": 32,
+      "type": "pages",
+      "slug": "dla-agentow-ai",
+      "invalid": []
+    },
+    {
+      "id": 31,
+      "type": "pages",
+      "slug": "dla-doradcow",
+      "invalid": []
+    },
+    {
+      "id": 30,
+      "type": "pages",
+      "slug": "msp",
+      "invalid": []
+    },
+    {
+      "id": 29,
+      "type": "pages",
+      "slug": "przemysl",
+      "invalid": []
+    },
+    {
+      "id": 28,
+      "type": "pages",
+      "slug": "dla-kogo",
+      "invalid": []
+    },
+    {
+      "id": 27,
+      "type": "pages",
+      "slug": "analiza-umowy",
+      "invalid": []
+    },
+    {
+      "id": 26,
+      "type": "pages",
+      "slug": "kalkulator-wypowiedzenia",
+      "invalid": []
+    },
+    {
+      "id": 25,
+      "type": "pages",
+      "slug": "ceny-orientacyjne",
+      "invalid": []
+    },
+    {
+      "id": 24,
+      "type": "pages",
+      "slug": "biometan",
+      "invalid": []
+    },
+    {
+      "id": 23,
+      "type": "pages",
+      "slug": "umowa-kompleksowa-msp",
+      "invalid": []
+    },
+    {
+      "id": 22,
+      "type": "pages",
+      "slug": "model-transzowy",
+      "invalid": []
+    },
+    {
+      "id": 21,
+      "type": "pages",
+      "slug": "cena-indeksowana-tge",
+      "invalid": []
+    },
+    {
+      "id": 20,
+      "type": "pages",
+      "slug": "polityka-prywatnosci",
+      "invalid": []
+    },
+    {
+      "id": 19,
+      "type": "pages",
+      "slug": "wgraj-fakture",
+      "invalid": []
+    },
+    {
+      "id": 18,
+      "type": "pages",
+      "slug": "wiedza",
+      "invalid": []
+    },
+    {
+      "id": 17,
+      "type": "pages",
+      "slug": "kontakt",
+      "invalid": []
+    },
+    {
+      "id": 16,
+      "type": "pages",
+      "slug": "cena-stala",
+      "invalid": []
+    },
+    {
+      "id": 15,
+      "type": "pages",
+      "slug": "oferta",
+      "invalid": []
+    },
+    {
+      "id": 14,
+      "type": "pages",
+      "slug": "start",
+      "invalid": []
+    },
+    {
+      "id": 46,
+      "type": "posts",
+      "slug": "art-4j-ust-3b-ms-p-kary",
+      "invalid": []
+    },
+    {
+      "id": 45,
+      "type": "posts",
+      "slug": "cena-stala-czy-indeksowana-tge",
+      "invalid": []
+    },
+    {
+      "id": 44,
+      "type": "posts",
+      "slug": "sprzedaz-rezerwowa-gazu",
+      "invalid": []
+    },
+    {
+      "id": 43,
+      "type": "posts",
+      "slug": "okres-wypowiedzenia-klauzula-prolongacyjna",
+      "invalid": []
+    },
+    {
+      "id": 42,
+      "type": "posts",
+      "slug": "jak-zmienic-sprzedawce-gazu-w-firmie",
+      "invalid": []
+    },
+    {
+      "id": 41,
+      "type": "posts",
+      "slug": "perspektywa-rynku-szablon",
+      "invalid": []
+    },
+    {
+      "id": 40,
+      "type": "posts",
+      "slug": "komentarz-rynkowy-szablon",
+      "invalid": []
+    },
+    {
+      "id": 13,
+      "type": "blocks",
+      "slug": "advisor",
+      "invalid": []
+    },
+    {
+      "id": 12,
+      "type": "blocks",
+      "slug": "analysis",
+      "invalid": []
+    },
+    {
+      "id": 11,
+      "type": "blocks",
+      "slug": "calculator",
+      "invalid": []
+    },
+    {
+      "id": 10,
+      "type": "blocks",
+      "slug": "faq-product",
+      "invalid": []
+    },
+    {
+      "id": 9,
+      "type": "blocks",
+      "slug": "trust",
+      "invalid": []
+    },
+    {
+      "id": 8,
+      "type": "blocks",
+      "slug": "segments",
+      "invalid": []
+    },
+    {
+      "id": 7,
+      "type": "blocks",
+      "slug": "pricing",
+      "invalid": []
+    },
+    {
+      "id": 6,
+      "type": "blocks",
+      "slug": "final-cta",
+      "invalid": []
+    },
+    {
+      "id": 5,
+      "type": "blocks",
+      "slug": "disclaimer",
+      "invalid": []
+    },
+    {
+      "id": 4,
+      "type": "blocks",
+      "slug": "upload",
+      "invalid": []
+    }
+  ],
+  "detailsBindings": [
+    "summary"
+  ],
+  "pass": true
+}

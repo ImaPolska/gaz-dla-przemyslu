@@ -45,7 +45,7 @@ Stan P1.2, 2026-09-13. **{len(rows)} wystąpień** `[[ ]]` w kanonicznych źród
 - Autorzy, daty i zatwierdzone komentarze rynkowe: P1.3.
 - Próg segmentacji `[[X]]` GWh/rok: P1.2.
 - Parametry produktów i cennika: do zatwierdzenia; niczego nie wypełniono fikcyjnymi danymi. Lista produktów przyjęta domyślnie z briefu.
-- Zgody, polityka, regulamin: treści zleceniodawcy, finalizacja prawna poza P1.1.
+- Zgody, polityka, regulamin: treści zleceniodawcy, finalizacja prawna w etapie 3.
 - Zdjęcia aktywów: opcjonalnie P1.3; obecnie brak zdjęć i zewnętrznych osadzeń.
 - Wzorce startowe celowo zawierają pola do uzupełnienia przy tworzeniu nowej treści.
 

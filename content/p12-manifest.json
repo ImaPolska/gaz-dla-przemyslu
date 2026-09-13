@@ -1,0 +1,727 @@
+{
+  "stage": "P1.2",
+  "direction": "C",
+  "schema_version": 1,
+  "items": [
+    {
+      "source_id": 101,
+      "import_id": 101,
+      "kind": "wp_block",
+      "slug": "upload",
+      "title": "Slot: upload faktury",
+      "parent": 0,
+      "parent_import_id": 0,
+      "path": "/?post_type=wp_block&name=upload",
+      "public_path": "/?post_type=wp_block&name=upload",
+      "source_file": "content/patterns/upload.html",
+      "categories": []
+    },
+    {
+      "source_id": 102,
+      "import_id": 102,
+      "kind": "wp_block",
+      "slug": "disclaimer",
+      "title": "Zastrzeżenie cen",
+      "parent": 0,
+      "parent_import_id": 0,
+      "path": "/?post_type=wp_block&name=disclaimer",
+      "public_path": "/?post_type=wp_block&name=disclaimer",
+      "source_file": "content/patterns/disclaimer.html",
+      "categories": []
+    },
+    {
+      "source_id": 103,
+      "import_id": 103,
+      "kind": "wp_block",
+      "slug": "final-cta",
+      "title": "CTA: wgraj fakturę",
+      "parent": 0,
+      "parent_import_id": 0,
+      "path": "/?post_type=wp_block&name=final-cta",
+      "public_path": "/?post_type=wp_block&name=final-cta",
+      "source_file": "content/patterns/final-cta.html",
+      "categories": []
+    },
+    {
+      "source_id": 104,
+      "import_id": 104,
+      "kind": "wp_block",
+      "slug": "pricing",
+      "title": "Slot: tabela cen",
+      "parent": 0,
+      "parent_import_id": 0,
+      "path": "/?post_type=wp_block&name=pricing",
+      "public_path": "/?post_type=wp_block&name=pricing",
+      "source_file": "content/patterns/pricing.html",
+      "categories": []
+    },
+    {
+      "source_id": 105,
+      "import_id": 105,
+      "kind": "wp_block",
+      "slug": "segments",
+      "title": "Wzorzec: segmenty",
+      "parent": 0,
+      "parent_import_id": 0,
+      "path": "/?post_type=wp_block&name=segments",
+      "public_path": "/?post_type=wp_block&name=segments",
+      "source_file": "content/patterns/segments.html",
+      "categories": []
+    },
+    {
+      "source_id": 106,
+      "import_id": 106,
+      "kind": "wp_block",
+      "slug": "trust",
+      "title": "Pasek zaufania",
+      "parent": 0,
+      "parent_import_id": 0,
+      "path": "/?post_type=wp_block&name=trust",
+      "public_path": "/?post_type=wp_block&name=trust",
+      "source_file": "content/patterns/trust.html",
+      "categories": []
+    },
+    {
+      "source_id": 107,
+      "import_id": 107,
+      "kind": "wp_block",
+      "slug": "faq-product",
+      "title": "FAQ: produkt",
+      "parent": 0,
+      "parent_import_id": 0,
+      "path": "/?post_type=wp_block&name=faq-product",
+      "public_path": "/?post_type=wp_block&name=faq-product",
+      "source_file": "content/patterns/faq-product.html",
+      "categories": []
+    },
+    {
+      "source_id": 108,
+      "import_id": 108,
+      "kind": "wp_block",
+      "slug": "calculator",
+      "title": "Slot: kalkulator wypowiedzenia",
+      "parent": 0,
+      "parent_import_id": 0,
+      "path": "/?post_type=wp_block&name=calculator",
+      "public_path": "/?post_type=wp_block&name=calculator",
+      "source_file": "content/patterns/calculator.html",
+      "categories": []
+    },
+    {
+      "source_id": 109,
+      "import_id": 109,
+      "kind": "wp_block",
+      "slug": "analysis",
+      "title": "Slot: analiza umowy",
+      "parent": 0,
+      "parent_import_id": 0,
+      "path": "/?post_type=wp_block&name=analysis",
+      "public_path": "/?post_type=wp_block&name=analysis",
+      "source_file": "content/patterns/analysis.html",
+      "categories": []
+    },
+    {
+      "source_id": 110,
+      "import_id": 110,
+      "kind": "wp_block",
+      "slug": "advisor",
+      "title": "Slot: formularz doradcy",
+      "parent": 0,
+      "parent_import_id": 0,
+      "path": "/?post_type=wp_block&name=advisor",
+      "public_path": "/?post_type=wp_block&name=advisor",
+      "source_file": "content/patterns/advisor.html",
+      "categories": []
+    },
+    {
+      "source_id": 201,
+      "import_id": 201,
+      "kind": "page",
+      "slug": "start",
+      "title": "Start",
+      "parent": 0,
+      "parent_import_id": 0,
+      "path": "/",
+      "public_path": "/",
+      "source_file": "content/pages/start.html",
+      "categories": []
+    },
+    {
+      "source_id": 202,
+      "import_id": 202,
+      "kind": "page",
+      "slug": "oferta",
+      "title": "Oferta",
+      "parent": 0,
+      "parent_import_id": 0,
+      "path": "/oferta/",
+      "public_path": "/oferta/",
+      "source_file": "content/pages/oferta.html",
+      "categories": []
+    },
+    {
+      "source_id": 203,
+      "import_id": 203,
+      "kind": "page",
+      "slug": "cena-stala",
+      "title": "Cena stała",
+      "parent": 202,
+      "parent_import_id": 202,
+      "path": "/oferta/cena-stala/",
+      "public_path": "/oferta/cena-stala/",
+      "source_file": "content/pages/cena-stala.html",
+      "categories": []
+    },
+    {
+      "source_id": 204,
+      "import_id": 204,
+      "kind": "page",
+      "slug": "kontakt",
+      "title": "Kontakt",
+      "parent": 0,
+      "parent_import_id": 0,
+      "path": "/kontakt/",
+      "public_path": "/kontakt/",
+      "source_file": "content/pages/kontakt.html",
+      "categories": []
+    },
+    {
+      "source_id": 205,
+      "import_id": 205,
+      "kind": "page",
+      "slug": "wiedza",
+      "title": "Wiedza",
+      "parent": 0,
+      "parent_import_id": 0,
+      "path": "/wiedza/",
+      "public_path": "/wiedza/",
+      "source_file": "content/pages/wiedza.html",
+      "categories": []
+    },
+    {
+      "source_id": 206,
+      "import_id": 206,
+      "kind": "page",
+      "slug": "wgraj-fakture",
+      "title": "Wgraj fakturę",
+      "parent": 0,
+      "parent_import_id": 0,
+      "path": "/wgraj-fakture/",
+      "public_path": "/wgraj-fakture/",
+      "source_file": "content/pages/wgraj-fakture.html",
+      "categories": []
+    },
+    {
+      "source_id": 207,
+      "import_id": 207,
+      "kind": "page",
+      "slug": "polityka-prywatnosci",
+      "title": "Polityka prywatności",
+      "parent": 0,
+      "parent_import_id": 0,
+      "path": "/polityka-prywatnosci/",
+      "public_path": "/polityka-prywatnosci/",
+      "source_file": "content/pages/polityka-prywatnosci.html",
+      "categories": []
+    },
+    {
+      "source_id": 208,
+      "import_id": 208,
+      "kind": "page",
+      "slug": "cena-indeksowana-tge",
+      "title": "Cena indeksowana TGE",
+      "parent": 202,
+      "parent_import_id": 202,
+      "path": "/oferta/cena-indeksowana-tge/",
+      "public_path": "/oferta/cena-indeksowana-tge/",
+      "source_file": "content/pages/cena-indeksowana-tge.html",
+      "categories": []
+    },
+    {
+      "source_id": 209,
+      "import_id": 209,
+      "kind": "page",
+      "slug": "model-transzowy",
+      "title": "Model transzowy",
+      "parent": 202,
+      "parent_import_id": 202,
+      "path": "/oferta/model-transzowy/",
+      "public_path": "/oferta/model-transzowy/",
+      "source_file": "content/pages/model-transzowy.html",
+      "categories": []
+    },
+    {
+      "source_id": 210,
+      "import_id": 210,
+      "kind": "page",
+      "slug": "umowa-kompleksowa-msp",
+      "title": "Umowa kompleksowa dla MŚP",
+      "parent": 202,
+      "parent_import_id": 202,
+      "path": "/oferta/umowa-kompleksowa-msp/",
+      "public_path": "/oferta/umowa-kompleksowa-msp/",
+      "source_file": "content/pages/umowa-kompleksowa-msp.html",
+      "categories": []
+    },
+    {
+      "source_id": 211,
+      "import_id": 211,
+      "kind": "page",
+      "slug": "biometan",
+      "title": "Biometan — wkrótce",
+      "parent": 202,
+      "parent_import_id": 202,
+      "path": "/oferta/biometan/",
+      "public_path": "/oferta/biometan/",
+      "source_file": "content/pages/biometan.html",
+      "categories": []
+    },
+    {
+      "source_id": 212,
+      "import_id": 212,
+      "kind": "page",
+      "slug": "ceny-orientacyjne",
+      "title": "Ceny orientacyjne",
+      "parent": 0,
+      "parent_import_id": 0,
+      "path": "/ceny-orientacyjne/",
+      "public_path": "/ceny-orientacyjne/",
+      "source_file": "content/pages/ceny-orientacyjne.html",
+      "categories": []
+    },
+    {
+      "source_id": 213,
+      "import_id": 213,
+      "kind": "page",
+      "slug": "kalkulator-wypowiedzenia",
+      "title": "Kalkulator terminu wypowiedzenia",
+      "parent": 0,
+      "parent_import_id": 0,
+      "path": "/kalkulator-wypowiedzenia/",
+      "public_path": "/kalkulator-wypowiedzenia/",
+      "source_file": "content/pages/kalkulator-wypowiedzenia.html",
+      "categories": []
+    },
+    {
+      "source_id": 214,
+      "import_id": 214,
+      "kind": "page",
+      "slug": "analiza-umowy",
+      "title": "Analiza umowy",
+      "parent": 0,
+      "parent_import_id": 0,
+      "path": "/analiza-umowy/",
+      "public_path": "/analiza-umowy/",
+      "source_file": "content/pages/analiza-umowy.html",
+      "categories": []
+    },
+    {
+      "source_id": 215,
+      "import_id": 215,
+      "kind": "page",
+      "slug": "dla-kogo",
+      "title": "Gaz dla Twojej firmy",
+      "parent": 0,
+      "parent_import_id": 0,
+      "path": "/dla-kogo/",
+      "public_path": "/dla-kogo/",
+      "source_file": "content/pages/dla-kogo.html",
+      "categories": []
+    },
+    {
+      "source_id": 216,
+      "import_id": 216,
+      "kind": "page",
+      "slug": "przemysl",
+      "title": "Gaz dla przemysłu",
+      "parent": 215,
+      "parent_import_id": 215,
+      "path": "/dla-kogo/przemysl/",
+      "public_path": "/dla-kogo/przemysl/",
+      "source_file": "content/pages/przemysl.html",
+      "categories": []
+    },
+    {
+      "source_id": 217,
+      "import_id": 217,
+      "kind": "page",
+      "slug": "msp",
+      "title": "Gaz dla MŚP",
+      "parent": 215,
+      "parent_import_id": 215,
+      "path": "/dla-kogo/msp/",
+      "public_path": "/dla-kogo/msp/",
+      "source_file": "content/pages/msp.html",
+      "categories": []
+    },
+    {
+      "source_id": 218,
+      "import_id": 218,
+      "kind": "page",
+      "slug": "dla-doradcow",
+      "title": "Dla doradców energetycznych",
+      "parent": 0,
+      "parent_import_id": 0,
+      "path": "/dla-doradcow/",
+      "public_path": "/dla-doradcow/",
+      "source_file": "content/pages/dla-doradcow.html",
+      "categories": []
+    },
+    {
+      "source_id": 219,
+      "import_id": 219,
+      "kind": "page",
+      "slug": "dla-agentow-ai",
+      "title": "Dla agentów AI",
+      "parent": 0,
+      "parent_import_id": 0,
+      "path": "/dla-agentow-ai/",
+      "public_path": "/dla-agentow-ai/",
+      "source_file": "content/pages/dla-agentow-ai.html",
+      "categories": []
+    },
+    {
+      "source_id": 220,
+      "import_id": 220,
+      "kind": "page",
+      "slug": "komentarz-rynkowy",
+      "title": "Komentarz rynkowy",
+      "parent": 0,
+      "parent_import_id": 0,
+      "path": "/komentarz-rynkowy/",
+      "public_path": "/komentarz-rynkowy/",
+      "source_file": "content/pages/komentarz-rynkowy.html",
+      "categories": []
+    },
+    {
+      "source_id": 221,
+      "import_id": 221,
+      "kind": "page",
+      "slug": "o-nas",
+      "title": "O nas",
+      "parent": 0,
+      "parent_import_id": 0,
+      "path": "/o-nas/",
+      "public_path": "/o-nas/",
+      "source_file": "content/pages/o-nas.html",
+      "categories": []
+    },
+    {
+      "source_id": 222,
+      "import_id": 222,
+      "kind": "page",
+      "slug": "dokumenty",
+      "title": "Dokumenty",
+      "parent": 0,
+      "parent_import_id": 0,
+      "path": "/dokumenty/",
+      "public_path": "/dokumenty/",
+      "source_file": "content/pages/dokumenty.html",
+      "categories": []
+    },
+    {
+      "source_id": 223,
+      "import_id": 223,
+      "kind": "page",
+      "slug": "regulamin",
+      "title": "Regulamin serwisu",
+      "parent": 0,
+      "parent_import_id": 0,
+      "path": "/regulamin/",
+      "public_path": "/regulamin/",
+      "source_file": "content/pages/regulamin.html",
+      "categories": []
+    },
+    {
+      "source_id": 224,
+      "import_id": 224,
+      "kind": "page",
+      "slug": "blad-404",
+      "title": "Nie znaleziono strony",
+      "parent": 0,
+      "parent_import_id": 0,
+      "path": "/blad-404/",
+      "public_path": "/blad-404/",
+      "source_file": "content/pages/blad-404.html",
+      "categories": []
+    },
+    {
+      "source_id": 225,
+      "import_id": 225,
+      "kind": "page",
+      "slug": "archiwum-kategorii",
+      "title": "Archiwum kategorii — szablon",
+      "parent": 0,
+      "parent_import_id": 0,
+      "path": "/archiwum-kategorii/",
+      "public_path": "/archiwum-kategorii/",
+      "source_file": "content/pages/archiwum-kategorii.html",
+      "categories": []
+    },
+    {
+      "source_id": 226,
+      "import_id": 226,
+      "kind": "page",
+      "slug": "wyniki-wyszukiwania",
+      "title": "Wyniki wyszukiwania",
+      "parent": 0,
+      "parent_import_id": 0,
+      "path": "/wyniki-wyszukiwania/",
+      "public_path": "/wyniki-wyszukiwania/",
+      "source_file": "content/pages/wyniki-wyszukiwania.html",
+      "categories": []
+    },
+    {
+      "source_id": 301,
+      "import_id": 301,
+      "kind": "post",
+      "slug": "komentarz-rynkowy-szablon",
+      "title": "[[tytuł komentarza]]",
+      "parent": 0,
+      "parent_import_id": 0,
+      "path": "/wiedza/komentarz-rynkowy-szablon/",
+      "public_path": "/wiedza/komentarz-rynkowy-szablon/",
+      "source_file": "content/posts/komentarz-rynkowy-szablon.html",
+      "categories": [
+        "komentarz-rynkowy"
+      ]
+    },
+    {
+      "source_id": 302,
+      "import_id": 302,
+      "kind": "post",
+      "slug": "perspektywa-rynku-szablon",
+      "title": "[[tytuł komentarza]]",
+      "parent": 0,
+      "parent_import_id": 0,
+      "path": "/wiedza/perspektywa-rynku-szablon/",
+      "public_path": "/wiedza/perspektywa-rynku-szablon/",
+      "source_file": "content/posts/perspektywa-rynku-szablon.html",
+      "categories": [
+        "komentarz-rynkowy"
+      ]
+    },
+    {
+      "source_id": 303,
+      "import_id": 303,
+      "kind": "post",
+      "slug": "jak-zmienic-sprzedawce-gazu-w-firmie",
+      "title": "Jak zmienić sprzedawcę gazu w firmie: kolejność kroków i terminy",
+      "parent": 0,
+      "parent_import_id": 0,
+      "path": "/wiedza/jak-zmienic-sprzedawce-gazu-w-firmie/",
+      "public_path": "/wiedza/jak-zmienic-sprzedawce-gazu-w-firmie/",
+      "source_file": "content/posts/jak-zmienic-sprzedawce-gazu-w-firmie.html",
+      "categories": [
+        "zmiana-sprzedawcy"
+      ]
+    },
+    {
+      "source_id": 304,
+      "import_id": 304,
+      "kind": "post",
+      "slug": "okres-wypowiedzenia-klauzula-prolongacyjna",
+      "title": "Okres wypowiedzenia i klauzula prolongacyjna w umowie na gaz: jak policzyć termin",
+      "parent": 0,
+      "parent_import_id": 0,
+      "path": "/wiedza/okres-wypowiedzenia-klauzula-prolongacyjna/",
+      "public_path": "/wiedza/okres-wypowiedzenia-klauzula-prolongacyjna/",
+      "source_file": "content/posts/okres-wypowiedzenia-klauzula-prolongacyjna.html",
+      "categories": [
+        "umowy-i-wypowiedzenia"
+      ]
+    },
+    {
+      "source_id": 305,
+      "import_id": 305,
+      "kind": "post",
+      "slug": "sprzedaz-rezerwowa-gazu",
+      "title": "Sprzedaż rezerwowa gazu: kiedy grozi i ile kosztuje",
+      "parent": 0,
+      "parent_import_id": 0,
+      "path": "/wiedza/sprzedaz-rezerwowa-gazu/",
+      "public_path": "/wiedza/sprzedaz-rezerwowa-gazu/",
+      "source_file": "content/posts/sprzedaz-rezerwowa-gazu.html",
+      "categories": [
+        "sprzedaz-rezerwowa"
+      ]
+    },
+    {
+      "source_id": 306,
+      "import_id": 306,
+      "kind": "post",
+      "slug": "cena-stala-czy-indeksowana-tge",
+      "title": "Cena stała czy indeksowana do TGE: dla jakiego profilu zużycia",
+      "parent": 0,
+      "parent_import_id": 0,
+      "path": "/wiedza/cena-stala-czy-indeksowana-tge/",
+      "public_path": "/wiedza/cena-stala-czy-indeksowana-tge/",
+      "source_file": "content/posts/cena-stala-czy-indeksowana-tge.html",
+      "categories": [
+        "ceny-i-rynek"
+      ]
+    },
+    {
+      "source_id": 307,
+      "import_id": 307,
+      "kind": "post",
+      "slug": "art-4j-ust-3b-ms-p-kary",
+      "title": "Co zmienia art. 4j ust. 3b Prawa energetycznego dla MŚP (od 21.07.2026): kary za wcześniejsze rozwiązanie umowy — do weryfikacji prawnej",
+      "parent": 0,
+      "parent_import_id": 0,
+      "path": "/wiedza/art-4j-ust-3b-ms-p-kary/",
+      "public_path": "/wiedza/art-4j-ust-3b-ms-p-kary/",
+      "source_file": "content/posts/art-4j-ust-3b-ms-p-kary.html",
+      "categories": [
+        "umowy-i-wypowiedzenia"
+      ]
+    }
+  ],
+  "map_paths": [
+    "/",
+    "/analiza-umowy/",
+    "/archiwum-kategorii/",
+    "/blad-404/",
+    "/category/biometan-i-raportowanie/",
+    "/category/ceny-i-rynek/",
+    "/category/sprzedaz-rezerwowa/",
+    "/category/umowy-i-wypowiedzenia/",
+    "/category/zmiana-sprzedawcy/",
+    "/ceny-orientacyjne/",
+    "/dla-agentow-ai/",
+    "/dla-doradcow/",
+    "/dla-kogo/",
+    "/dla-kogo/msp/",
+    "/dla-kogo/przemysl/",
+    "/dokumenty/",
+    "/kalkulator-wypowiedzenia/",
+    "/komentarz-rynkowy/",
+    "/kontakt/",
+    "/o-nas/",
+    "/oferta/",
+    "/oferta/biometan/",
+    "/oferta/cena-indeksowana-tge/",
+    "/oferta/cena-stala/",
+    "/oferta/model-transzowy/",
+    "/oferta/umowa-kompleksowa-msp/",
+    "/polityka-prywatnosci/",
+    "/regulamin/",
+    "/wgraj-fakture/",
+    "/wiedza/",
+    "/wiedza/art-4j-ust-3b-ms-p-kary/",
+    "/wiedza/cena-stala-czy-indeksowana-tge/",
+    "/wiedza/jak-zmienic-sprzedawce-gazu-w-firmie/",
+    "/wiedza/komentarz-rynkowy-szablon/",
+    "/wiedza/okres-wypowiedzenia-klauzula-prolongacyjna/",
+    "/wiedza/perspektywa-rynku-szablon/",
+    "/wiedza/sprzedaz-rezerwowa-gazu/",
+    "/wyniki-wyszukiwania/"
+  ],
+  "categories": [
+    {
+      "source_id": 50,
+      "slug": "komentarz-rynkowy",
+      "name": "Komentarz rynkowy",
+      "route": "/komentarz-rynkowy/"
+    },
+    {
+      "source_id": 51,
+      "slug": "zmiana-sprzedawcy",
+      "name": "Zmiana sprzedawcy",
+      "route": "/category/zmiana-sprzedawcy/"
+    },
+    {
+      "source_id": 52,
+      "slug": "umowy-i-wypowiedzenia",
+      "name": "Umowy i wypowiedzenia",
+      "route": "/category/umowy-i-wypowiedzenia/"
+    },
+    {
+      "source_id": 53,
+      "slug": "ceny-i-rynek",
+      "name": "Ceny i rynek",
+      "route": "/category/ceny-i-rynek/"
+    },
+    {
+      "source_id": 54,
+      "slug": "biometan-i-raportowanie",
+      "name": "Biometan i raportowanie (CSRD/ETS)",
+      "route": "/category/biometan-i-raportowanie/"
+    },
+    {
+      "source_id": 55,
+      "slug": "sprzedaz-rezerwowa",
+      "name": "Sprzedaż rezerwowa",
+      "route": "/category/sprzedaz-rezerwowa/"
+    }
+  ],
+  "category_routes": {
+    "komentarz-rynkowy": "/komentarz-rynkowy/",
+    "zmiana-sprzedawcy": "/category/zmiana-sprzedawcy/",
+    "umowy-i-wypowiedzenia": "/category/umowy-i-wypowiedzenia/",
+    "ceny-i-rynek": "/category/ceny-i-rynek/",
+    "biometan-i-raportowanie": "/category/biometan-i-raportowanie/",
+    "sprzedaz-rezerwowa": "/category/sprzedaz-rezerwowa/"
+  },
+  "front_page": {
+    "source_id": 201,
+    "slug": "start"
+  },
+  "posts_page": {
+    "source_id": 205,
+    "slug": "wiedza",
+    "render_post_content": true
+  },
+  "not_found": {
+    "source_id": 224,
+    "slug": "blad-404",
+    "http_status": 404,
+    "note": "Render this source page content from 404.php; source page itself has normal import path."
+  },
+  "category_archive_template": {
+    "source_id": 225,
+    "slug": "archiwum-kategorii",
+    "dynamic_h1": "core/query-title level 1",
+    "query_inherit": true
+  },
+  "market_archive": {
+    "source_id": 220,
+    "slug": "komentarz-rynkowy",
+    "category_source_id": 50,
+    "route": "/komentarz-rynkowy/",
+    "note": "Actual category archive; use page 220 post_content as body. Remap query.taxQuery.category IDs."
+  },
+  "post_permalink": "/wiedza/%postname%/",
+  "query_term_remapping": "Remap every nested core/query attrs.query.taxQuery.category source term ID after import, including home and archive body.",
+  "article_editing_exception": {
+    "group_metadata_name": "Treść artykułu",
+    "templateLock": false,
+    "post_source_ids": [
+      303,
+      304,
+      305,
+      306,
+      307
+    ],
+    "reason": "Required editing test 14: Editor inserts paragraph and 3×3 table under second body heading. Article layout/header/sources/CTA remain contentOnly."
+  },
+  "overrides": {
+    "faq_answers": "core/paragraph bindings.__default core/pattern-overrides",
+    "faq_questions": "Pytanie FAQ 1..6: native core/details summary bound via __default core/pattern-overrides. Requires main theme block_bindings_supported_attributes_core/details ['summary']; verify in WordPress 7.1 edit/reload.",
+    "cta": [
+      "Tytuł CTA",
+      "Podtytuł CTA"
+    ],
+    "pricing": [
+      "Data aktualizacji cen"
+    ],
+    "segment_trust": "Named heading/paragraph bindings in pattern sources."
+  },
+  "technical_dates": "WXR 2000-01-01 is import bookkeeping, never visible; content uses [[data]] and [[autor]].",
+  "legal_validation": "Article 307 target date/law/scope/consequences not verified. Explicit [[do weryfikacji prawnej]] retained; not legal advice.",
+  "inactive_slots": "Only core blocks; actions /kontakt/; no upload, calculator, newsletter, CRM, endpoint or PDF download is active.",
+  "preserved": [
+    "C homepage core structure/content",
+    "cena-stala core structure/content"
+  ]
+}

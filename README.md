@@ -1,65 +1,85 @@
-# Gaz dla Przemysłu · P1.1
+# Gaz dla Przemysłu · P1.2
 
-Prototyp WordPress: Blocksy free z wordpress.org, `gdp-child`, wyłącznie bloki core. Dokument zleceniodawcy z 13.09.2026 jest nadrzędny. Zrealizowany zakres roboczy: trzy kierunki, wspólna strona główna i `/oferta/cena-stala/`; pomocnicze adresy są oznaczonymi stubami, nie pełnym P1.2.
+Wybrany kierunek C: redakcyjny, ciepłe tło, butelkowa zieleń, Source Serif 4 i Source Sans 3. Blocksy free z wordpress.org, `gdp-child`, wyłącznie bloki core, bez Companion i innych wtyczek. Dokument zleceniodawcy z 13.09.2026 jest nadrzędny.
 
 ## Stan dostarczenia
 
-**Publiczne repozytorium i publiczne linki `?blueprint-url=...` nie zostały dostarczone.** Agent nie ma własnego konta publikacyjnego. Nie użyto kont ani infrastruktury użytkownika i nie poproszono o dostęp. Lokalne testy CLI nie dowodzą uruchomienia linku na playground.wordpress.net.
+Publiczne repozytorium oraz wymagany link `playground.wordpress.net/?blueprint-url=...` nie zostały dostarczone. Agent nie ma własnego konta publikacyjnego. Nie użyto infrastruktury ani kont zleceniodawcy. Lokalny test CLI nie jest dowodem uruchomienia publicznego linku.
 
-`dist/etap1-A.zip`, `dist/etap1-B.zip`, `dist/etap1-C.zip` są pakietami źródłowymi Blueprint Bundle. W środku każdy ma `blueprint.json`, `gdp-child.zip` i identyczny `site.wxr`. `blueprints/A.json` itp. używają zasobów `bundled`; same JSON-y bez plików ZIP/WXR nie są publicznymi linkami do uruchomienia. Nie wysyłamy fikcyjnych adresów.
+`dist/etap1-v0.1.zip` jest odtwarzalnym Blueprint Bundle: `blueprint.json`, `gdp-child.zip` i `site.wxr`. `blueprints/main.json` wykorzystuje zasoby `bundled`, dlatego sam JSON bez towarzyszących zasobów nie jest przenośnym publicznym adresem uruchomienia.
 
-## Środowisko i start lokalny
+## Odtworzenie lokalne
 
-Wymagane Node 20+, npm i Python 3. Git jest źródłem prawdy. Testowano Playground CLI 3.1.53; WordPress `latest` rozwiązał się do 7.1, PHP 8.3 do 8.3.33. Docker nie jest używany.
+Wymagane: Node 20+, npm, Python 3. Docker nie jest używany. Wersje narzędzi zapisano w `package-lock.json`; konfiguracja WordPress pozostaje `latest`, PHP `8.3`, zgodnie z briefem.
 
 ```sh
 npm ci
-python3 scripts/build.py --active A
+python3 scripts/build.py
 node scripts/validate-blueprints.mjs
-npx wp-playground-cli server --blueprint=dist/A \
-  --blueprint-may-read-adjacent-files --port=9400 --workers=1
+npx wp-playground-cli server --blueprint=dist/main \
+  --blueprint-may-read-adjacent-files --port=9403 --workers=1
 ```
 
-`--workers=1` ogranicza koszt izolowanego testu, lecz CLI ostrzega przed ryzykiem blokad przy dużej współbieżności. Testy wykonują żądania kolejno. Po komunikacie o nasłuchiwaniu należy poczekać na zakończenie importu i HTTP 200, nie traktować samego otwarcia portu jako gotowej strony.
+Generator od P1.2 rozwija tylko C. Pozostałe kierunki odtwarza się z niezmienionych historycznych tagów, nie przez generator `main`. Zimny start kończy się po zakończeniu importu i wyrenderowaniu strony, nie w chwili otwarcia portu.
 
-Analogicznie `dist/B` i `dist/C`. Aby zbudować tylko nowy wariant aktywny w źródłach, użyj `python3 scripts/build.py --active B` lub `C`. Skrypt zawsze buduje wszystkie trzy pakiety, a `theme/gdp-child` i `dist/gdp-child.zip` wskazują wariant aktywny.
+Źródłem treści są pliki `content/pages`, `content/posts`, `content/patterns`. `build-wxr.py` waliduje je i składa WXR. `generate-content.py` jest narzędziem odtworzenia początkowej treści roboczej P1.2; nie uruchamia się automatycznie podczas zwykłego builda, aby nie nadpisywać późniejszych ręcznych poprawek.
 
-## Odtworzenie repozytorium z załączonego Git bundle
+## Repozytorium z Git bundle
 
 ```sh
 git clone gaz-dla-przemyslu-repo.bundle gaz-dla-przemyslu
 cd gaz-dla-przemyslu
-git checkout etap1-A  # analogicznie etap1-B / etap1-C
+git checkout etap1-v0.1
 npm ci
+python3 scripts/build.py
 ```
 
-Tagi są lokalnymi, rzeczywistymi obiektami Git, nie tagami opublikowanego remote. W dostarczonym archiwum źródeł znajduje się stan `main` z A jako wariantem technicznym; nie oznacza to wyboru kierunku.
+Tagi `etap1-A/B/C` zachowują P1.1. `main` i `etap1-v0.1` obejmują wybrane C oraz pełną mapę P1.2. Są to rzeczywiste tagi lokalnego Git, nie opublikowanego remote.
 
-## Zasady techniczne
+## Architektura
 
-- Jedno WXR i identyczna struktura bloków A/B/C. Zmieniają się tokeny, fonty, CSS i ustawienia prezentacyjne.
-- `config/tokens.json` generuje `theme.json` i zgodną paletę Blocksy. Nagłówek i czterokolumnowa stopka pochodzą z free builderów; widgety stopki są blokami core.
-- Fonty WOFF2 latin/latin-ext są w `assets/fonts`, z licencjami. Remote Google Fonts jest wyłączony.
-- Każda główna sekcja jest nazwaną po polsku grupą z `templateLock: contentOnly`. UI oraz core REST save pilnują układu dla Editor. Nie deklarujemy zaliczenia pełnego testu edycji z P1.2.
-- Siedem `wp_block` jest importowanych jako wzorce zsynchronizowane. CTA ma działające nadpisania tytułu i podtytułu; FAQ używa natywnych Details.
-- Formularze i upload to oznaczone, nieaktywne sloty. Przyciski prowadzą do kontaktu. Nie ma wysyłania danych, poczty, HubSpot, endpointów biznesowych ani wtyczek projektu.
-- Skrypt importu WXR jest ograniczony do własnego, kontrolowanego formatu i uruchamia core API przez `runPHP`. Nie jest uniwersalnym importerem; nie obsługuje zewnętrznych załączników. To jawne odstępstwo od `importWxr`, którego kompilator instalowałby zakazaną wtyczkę importera.
-- `GDP_PROTOTYPE` jest wymaganym bezpiecznikiem dla skryptów czyszczących wyłącznie jednorazową instancję Playground. Nie uruchamiać ich na istniejącej stronie.
-- Login demonstracyjny Administrator: `admin` / `password`; Redaktor: `redaktor` / `GDP-prototyp-2026`. To publiczne dane prototypu, nie dane użytkownika. Nigdy nie stosować na hostingu.
+- Jedno źródło tokenów: `config/tokens.json`; z niego powstają `theme.json` oraz paleta Customizera. Aktywne ustawienia są w `theme_mods_gdp-child`, z lustrem `theme_mods_blocksy`.
+- Nagłówek i stopka pochodzą z free builderów Blocksy. Treść stopki to widgety bloków core; dane podmiotu pozostają placeholderami.
+- `/wiedza/` jest stroną wpisów, której bloki renderuje child `home.php`. Query Loop i wyszukiwarka są natywne.
+- Wszystkie wpisy mają adres `/wiedza/<slug>/`. Opcja permalinków pozostaje `/%postname%/`; child dodaje regułę i filtr odnośników.
+- `/komentarz-rynkowy/` jest archiwum kategorii. `category.php` renderuje edytowalny wzorzec strony; inne kategorie korzystają z `archiwum-kategorii`.
+- Błąd 404 wykorzystuje filtr Blocksy i treść strony `blad-404`. Szablony PHP nie zawierają tekstów biznesowych.
+- Sekcje układu są nazwane po polsku i blokowane `contentOnly`. Redaktor nie przesuwa sekcji. Wyjątek: nazwana „Treść artykułu” umożliwia dodanie akapitu i tabeli, wymagane w sekcji 14 briefu. Blokady sprawdzane są też na core REST save.
+- Nadpisania wzorców korzystają z `core/pattern-overrides`. Dla `core/details.summary` child włącza obsługiwany filtr core 6.9+, bez własnego bloku i bez wtyczki.
+- Fonty są lokalne WOFF2 latin/latin-ext z licencjami. Brak osadzonych map, CDN i Google Fonts.
+- Sloty nie przyjmują plików ani danych, nie wykonują obliczeń i nie wysyłają wiadomości. Ich przyciski prowadzą do `/kontakt/`. Funkcje M1–M9 należą do etapu 4.
 
-## Weryfikacja i pliki
+## Import i bezpieczniki
 
-- `docs/qa/browser-runtime.json`: 10 lokalnych tras dla każdego kierunku, pomiary dwóch stron w trzech rozdzielczościach, hosty, błędy JS i testy odczytowe interakcji.
-- `docs/qa/gutenberg-serialization.json`: rzeczywista walidacja `wp.blocks.parse` dla 16 obiektów w edytorze.
-- `docs/qa/schema.json`: walidacja opublikowanego schematu.
-- `docs/screenshots`: 12 pełnych zrzutów, desktop 1440×900 i mobile 360×800; nazwa pliku wskazuje kierunek i stronę.
-- `docs/open-items.md`: kanoniczny rejestr placeholderów, z lokalizacjami.
-- `docs/decisions.md`, `docs/changelog.md`, `docs/P1.1.md`: decyzje, historia i raport.
-- `scripts/verify-blocks.php`: audyt zawartości bazy; testowe blueprinty dopisują wynik do `/gdp-audit.json`.
-- `scripts/qa.mjs`: testy w Playwright. Należy przekazać uruchomiony obiekt `browser` do eksportowanej funkcji `run`.
+Importer jest jednorazowym skryptem core API dla kontrolowanego WXR projektu, uruchamianym przez `runPHP`. Nie jest wtyczką. Wbudowany `importWxr` instaluje importer WordPress, dlatego nie jest stosowany przy twardym zakazie wtyczek. Obrazy są placeholderami; importer odmawia obcych typów i nie deklaruje obsługi mediów.
 
-## Publikacja i następny etap
+Skrypty wymagają `GDP_PROTOTYPE` i świeżej instancji. Nigdy nie uruchamiać ich na istniejącej stronie. Usuwanie domyślnych wpisów i przykładowych wtyczek dotyczy tylko jednorazowego Playground.
 
-Po uzyskaniu legalnej możliwości publikacji na własnym koncie agenta trzeba umieścić komplet zasobów w publicznym repo, wygenerować URL-owe blueprinty wskazujące pliki na odpowiednich tagach i dopiero wtedy przetestować każdy dokładny adres `https://playground.wordpress.net/?blueprint-url=...` do wyrenderowanej strony głównej. Testów tych nie zastępuje CLI.
+Loginy demonstracyjne: Administrator `admin` / `password`; Redaktor `redaktor` / `GDP-prototyp-2026`. To dane publicznego prototypu, nie kont użytkownika. Nie stosować na hostingu.
 
-P1.2, `main.json`, pełna mapa, pięć artykułów, instrukcja testu edycji oraz pełny audyt 13.3–13.6 czekają na wybór kierunku. Odtworzenie na hostingu przez `restore-on-host.sh` należy dopracować do P1.4. Nie dołączamy obecnie pozornie gotowego skryptu wdrożenia; etap 2 nie został rozpoczęty.
+## Weryfikacja
+
+- `docs/qa/inventory-p12.md`: zakres i scenariusze testów.
+- `scripts/verify-blocks.php`: audyt bazy WordPress; testowy blueprint zapisuje `gdp-audit.json`.
+- `scripts/qa-p12.mjs`: front, adresy, responsywność, hosty, axe-core i interakcje.
+- `docs/qa/p12-browser.json`: surowe wyniki frontu i dostępności.
+- `docs/qa/schema-p12.json`: JSON Schema.
+- `docs/screenshots/p12`: widoki 360×800, 768×1024 i 1440×900.
+- `docs/test-edycji.md`: ilustrowany test dla zleceniodawcy.
+- `docs/open-items.md`: kanoniczne wystąpienia placeholderów.
+- `docs/P1.2.md`: krótki raport kontrolny, z ograniczeniami odbioru.
+
+Po buildzie uruchom instancję testową zamiast zwykłej, aby włączyć logowanie i zapisać audyt importu:
+
+```sh
+npx wp-playground-cli server --blueprint=.runtime/test-main \
+  --blueprint-may-read-adjacent-files --port=9403 --workers=1
+```
+
+W drugim terminalu: `npx playwright install chromium`, następnie `node scripts/run-qa-p12.mjs`. Skrypt sprawdza front i serializację; nie zastępuje operacji edycji opisanych w instrukcji. Używa wyłącznie kont demonstracyjnych świeżej instancji i portu 9403.
+
+## Publikacja i kolejne etapy
+
+Po uzyskaniu legalnej możliwości publikacji na własnym koncie agenta trzeba opublikować zasoby, przygotować URL-owy blueprint wskazujący pliki na tagu i przetestować dokładny link Playground aż do wyrenderowanej strony głównej. Bundle ani zrzut lokalny nie zastępują tego testu.
+
+P1.2 jest punktem na uwagi. P1.3 obejmie uzgodnione poprawki. Dopiero pisemna akceptacja P1.4 i odrębne nadanie dostępów umożliwiają etap 2. Nie wykonano wdrożenia, konfiguracji infrastruktury ani instalacji wtyczek. Procedura odtworzenia na hostingu jest osobnym elementem zamknięcia P1.4.

@@ -1,17 +1,18 @@
 {
-  "scope": "P1.1 only; identical content for A/B/C",
-  "source_specification": "gazdlaprzemyslu_etap1_instrukcja_agenta.md, sections 1.3, 5, 7, 8, 9, 10, 16; scoped to P1.1",
+  "scope": "P1.2 full content; direction C",
+  "source_specification": "gazdlaprzemyslu_etap1_instrukcja_agenta.md, sections 1.3, 5, 7, 8, 9, 10, 14, 16; P1.2 direction C",
   "technical_timestamp": "2000-01-01 00:00:00",
   "timestamp_note": "Import bookkeeping only. Visible dates remain [[data]]. Native theme date/author metadata must be disabled.",
   "validation_scope": "Source structural checks only. Gutenberg save validation, rendered accessibility and runtime checks are separate.",
   "notes": [
     "Home Query Loop requests three posts; only two placeholder market posts exist.",
-    "No starter knowledge articles are included in P1.1.",
-    "FAQ answers support per-instance paragraph pattern overrides. Questions use native Details summary and remain globally editable in the synced pattern, rather than claiming unsupported summary overrides.",
+    "Five draft knowledge articles; legal facts/terms remain explicit placeholders.",
+    "FAQ answers use paragraph pattern overrides. FAQ questions bind native Details summary via core/pattern-overrides; main theme supplies block_bindings_supported_attributes_core/details ['summary'] support for the WordPress 7.1 runtime. Runtime edit/reload test is required.",
     "Existing IDs can be remapped by an importer. Remap nested core/block refs.",
-    "All main CTAs point to /kontakt/ and never upload or submit data.",
+    "Acquisition navigation points to product/tool landings. Inactive module actions point to /kontakt/; no data is submitted.",
     "ct_page_title=no is set for pages and posts to avoid duplicate visible titles.",
-    "Wiedza content is a supporting stub. If set as page_for_posts, WordPress uses the theme archive instead of this page's post_content."
+    "Render page_for_posts post_content through home.php. Market archive body is page source 220.",
+    "Article prose group Treść artykułu has templateLock false: narrow exception required by editing test 14."
   ],
   "items": [
     {
@@ -41,7 +42,8 @@
       "slug": "upload",
       "title": "Slot: upload faktury",
       "parent_import_id": 0,
-      "public_path": "/?post_type=wp_block&name=upload"
+      "public_path": "/?post_type=wp_block&name=upload",
+      "categories": []
     },
     {
       "file": "content/patterns/disclaimer.html",
@@ -61,7 +63,8 @@
       "slug": "disclaimer",
       "title": "Zastrzeżenie cen",
       "parent_import_id": 0,
-      "public_path": "/?post_type=wp_block&name=disclaimer"
+      "public_path": "/?post_type=wp_block&name=disclaimer",
+      "categories": []
     },
     {
       "file": "content/patterns/final-cta.html",
@@ -78,13 +81,14 @@
       ],
       "refs": [],
       "placeholders": [],
-      "sha256": "bece4f99bfa98e080fe4b1dc901d6714b79ee591774266fd74980ba7862bc1ae",
+      "sha256": "99dc19c81e3f8dfdfbab1d93a30f4f1e68ec72d781c932dea00960ec44fe7145",
       "import_id": 103,
       "post_type": "wp_block",
       "slug": "final-cta",
       "title": "CTA: wgraj fakturę",
       "parent_import_id": 0,
-      "public_path": "/?post_type=wp_block&name=final-cta"
+      "public_path": "/?post_type=wp_block&name=final-cta",
+      "categories": []
     },
     {
       "file": "content/patterns/pricing.html",
@@ -119,7 +123,8 @@
       "slug": "pricing",
       "title": "Slot: tabela cen",
       "parent_import_id": 0,
-      "public_path": "/?post_type=wp_block&name=pricing"
+      "public_path": "/?post_type=wp_block&name=pricing",
+      "categories": []
     },
     {
       "file": "content/patterns/segments.html",
@@ -138,13 +143,14 @@
         "[[X]]",
         "[[do uzgodnienia]]"
       ],
-      "sha256": "3228019d7d2bd1092a72371ec08321ad4857423c988a2fd4e32f02466d62c2a6",
+      "sha256": "6dc85fb899696e19aa8c6b0f97fcab40b5190f8525113e183af8f61377b2f826",
       "import_id": 105,
       "post_type": "wp_block",
       "slug": "segments",
       "title": "Wzorzec: segmenty",
       "parent_import_id": 0,
-      "public_path": "/?post_type=wp_block&name=segments"
+      "public_path": "/?post_type=wp_block&name=segments",
+      "categories": []
     },
     {
       "file": "content/patterns/trust.html",
@@ -167,7 +173,8 @@
       "slug": "trust",
       "title": "Pasek zaufania",
       "parent_import_id": 0,
-      "public_path": "/?post_type=wp_block&name=trust"
+      "public_path": "/?post_type=wp_block&name=trust",
+      "categories": []
     },
     {
       "file": "content/patterns/faq-product.html",
@@ -182,13 +189,109 @@
       ],
       "refs": [],
       "placeholders": [],
-      "sha256": "d7f9decb215c791535ade19de4dd5a4e7c70b6d3e8e2eacd2d3cfd80e83f0d4e",
+      "sha256": "e2134b2b3c940444233f6ff100de35c6d92f6d9a007c9cf4fc7ca43e1eefe305",
       "import_id": 107,
       "post_type": "wp_block",
       "slug": "faq-product",
       "title": "FAQ: produkt",
       "parent_import_id": 0,
-      "public_path": "/?post_type=wp_block&name=faq-product"
+      "public_path": "/?post_type=wp_block&name=faq-product",
+      "categories": []
+    },
+    {
+      "file": "content/patterns/calculator.html",
+      "blocks": {
+        "core/button": 1,
+        "core/buttons": 1,
+        "core/group": 3,
+        "core/heading": 2,
+        "core/paragraph": 10
+      },
+      "h1_count": 0,
+      "top_sections": [
+        "Slot: kalkulator terminu wypowiedzenia"
+      ],
+      "refs": [],
+      "placeholders": [
+        "[[data z umowy]]",
+        "[[wartość i jednostka z umowy]]",
+        "[[pełne brzmienie klauzuli]]",
+        "[[adres e-mail — opcjonalnie w przyszłym module]]",
+        "[[wynik kalkulatora po analizie sposobu liczenia terminu]]",
+        "[[do weryfikacji prawnej]]",
+        "[[treść zgody dostarczy zleceniodawca]]"
+      ],
+      "sha256": "0bf6a3a5863fe01df9c809ebd1c00eb83e942128a02e83c65ecc6f519ba11735",
+      "import_id": 108,
+      "post_type": "wp_block",
+      "slug": "calculator",
+      "title": "Slot: kalkulator wypowiedzenia",
+      "parent_import_id": 0,
+      "public_path": "/?post_type=wp_block&name=calculator",
+      "categories": []
+    },
+    {
+      "file": "content/patterns/analysis.html",
+      "blocks": {
+        "core/button": 1,
+        "core/buttons": 1,
+        "core/group": 2,
+        "core/heading": 2,
+        "core/list": 1,
+        "core/list-item": 6,
+        "core/paragraph": 7
+      },
+      "h1_count": 0,
+      "top_sections": [
+        "Slot: analiza umowy"
+      ],
+      "refs": [],
+      "placeholders": [
+        "[[miejsce na plik — nieaktywne]]",
+        "[[adres e-mail]]",
+        "[[NIP firmy]]",
+        "[[do weryfikacji prawnej]]",
+        "[[treść zgody dostarczy zleceniodawca]]"
+      ],
+      "sha256": "d495fef210af651a7739b856cdd35f365dfc4097b8905cb868820478d8a199d7",
+      "import_id": 109,
+      "post_type": "wp_block",
+      "slug": "analysis",
+      "title": "Slot: analiza umowy",
+      "parent_import_id": 0,
+      "public_path": "/?post_type=wp_block&name=analysis",
+      "categories": []
+    },
+    {
+      "file": "content/patterns/advisor.html",
+      "blocks": {
+        "core/button": 1,
+        "core/buttons": 1,
+        "core/group": 2,
+        "core/heading": 1,
+        "core/paragraph": 8
+      },
+      "h1_count": 0,
+      "top_sections": [
+        "Slot: zgłoszenie doradcy"
+      ],
+      "refs": [],
+      "placeholders": [
+        "[[imię i nazwisko]]",
+        "[[dane doradcy]]",
+        "[[dane kontaktowe]]",
+        "[[branże i sposób pracy]]",
+        "[[zapytania indywidualne lub portfel klientów]]",
+        "[[treść zgody dostarczy zleceniodawca]]"
+      ],
+      "sha256": "dc9fa7fa3771e36ada128f8875eb1e83484e8c7e9497ac8c9c2981f0bf917513",
+      "import_id": 110,
+      "post_type": "wp_block",
+      "slug": "advisor",
+      "title": "Slot: formularz doradcy",
+      "parent_import_id": 0,
+      "public_path": "/?post_type=wp_block&name=advisor",
+      "categories": []
     },
     {
       "file": "content/pages/start.html",
@@ -236,53 +339,67 @@
         "[[imię i nazwisko, stanowisko]]",
         "[[linki do źródeł]]"
       ],
-      "sha256": "7faf8bbc7a82205db7c1b84eaa25e6c283a6fb0d4fbdaaab0db13c93094f9d79",
+      "sha256": "9d178cf28b76549c04ca14577e8b0ec18f943a606b906de3f9666141dde5f63e",
       "import_id": 201,
       "post_type": "page",
       "slug": "start",
       "title": "Start",
       "parent_import_id": 0,
-      "public_path": "/"
+      "public_path": "/",
+      "categories": []
     },
     {
       "file": "content/pages/oferta.html",
       "blocks": {
-        "core/block": 2,
-        "core/group": 2,
-        "core/heading": 2,
-        "core/list": 1,
-        "core/list-item": 5,
-        "core/paragraph": 5
+        "core/block": 5,
+        "core/button": 1,
+        "core/buttons": 1,
+        "core/group": 12,
+        "core/heading": 10,
+        "core/list": 2,
+        "core/list-item": 6,
+        "core/paragraph": 14,
+        "core/table": 1
       },
       "h1_count": 1,
       "top_sections": [
-        "Oferta: strona pomocnicza",
-        "Następny krok: wybór modelu"
+        "Otwarcie: Wybierz sposób zakupu, nie tylko stawkę.",
+        "Modele zakupu gazu",
+        "Porównaj te same cechy",
+        "Dla kogo który model",
+        "Źródła i aktualizacja",
+        "Następny krok"
       ],
       "refs": [
+        102,
+        102,
+        102,
         102,
         103
       ],
       "placeholders": [
-        "[[warunki do potwierdzenia]]",
-        "[[warunki do potwierdzenia]]",
-        "[[zakres do potwierdzenia]]",
-        "[[data]]",
         "[[ ]]",
-        "[[zatwierdzone warunki produktów]]"
+        "[[ ]]",
+        "[[ ]]",
+        "[[ ]]",
+        "[[warunki produktu PBM — dokument do zatwierdzenia]]",
+        "[[źródło: dokument, wersja i link po weryfikacji merytorycznej]]",
+        "[[data]]",
+        "[[autor]]"
       ],
-      "sha256": "739c84de16d0df8fe59faaba17150926810addabf4c044232f800d135356be13",
+      "sha256": "d6d6d42aad10dbb40c79cbaa2732371a37ea270c76fb833084f9a2b5d93747cb",
       "import_id": 202,
       "post_type": "page",
       "slug": "oferta",
       "title": "Oferta",
       "parent_import_id": 0,
-      "public_path": "/oferta/"
+      "public_path": "/oferta/",
+      "categories": []
     },
     {
       "file": "content/pages/cena-stala.html",
       "blocks": {
-        "core/block": 4,
+        "core/block": 8,
         "core/button": 2,
         "core/buttons": 1,
         "core/group": 14,
@@ -305,7 +422,11 @@
       "refs": [
         102,
         102,
+        102,
+        102,
+        102,
         107,
+        102,
         103
       ],
       "placeholders": [
@@ -325,212 +446,1439 @@
         "[[warunki produktu PBM: dokument do zatwierdzenia]]",
         "[[linki do źródeł po weryfikacji merytorycznej i prawnej]]"
       ],
-      "sha256": "7b1bd4d9545596e3bee6881bb0e3db5aa50edcae2412330ad013d8ed3d947715",
+      "sha256": "96064f592d4e84f2c8e1bcbc6754fdabbf3d99e3308ff75d4a0af71d2703f100",
       "import_id": 203,
       "post_type": "page",
       "slug": "cena-stala",
       "title": "Cena stała",
       "parent_import_id": 202,
-      "public_path": "/oferta/cena-stala/"
+      "public_path": "/oferta/cena-stala/",
+      "categories": []
     },
     {
       "file": "content/pages/kontakt.html",
       "blocks": {
-        "core/block": 1,
-        "core/group": 2,
-        "core/heading": 2,
-        "core/list": 1,
-        "core/list-item": 6,
-        "core/paragraph": 4
+        "core/button": 2,
+        "core/buttons": 2,
+        "core/group": 8,
+        "core/heading": 6,
+        "core/list": 2,
+        "core/list-item": 5,
+        "core/paragraph": 13,
+        "core/table": 1
       },
       "h1_count": 1,
       "top_sections": [
-        "Kontakt: strona pomocnicza",
-        "Formularz kontaktowy: demonstracja"
+        "Otwarcie: Porozmawiajmy o zakupie gazu w Twojej firmie.",
+        "Dane kontaktowe",
+        "Formularz kontaktowy: podgląd",
+        "Lokalizacja",
+        "Z czym chcesz przyjść?",
+        "Źródła i aktualizacja"
       ],
-      "refs": [
-        101
-      ],
+      "refs": [],
       "placeholders": [
-        "[[adres siedziby]]",
+        "[[PBM Sp. z o.o., adres, NIP, KRS, kapitał zakładowy]]",
+        "[[adres e-mail do kontaktu]]",
+        "[[numer telefonu]]",
+        "[[dni i godziny obsługi]]",
+        "[[dane kontaktowe]]",
         "[[adres e-mail]]",
         "[[numer telefonu]]",
-        "[[godziny]]",
-        "[[NIP, KRS, kapitał zakładowy]]",
-        "[[Miejsce na mapę: bez osadzenia zewnętrznego]]"
+        "[[zakup gazu, umowa lub współpraca]]",
+        "[[krótki opis potrzeb]]",
+        "[[treść zgody dostarczy zleceniodawca]]",
+        "[[mapa: lokalizacja biura po potwierdzeniu adresu]]",
+        "[[do uzupełnienia]]",
+        "[[zatwierdzone dane rejestrowe i kontaktowe PBM]]",
+        "[[data]]",
+        "[[autor]]"
       ],
-      "sha256": "112f7fd0afe37904500dad4710fc9bbdfe8e1e19d5ddc0d7d311baeb80fc881b",
+      "sha256": "ede571519e563ce46aa98d162e07a856cb2925b0c365cb2f9a5607e0d6065d64",
       "import_id": 204,
       "post_type": "page",
       "slug": "kontakt",
       "title": "Kontakt",
       "parent_import_id": 0,
-      "public_path": "/kontakt/"
+      "public_path": "/kontakt/",
+      "categories": []
     },
     {
       "file": "content/pages/wiedza.html",
       "blocks": {
-        "core/group": 1,
-        "core/heading": 2,
+        "core/block": 1,
+        "core/button": 2,
+        "core/buttons": 2,
+        "core/group": 14,
+        "core/heading": 11,
+        "core/list": 1,
+        "core/list-item": 1,
+        "core/paragraph": 17,
+        "core/post-excerpt": 1,
+        "core/post-template": 1,
+        "core/post-title": 1,
+        "core/query": 1,
+        "core/query-no-results": 1,
+        "core/search": 1
+      },
+      "h1_count": 1,
+      "top_sections": [
+        "Otwarcie: Wiedza, która porządkuje decyzję o gazie.",
+        "Wybierz temat",
+        "Najnowsze artykuły",
+        "Znajdź odpowiedź",
+        "Szukasz komentarza do rynku?",
+        "Źródła i aktualizacja",
+        "Następny krok"
+      ],
+      "refs": [
+        103
+      ],
+      "placeholders": [
+        "[[w przygotowaniu]]",
+        "[[data]]",
+        "[[autor]]",
+        "[[źródła wskazane osobno pod każdym artykułem]]",
+        "[[data]]",
+        "[[autor]]"
+      ],
+      "sha256": "63afa1df9d8386250afefeb64e2bdd052f2561b6e010f4e9b0429b812b19b79c",
+      "import_id": 205,
+      "post_type": "page",
+      "slug": "wiedza",
+      "title": "Wiedza",
+      "parent_import_id": 0,
+      "public_path": "/wiedza/",
+      "categories": []
+    },
+    {
+      "file": "content/pages/wgraj-fakture.html",
+      "blocks": {
+        "core/block": 2,
+        "core/button": 1,
+        "core/buttons": 1,
+        "core/details": 3,
+        "core/group": 8,
+        "core/heading": 7,
+        "core/list": 3,
+        "core/list-item": 10,
+        "core/paragraph": 12,
+        "core/table": 1
+      },
+      "h1_count": 1,
+      "top_sections": [
+        "Otwarcie: Jedna faktura. Konkretne pytania o zakup gazu.",
+        "Prześlij fakturę: podgląd modułu",
+        "Co odczytamy z faktury",
+        "Co dostaniesz w 24 h — cel do potwierdzenia",
+        "Co przygotować poza fakturą",
+        "Bezpieczeństwo danych",
+        "Pytania o przygotowanie faktury",
+        "Źródła i aktualizacja"
+      ],
+      "refs": [
+        101,
+        102
+      ],
+      "placeholders": [
+        "[[zakres odpowiedzi]]",
+        "[[okres retencji i procedura]]",
+        "[[role, podmioty i zasady dostępu]]",
+        "[[treść dostarczy zleceniodawca]]",
+        "[[do zatwierdzenia przed uruchomieniem]]",
+        "[[do potwierdzenia]]",
+        "[[warunki produktu PBM — dokument do zatwierdzenia]]",
+        "[[źródło: dokument, wersja i link po weryfikacji merytorycznej]]",
+        "[[data]]",
+        "[[autor]]"
+      ],
+      "sha256": "891efe7085930521bb12e4c801f56d65ab859cce63b417cce3451606ebf12bb3",
+      "import_id": 206,
+      "post_type": "page",
+      "slug": "wgraj-fakture",
+      "title": "Wgraj fakturę",
+      "parent_import_id": 0,
+      "public_path": "/wgraj-fakture/",
+      "categories": []
+    },
+    {
+      "file": "content/pages/polityka-prywatnosci.html",
+      "blocks": {
+        "core/group": 9,
+        "core/heading": 9,
+        "core/list": 1,
+        "core/list-item": 1,
+        "core/paragraph": 11
+      },
+      "h1_count": 1,
+      "top_sections": [
+        "Otwarcie: Polityka prywatności",
+        "Administrator danych i kontakt",
+        "Cele, zakres i podstawy przetwarzania",
+        "Odbiorcy i podmioty przetwarzające",
+        "Retencja i usuwanie danych",
+        "Prawa osób i sposób kontaktu",
+        "Pliki cookie i mechanizm zgód",
+        "Zmiany polityki",
+        "Źródła i aktualizacja"
+      ],
+      "refs": [],
+      "placeholders": [
+        "[[treść dostarczy zleceniodawca]]",
+        "[[treść dostarczy zleceniodawca]]",
+        "[[treść dostarczy zleceniodawca]]",
+        "[[treść dostarczy zleceniodawca]]",
+        "[[treść dostarczy zleceniodawca]]",
+        "[[treść dostarczy zleceniodawca]]",
+        "[[slot CMP — etap 3]]",
+        "[[treść dostarczy zleceniodawca]]",
+        "[[zatwierdzony dokument prawny: wersja i osoba akceptująca]]",
+        "[[data]]",
+        "[[autor]]"
+      ],
+      "sha256": "5ba79e83f2fefcfb55dfcff4409be14e33f552799ed57db0fae077d71ab6bacd",
+      "import_id": 207,
+      "post_type": "page",
+      "slug": "polityka-prywatnosci",
+      "title": "Polityka prywatności",
+      "parent_import_id": 0,
+      "public_path": "/polityka-prywatnosci/",
+      "categories": []
+    },
+    {
+      "file": "content/pages/cena-indeksowana-tge.html",
+      "blocks": {
+        "core/block": 7,
+        "core/button": 1,
+        "core/buttons": 1,
+        "core/details": 6,
+        "core/group": 8,
+        "core/heading": 7,
+        "core/list": 3,
+        "core/list-item": 10,
+        "core/paragraph": 11,
+        "core/table": 1
+      },
+      "h1_count": 1,
+      "top_sections": [
+        "Otwarcie: Cena indeksowana TGE. Jasna formuła zamiast domysłów.",
+        "Gdy akceptujesz zmianę ceny paliwa",
+        "Jak działa ten model",
+        "Ryzyka i ograniczenia",
+        "Przykład do uzupełnienia",
+        "Pytania przed wyborem",
+        "Źródła i aktualizacja",
+        "Następny krok"
+      ],
+      "refs": [
+        102,
+        102,
+        102,
+        102,
+        102,
+        102,
+        103
+      ],
+      "placeholders": [
+        "[[indeks lub instrument TGE]]",
+        "[[ ]]",
+        "[[ ]]",
+        "[[ ]]",
+        "[[źródło]]",
+        "[[ ]]",
+        "[[ ]]",
+        "[[ ]]",
+        "[[ ]]",
+        "[[link do właściwego indeksu]]",
+        "[[warunki produktu PBM — dokument do zatwierdzenia]]",
+        "[[źródło: dokument, wersja i link po weryfikacji merytorycznej]]",
+        "[[data]]",
+        "[[autor]]"
+      ],
+      "sha256": "12e15cd7132808f9c3e3909b2a408140ef90267a096a99ac0f0eaf24abd7ee6b",
+      "import_id": 208,
+      "post_type": "page",
+      "slug": "cena-indeksowana-tge",
+      "title": "Cena indeksowana TGE",
+      "parent_import_id": 202,
+      "public_path": "/oferta/cena-indeksowana-tge/",
+      "categories": []
+    },
+    {
+      "file": "content/pages/model-transzowy.html",
+      "blocks": {
+        "core/block": 7,
+        "core/button": 1,
+        "core/buttons": 1,
+        "core/details": 6,
+        "core/group": 8,
+        "core/heading": 7,
+        "core/list": 3,
+        "core/list-item": 10,
+        "core/paragraph": 10,
+        "core/table": 2
+      },
+      "h1_count": 1,
+      "top_sections": [
+        "Otwarcie: Model transzowy. Decyzje rozłożone na części.",
+        "Gdy masz proces podejmowania decyzji",
+        "Jak działa ten model",
+        "Ryzyka i ograniczenia",
+        "Przykład do uzupełnienia",
+        "Pytania przed wyborem",
+        "Źródła i aktualizacja",
+        "Następny krok"
+      ],
+      "refs": [
+        102,
+        102,
+        102,
+        102,
+        102,
+        102,
+        103
+      ],
+      "placeholders": [
+        "[[ ]]",
+        "[[ ]]",
+        "[[ ]]",
+        "[[ ]]",
+        "[[oznaczenie]]",
+        "[[ ]]",
+        "[[ ]]",
+        "[[sposób akceptacji]]",
+        "[[oznaczenie]]",
+        "[[ ]]",
+        "[[ ]]",
+        "[[sposób akceptacji]]",
+        "[[ ]]",
+        "[[formuła umowna]]",
+        "[[warunki]]",
+        "[[ ]]",
+        "[[ ]]",
+        "[[ ]]",
+        "[[ ]]",
+        "[[warunki do zatwierdzenia]]",
+        "[[warunki produktu PBM — dokument do zatwierdzenia]]",
+        "[[źródło: dokument, wersja i link po weryfikacji merytorycznej]]",
+        "[[data]]",
+        "[[autor]]"
+      ],
+      "sha256": "e51791202dd81b5975289e61c1b4c6eae8b4a563e851ae25d39b8b1e2d893c17",
+      "import_id": 209,
+      "post_type": "page",
+      "slug": "model-transzowy",
+      "title": "Model transzowy",
+      "parent_import_id": 202,
+      "public_path": "/oferta/model-transzowy/",
+      "categories": []
+    },
+    {
+      "file": "content/pages/umowa-kompleksowa-msp.html",
+      "blocks": {
+        "core/block": 7,
+        "core/button": 1,
+        "core/buttons": 1,
+        "core/details": 6,
+        "core/group": 10,
+        "core/heading": 9,
+        "core/list": 3,
+        "core/list-item": 10,
+        "core/paragraph": 13,
+        "core/table": 1
+      },
+      "h1_count": 1,
+      "top_sections": [
+        "Otwarcie: Gaz dla MŚP. Najpierw ustal zakres umów.",
+        "Gdy gaz jest ważny, a czas na formalności ograniczony",
+        "Jak działa ten model",
+        "Ryzyka i ograniczenia",
+        "Przykład do uzupełnienia",
+        "Pytania przed wyborem",
+        "Osobna umowa dystrybucyjna",
+        "Zanim wyślesz jakikolwiek dokument",
+        "Źródła i aktualizacja",
+        "Następny krok"
+      ],
+      "refs": [
+        102,
+        102,
+        102,
+        102,
+        102,
+        102,
+        103
+      ],
+      "placeholders": [
+        "[[do zatwierdzenia]]",
+        "[[ ]]",
+        "[[ ]]",
+        "[[ ]]",
+        "[[ ]]",
+        "[[do weryfikacji prawnej]]",
+        "[[warunki produktu PBM — dokument do zatwierdzenia]]",
+        "[[źródło: dokument, wersja i link po weryfikacji merytorycznej]]",
+        "[[data]]",
+        "[[autor]]"
+      ],
+      "sha256": "e2d8b23c9229af34cbe912378b9c087089e950a34a8bb851c20052999c807978",
+      "import_id": 210,
+      "post_type": "page",
+      "slug": "umowa-kompleksowa-msp",
+      "title": "Umowa kompleksowa dla MŚP",
+      "parent_import_id": 202,
+      "public_path": "/oferta/umowa-kompleksowa-msp/",
+      "categories": []
+    },
+    {
+      "file": "content/pages/biometan.html",
+      "blocks": {
+        "core/button": 2,
+        "core/buttons": 2,
+        "core/group": 8,
+        "core/heading": 6,
+        "core/list": 2,
+        "core/list-item": 5,
+        "core/paragraph": 13,
+        "core/table": 1
+      },
+      "h1_count": 1,
+      "top_sections": [
+        "Otwarcie: Biometan. Kierunek rozwoju, nie obietnica dostawy.",
+        "Od aktywów do udokumentowanego produktu",
+        "Dokumenty przed deklaracją",
+        "Raportowanie Scope 1 per punkt poboru — wkrótce",
+        "Zainteresowanie biometanem",
+        "Źródła i aktualizacja"
+      ],
+      "refs": [],
+      "placeholders": [
+        "[[opis aktywów do zatwierdzenia]]",
+        "[[dokumentacja produktu]]",
+        "[[do uzgodnienia]]",
+        "[[do weryfikacji prawnej i certyfikacyjnej]]",
+        "[[specyfikacja danych]]",
+        "[[do zatwierdzenia]]",
+        "[[do weryfikacji]]",
+        "[[nazwa firmy]]",
+        "[[adres e-mail]]",
+        "[[potrzeby zakupowe lub dokumentacyjne]]",
+        "[[treść zgody dostarczy zleceniodawca]]",
+        "[[zatwierdzony opis aktywów Grupy IMA Polska]]",
+        "[[dokumentacja biometanu i właściwe wymagania certyfikacyjne]]",
+        "[[data]]",
+        "[[autor]]"
+      ],
+      "sha256": "06c2d7d6f748288f019058f4a3ee9e630bfecea39361bd2cbae57ace4835b2e5",
+      "import_id": 211,
+      "post_type": "page",
+      "slug": "biometan",
+      "title": "Biometan — wkrótce",
+      "parent_import_id": 202,
+      "public_path": "/oferta/biometan/",
+      "categories": []
+    },
+    {
+      "file": "content/pages/ceny-orientacyjne.html",
+      "blocks": {
+        "core/block": 6,
+        "core/button": 1,
+        "core/buttons": 1,
+        "core/group": 7,
+        "core/heading": 6,
+        "core/list": 2,
+        "core/list-item": 8,
+        "core/paragraph": 3,
+        "core/table": 2
+      },
+      "h1_count": 1,
+      "top_sections": [
+        "Otwarcie: Cena gazu. Zobacz, co porównujesz.",
+        "Pełna tabela cen orientacyjnych",
+        "Dekompozycja rachunku",
+        "Jak czytać pasma",
+        "Przykład karty porównania",
+        "Źródła i aktualizacja",
+        "Następny krok"
+      ],
+      "refs": [
+        102,
+        104,
+        102,
+        102,
+        102,
+        103
+      ],
+      "placeholders": [
+        "[[do weryfikacji prawnej]]",
+        "[[ ]]",
+        "[[ ]]",
+        "[[ ]]",
+        "[[ ]]",
+        "[[ ]]",
+        "[[ ]]",
+        "[[ ]]",
+        "[[ ]]",
+        "[[ ]]",
+        "[[ ]]",
+        "[[źródło pasm cen i metodologia po zatwierdzeniu]]",
+        "[[link]]",
+        "[[warunki handlowe PBM i dane rozliczeniowe operatora]]",
+        "[[data]]",
+        "[[autor]]"
+      ],
+      "sha256": "8f8b1b0755c85ea8e08b75468240c74acfe8188ceb43ea952057a4f145877ef9",
+      "import_id": 212,
+      "post_type": "page",
+      "slug": "ceny-orientacyjne",
+      "title": "Ceny orientacyjne",
+      "parent_import_id": 0,
+      "public_path": "/ceny-orientacyjne/",
+      "categories": []
+    },
+    {
+      "file": "content/pages/kalkulator-wypowiedzenia.html",
+      "blocks": {
+        "core/block": 1,
+        "core/button": 2,
+        "core/buttons": 2,
+        "core/details": 1,
+        "core/group": 7,
+        "core/heading": 6,
+        "core/list": 1,
+        "core/list-item": 2,
+        "core/paragraph": 8,
+        "core/table": 1
+      },
+      "h1_count": 1,
+      "top_sections": [
+        "Otwarcie: Termin z umowy, nie z domysłu.",
+        "Kalkulator: podgląd modułu",
+        "Skąd wziąć dane z umowy",
+        "Dane niepełne? Zatrzymaj obliczenie.",
+        "Zanim wyślesz jakikolwiek dokument",
+        "Sprawdź komplet dokumentów",
+        "Źródła i aktualizacja"
+      ],
+      "refs": [
+        108
+      ],
+      "placeholders": [
+        "[[do weryfikacji prawnej]]",
+        "[[do weryfikacji prawnej]]",
+        "[[umowa klienta, aneksy, regulamin i właściwa instrukcja operatora]]",
+        "[[źródło: aktualne przepisy o liczeniu terminów i zmianie sprzedawcy — do weryfikacji prawnej]]",
+        "[[data]]",
+        "[[autor]]"
+      ],
+      "sha256": "99978b3bf7439dc00f2920ae375f304f3402b4391b12bb8748d73f23e48121d2",
+      "import_id": 213,
+      "post_type": "page",
+      "slug": "kalkulator-wypowiedzenia",
+      "title": "Kalkulator terminu wypowiedzenia",
+      "parent_import_id": 0,
+      "public_path": "/kalkulator-wypowiedzenia/",
+      "categories": []
+    },
+    {
+      "file": "content/pages/analiza-umowy.html",
+      "blocks": {
+        "core/block": 1,
+        "core/button": 2,
+        "core/buttons": 2,
+        "core/group": 8,
+        "core/heading": 7,
+        "core/list": 2,
+        "core/list-item": 7,
+        "core/paragraph": 8,
+        "core/table": 1
+      },
+      "h1_count": 1,
+      "top_sections": [
+        "Otwarcie: Przeczytaj umowę, zanim wybierzesz termin.",
+        "Analiza: podgląd modułu",
+        "Proces: od dokumentów do sprawdzonej decyzji",
+        "Co robimy / czego nie robimy",
+        "Zanim wyślesz jakikolwiek dokument",
+        "Czego nie wysyłać do prototypu",
+        "Źródła i aktualizacja",
+        "Następny krok: omów zakres analizy"
+      ],
+      "refs": [
+        109
+      ],
+      "placeholders": [
+        "[[do weryfikacji prawnej]]",
+        "[[do weryfikacji prawnej]]",
+        "[[do zatwierdzenia]]",
+        "[[umowa klienta i dokumenty powiązane]]",
+        "[[procedura PBM: zatwierdzenie prawne i operacyjne]]",
+        "[[data]]",
+        "[[autor]]"
+      ],
+      "sha256": "b0f218faea3db946680dbcbff035990bd4da7711e49aad6d2ca947f8f522abba",
+      "import_id": 214,
+      "post_type": "page",
+      "slug": "analiza-umowy",
+      "title": "Analiza umowy",
+      "parent_import_id": 0,
+      "public_path": "/analiza-umowy/",
+      "categories": []
+    },
+    {
+      "file": "content/pages/dla-kogo.html",
+      "blocks": {
+        "core/block": 2,
+        "core/button": 1,
+        "core/buttons": 1,
+        "core/group": 4,
+        "core/heading": 3,
         "core/list": 1,
         "core/list-item": 2,
         "core/paragraph": 3
       },
       "h1_count": 1,
       "top_sections": [
-        "Wiedza: strona pomocnicza"
+        "Otwarcie: Zacznij od tego, jak pracuje Twoja firma.",
+        "Segmenty klientów",
+        "Źródła i aktualizacja",
+        "Następny krok"
+      ],
+      "refs": [
+        105,
+        103
+      ],
+      "placeholders": [
+        "[[warunki produktu PBM — dokument do zatwierdzenia]]",
+        "[[źródło: dokument, wersja i link po weryfikacji merytorycznej]]",
+        "[[data]]",
+        "[[autor]]"
+      ],
+      "sha256": "679a41be6bafb3f7ae149cfaa8a75d3252e8a0e6ef1cc7f5b3d29d45812e5659",
+      "import_id": 215,
+      "post_type": "page",
+      "slug": "dla-kogo",
+      "title": "Gaz dla Twojej firmy",
+      "parent_import_id": 0,
+      "public_path": "/dla-kogo/",
+      "categories": []
+    },
+    {
+      "file": "content/pages/przemysl.html",
+      "blocks": {
+        "core/block": 1,
+        "core/button": 2,
+        "core/buttons": 2,
+        "core/group": 8,
+        "core/heading": 8,
+        "core/list": 4,
+        "core/list-item": 14,
+        "core/paragraph": 7,
+        "core/table": 1
+      },
+      "h1_count": 1,
+      "top_sections": [
+        "Otwarcie: Gaz dla przemysłu. Warunki pod rytm zakładu.",
+        "Co warto uporządkować",
+        "Produkty do rozmowy",
+        "Przygotuj dane do rozmowy",
+        "Jak przejdziesz przez proces",
+        "Zanim wyślesz jakikolwiek dokument",
+        "Źródła i aktualizacja",
+        "Zacznij od swojego profilu"
+      ],
+      "refs": [
+        102
+      ],
+      "placeholders": [
+        "[[dostępny zakres danych]]",
+        "[[założenia]]",
+        "[[do weryfikacji prawnej]]",
+        "[[warunki produktu PBM — dokument do zatwierdzenia]]",
+        "[[źródło: dokument, wersja i link po weryfikacji merytorycznej]]",
+        "[[data]]",
+        "[[autor]]"
+      ],
+      "sha256": "92e509c38991d6ccfbd998cdbd5d5a162d11176e615989c281e302d84b8eeb66",
+      "import_id": 216,
+      "post_type": "page",
+      "slug": "przemysl",
+      "title": "Gaz dla przemysłu",
+      "parent_import_id": 215,
+      "public_path": "/dla-kogo/przemysl/",
+      "categories": []
+    },
+    {
+      "file": "content/pages/msp.html",
+      "blocks": {
+        "core/block": 1,
+        "core/button": 2,
+        "core/buttons": 2,
+        "core/group": 8,
+        "core/heading": 8,
+        "core/list": 4,
+        "core/list-item": 14,
+        "core/paragraph": 7,
+        "core/table": 1
+      },
+      "h1_count": 1,
+      "top_sections": [
+        "Otwarcie: Gaz dla MŚP. Mniej domysłów przed podpisem.",
+        "Co warto uporządkować",
+        "Produkty do rozmowy",
+        "Przygotuj dane do rozmowy",
+        "Jak przejdziesz przez proces",
+        "Zanim wyślesz jakikolwiek dokument",
+        "Źródła i aktualizacja",
+        "Zacznij od swojego profilu"
+      ],
+      "refs": [
+        102
+      ],
+      "placeholders": [
+        "[[do weryfikacji prawnej]]",
+        "[[warunki produktu PBM — dokument do zatwierdzenia]]",
+        "[[źródło: dokument, wersja i link po weryfikacji merytorycznej]]",
+        "[[data]]",
+        "[[autor]]"
+      ],
+      "sha256": "5636158c92ad473e0cd432d65a8c640233593f39439273badc7b5c535cbbbc99",
+      "import_id": 217,
+      "post_type": "page",
+      "slug": "msp",
+      "title": "Gaz dla MŚP",
+      "parent_import_id": 215,
+      "public_path": "/dla-kogo/msp/",
+      "categories": []
+    },
+    {
+      "file": "content/pages/dla-doradcow.html",
+      "blocks": {
+        "core/block": 1,
+        "core/button": 1,
+        "core/buttons": 1,
+        "core/group": 6,
+        "core/heading": 5,
+        "core/list": 2,
+        "core/list-item": 6,
+        "core/paragraph": 5,
+        "core/table": 1
+      },
+      "h1_count": 1,
+      "top_sections": [
+        "Otwarcie: Twój portfel klientów. Uporządkowana współpraca.",
+        "Ustalmy sposób pracy",
+        "Co ma otrzymać doradca",
+        "Najpierw prawo do reprezentacji",
+        "Formularz doradcy: podgląd",
+        "Źródła i aktualizacja"
+      ],
+      "refs": [
+        110
+      ],
+      "placeholders": [
+        "[[model współpracy]]",
+        "[[zasady prowadzenia zapytań]]",
+        "[[zakres uprawnień i procedura]]",
+        "[[warunki operacyjne]]",
+        "[[opiekun i zakres obsługi]]",
+        "[[regulamin i model współpracy z doradcami]]",
+        "[[zasady umocowania i przekazywania danych]]",
+        "[[data]]",
+        "[[autor]]"
+      ],
+      "sha256": "cdb3501af9267abf55a58202ab97914ebd708c61fafd565c73163731e0e8e8da",
+      "import_id": 218,
+      "post_type": "page",
+      "slug": "dla-doradcow",
+      "title": "Dla doradców energetycznych",
+      "parent_import_id": 0,
+      "public_path": "/dla-doradcow/",
+      "categories": []
+    },
+    {
+      "file": "content/pages/dla-agentow-ai.html",
+      "blocks": {
+        "core/button": 2,
+        "core/buttons": 2,
+        "core/group": 5,
+        "core/heading": 5,
+        "core/list": 2,
+        "core/list-item": 6,
+        "core/paragraph": 6,
+        "core/table": 1
+      },
+      "h1_count": 1,
+      "top_sections": [
+        "Otwarcie: Kanał dla agentów AI. Specyfikacja przed integracją.",
+        "Co planujemy opisać maszynowo",
+        "Granice działania agenta",
+        "Specyfikacja: miejsce na dokument",
+        "Źródła i aktualizacja"
       ],
       "refs": [],
       "placeholders": [
-        "[[tytuł komentarza]]",
-        "[[tytuł komentarza]]",
-        "[[data]]"
+        "[[schemat danych]]",
+        "[[specyfikacja RFQ]]",
+        "[[model odpowiedzi]]",
+        "[[polityka wersji]]",
+        "[[reguły umocowania]]",
+        "[[specyfikacja B2A: wersja, data, URL]]",
+        "[[zatwierdzona specyfikacja B2A i zasady bezpieczeństwa]]",
+        "[[data]]",
+        "[[autor]]"
       ],
-      "sha256": "587f3c403f0f98b4fd71431270dbd1bcfb451cdee23db5415621016bf1331d61",
-      "import_id": 205,
+      "sha256": "6b532ee3d0ffdd0271ba723379bdea7b0c9a01859f6930873b9f5ac986872c13",
+      "import_id": 219,
       "post_type": "page",
-      "slug": "wiedza",
-      "title": "Wiedza",
+      "slug": "dla-agentow-ai",
+      "title": "Dla agentów AI",
       "parent_import_id": 0,
-      "public_path": "/wiedza/"
+      "public_path": "/dla-agentow-ai/",
+      "categories": []
     },
     {
-      "file": "content/pages/wgraj-fakture.html",
+      "file": "content/pages/komentarz-rynkowy.html",
+      "blocks": {
+        "core/button": 2,
+        "core/buttons": 2,
+        "core/group": 7,
+        "core/heading": 4,
+        "core/list": 1,
+        "core/list-item": 1,
+        "core/paragraph": 11,
+        "core/post-template": 1,
+        "core/post-title": 1,
+        "core/query": 1,
+        "core/query-no-results": 1
+      },
+      "h1_count": 1,
+      "top_sections": [
+        "Otwarcie: Komentarz rynkowy. Kontekst zamiast prognozy bez podstaw.",
+        "Wpisy z datą i autorem",
+        "Subskrypcja: podgląd",
+        "Źródła i aktualizacja"
+      ],
+      "refs": [],
+      "placeholders": [
+        "[[data]]",
+        "[[komentarz]]",
+        "[[autor]]",
+        "[[adres e-mail]]",
+        "[[treść zgody dostarczy zleceniodawca]]",
+        "[[źródła rynku podawane osobno w każdym zatwierdzonym komentarzu]]",
+        "[[data]]",
+        "[[autor]]"
+      ],
+      "sha256": "498af3b4aad7172fcbf75941415244895c15594de23297bf57476681d6902fad",
+      "import_id": 220,
+      "post_type": "page",
+      "slug": "komentarz-rynkowy",
+      "title": "Komentarz rynkowy",
+      "parent_import_id": 0,
+      "public_path": "/komentarz-rynkowy/",
+      "categories": []
+    },
+    {
+      "file": "content/pages/o-nas.html",
       "blocks": {
         "core/block": 1,
-        "core/group": 3,
+        "core/button": 1,
+        "core/buttons": 1,
+        "core/group": 8,
+        "core/heading": 7,
+        "core/list": 2,
+        "core/list-item": 6,
+        "core/paragraph": 9,
+        "core/table": 1
+      },
+      "h1_count": 1,
+      "top_sections": [
+        "Otwarcie: Gaz dla Przemysłu. Kanał PBM z Grupy IMA Polska.",
+        "Podmiot i Grupa",
+        "Aktywa: pokażemy dokumenty, nie zastępcze zdjęcia",
+        "Zespół i odpowiedzialność",
+        "Dane, które można sprawdzić",
+        "Jak chcemy pracować z Twoimi danymi",
+        "Źródła i aktualizacja"
+      ],
+      "refs": [
+        106
+      ],
+      "placeholders": [
+        "[[aktywa Grupy: opis, lokalizacja i zatwierdzone dane]]",
+        "[[zdjęcie: zatwierdzony widok aktywów Grupy, opis alternatywny i prawa do publikacji]]",
+        "[[imię i nazwisko, stanowisko, odpowiedzialność]]",
+        "[[imię i nazwisko, stanowisko, odpowiedzialność]]",
+        "[[imię i nazwisko, stanowisko]]",
+        "[[PBM Sp. z o.o., adres, NIP, KRS, kapitał zakładowy]]",
+        "[[ ]]",
+        "[[materiały zatwierdzone przez PBM i Grupę IMA Polska]]",
+        "[[odpis rejestrowy i dokument koncesji]]",
+        "[[data]]",
+        "[[autor]]"
+      ],
+      "sha256": "b0fad0b34c39d7a1f0916d6eedd863638da7a9f3b7227b2043b549a4b5dc2c4e",
+      "import_id": 221,
+      "post_type": "page",
+      "slug": "o-nas",
+      "title": "O nas",
+      "parent_import_id": 0,
+      "public_path": "/o-nas/",
+      "categories": []
+    },
+    {
+      "file": "content/pages/dokumenty.html",
+      "blocks": {
+        "core/block": 1,
+        "core/group": 10,
+        "core/heading": 10,
+        "core/list": 2,
+        "core/list-item": 5,
+        "core/paragraph": 4,
+        "core/table": 6
+      },
+      "h1_count": 1,
+      "top_sections": [
+        "Otwarcie: Dokumenty. Nazwa, wersja i data w jednym miejscu.",
+        "Dokumenty do publikacji",
+        "Jak sprawdzić dokument",
+        "Źródła i aktualizacja"
+      ],
+      "refs": [
+        102
+      ],
+      "placeholders": [
+        "[[numer koncesji i dokument]]",
+        "[[data / wersja]]",
+        "[[URL pliku PDF po zatwierdzeniu]]",
+        "[[zatwierdzony cennik]]",
+        "[[data / wersja]]",
+        "[[URL pliku PDF po zatwierdzeniu]]",
+        "[[dokument i zakres publikacji]]",
+        "[[data / wersja]]",
+        "[[URL pliku PDF po zatwierdzeniu]]",
+        "[[zatwierdzone regulaminy]]",
+        "[[data / wersja]]",
+        "[[URL pliku PDF po zatwierdzeniu]]",
+        "[[pakiet informacji i zgód]]",
+        "[[data / wersja]]",
+        "[[URL pliku PDF po zatwierdzeniu]]",
+        "[[decyzje właściwe dla PBM]]",
+        "[[data / wersja]]",
+        "[[URL pliku PDF po zatwierdzeniu]]",
+        "[[zatwierdzona lista dokumentów PBM i oryginalne pliki]]",
+        "[[data]]",
+        "[[autor]]"
+      ],
+      "sha256": "5ccc50f666b75dfb53e142a5de6c2b6a555e587e774cd1524b5ff0b89e59931c",
+      "import_id": 222,
+      "post_type": "page",
+      "slug": "dokumenty",
+      "title": "Dokumenty",
+      "parent_import_id": 0,
+      "public_path": "/dokumenty/",
+      "categories": []
+    },
+    {
+      "file": "content/pages/regulamin.html",
+      "blocks": {
+        "core/group": 8,
+        "core/heading": 8,
+        "core/list": 1,
+        "core/list-item": 1,
+        "core/paragraph": 9
+      },
+      "h1_count": 1,
+      "top_sections": [
+        "Otwarcie: Regulamin serwisu",
+        "Podmiot i zakres serwisu",
+        "Charakter informacji i treści roboczych",
+        "Zasady korzystania z narzędzi",
+        "Zasady kontaktu i przekazywania dokumentów",
+        "Odpowiedzialność i zgłaszanie uwag",
+        "Wersje i zmiany regulaminu",
+        "Źródła i aktualizacja"
+      ],
+      "refs": [],
+      "placeholders": [
+        "[[treść dostarczy zleceniodawca]]",
+        "[[treść dostarczy zleceniodawca]]",
+        "[[treść dostarczy zleceniodawca]]",
+        "[[treść dostarczy zleceniodawca]]",
+        "[[treść dostarczy zleceniodawca]]",
+        "[[treść dostarczy zleceniodawca]]",
+        "[[zatwierdzony dokument prawny: wersja i osoba akceptująca]]",
+        "[[data]]",
+        "[[autor]]"
+      ],
+      "sha256": "f1c3eacbd72c9cf1874a0686edd9d9e930ad64524c4fefcfef82f6d06145bd49",
+      "import_id": 223,
+      "post_type": "page",
+      "slug": "regulamin",
+      "title": "Regulamin serwisu",
+      "parent_import_id": 0,
+      "public_path": "/regulamin/",
+      "categories": []
+    },
+    {
+      "file": "content/pages/blad-404.html",
+      "blocks": {
+        "core/button": 2,
+        "core/buttons": 2,
+        "core/group": 2,
         "core/heading": 2,
         "core/list": 1,
         "core/list-item": 3,
-        "core/paragraph": 4
+        "core/paragraph": 1
       },
       "h1_count": 1,
       "top_sections": [
-        "Wgraj fakturę: strona pomocnicza",
-        "Upload faktury: demonstracja",
-        "Zakres danych i bezpieczeństwo: zapowiedź"
+        "Otwarcie: Nie znaleźliśmy tej strony.",
+        "Wybierz następny krok"
       ],
-      "refs": [
-        101
-      ],
-      "placeholders": [
-        "[[dostarczy zleceniodawca]]"
-      ],
-      "sha256": "3127b58fdf904dc63e3aa371fb75af874dafbb83ccb6ffa7ca0051052bbbd94f",
-      "import_id": 206,
+      "refs": [],
+      "placeholders": [],
+      "sha256": "53d02a66588d075559f129aa7d46eeebd23113bbbadfb4e151e8d06b66719f0c",
+      "import_id": 224,
       "post_type": "page",
-      "slug": "wgraj-fakture",
-      "title": "Wgraj fakturę",
+      "slug": "blad-404",
+      "title": "Nie znaleziono strony",
       "parent_import_id": 0,
-      "public_path": "/wgraj-fakture/"
+      "public_path": "/blad-404/",
+      "categories": []
     },
     {
-      "file": "content/pages/polityka-prywatnosci.html",
+      "file": "content/pages/archiwum-kategorii.html",
       "blocks": {
-        "core/group": 1,
-        "core/heading": 6,
-        "core/paragraph": 6
+        "core/block": 1,
+        "core/button": 1,
+        "core/buttons": 1,
+        "core/group": 5,
+        "core/heading": 2,
+        "core/paragraph": 6,
+        "core/post-excerpt": 1,
+        "core/post-template": 1,
+        "core/post-title": 1,
+        "core/query": 1,
+        "core/query-no-results": 1,
+        "core/query-title": 1
       },
       "h1_count": 1,
       "top_sections": [
-        "Polityka prywatności: placeholder"
+        "Nagłówek archiwum kategorii",
+        "Materiały w tej kategorii",
+        "Nie znalazłeś odpowiedzi?",
+        "Następny krok"
+      ],
+      "refs": [
+        103
+      ],
+      "placeholders": [
+        "[[data]]",
+        "[[autor]]"
+      ],
+      "sha256": "c15787abe3f7ee77bd6cecd13a24504d9211dbe55e81d10abe18113d8fd8e630",
+      "import_id": 225,
+      "post_type": "page",
+      "slug": "archiwum-kategorii",
+      "title": "Archiwum kategorii — szablon",
+      "parent_import_id": 0,
+      "public_path": "/archiwum-kategorii/",
+      "categories": []
+    },
+    {
+      "file": "content/pages/wyniki-wyszukiwania.html",
+      "blocks": {
+        "core/group": 2,
+        "core/heading": 1,
+        "core/paragraph": 3,
+        "core/post-template": 1,
+        "core/post-title": 1,
+        "core/query": 1,
+        "core/query-no-results": 1,
+        "core/query-pagination": 1,
+        "core/query-pagination-next": 1,
+        "core/query-pagination-numbers": 1,
+        "core/query-pagination-previous": 1,
+        "core/search": 1
+      },
+      "h1_count": 1,
+      "top_sections": [
+        "Wyszukiwanie wiedzy",
+        "Znalezione materiały"
       ],
       "refs": [],
       "placeholders": [
-        "[[treść dostarczy zleceniodawca]]",
-        "[[treść dostarczy zleceniodawca]]",
-        "[[treść dostarczy zleceniodawca]]",
-        "[[treść dostarczy zleceniodawca]]",
-        "[[treść dostarczy zleceniodawca; slot CMP: etap późniejszy]]"
+        "[[data]]",
+        "[[autor]]"
       ],
-      "sha256": "b8c236a5a70d6abcf9d8fed33607f4e78be8112b2737536209c7ae5985bd6843",
-      "import_id": 207,
+      "sha256": "d0e1b088d2196f62368f5ccbe7882dea35e32c228690ff86bf689ef09a97cca4",
+      "import_id": 226,
       "post_type": "page",
-      "slug": "polityka-prywatnosci",
-      "title": "Polityka prywatności",
+      "slug": "wyniki-wyszukiwania",
+      "title": "Wyniki wyszukiwania",
       "parent_import_id": 0,
-      "public_path": "/polityka-prywatnosci/"
+      "public_path": "/wyniki-wyszukiwania/",
+      "categories": []
     },
     {
       "file": "content/posts/komentarz-rynkowy-szablon.html",
       "blocks": {
-        "core/group": 2,
+        "core/block": 2,
+        "core/group": 5,
         "core/heading": 4,
-        "core/paragraph": 8
+        "core/list": 2,
+        "core/list-item": 5,
+        "core/paragraph": 7
       },
       "h1_count": 1,
       "top_sections": [
-        "Nagłówek komentarza: szablon",
-        "Treść komentarza: placeholder"
+        "Otwarcie: [[tytuł komentarza]]",
+        "Data i autor",
+        "Co wydarzyło się na rynku",
+        "Źródła i aktualizacja",
+        "Następny krok"
       ],
-      "refs": [],
+      "refs": [
+        102,
+        103
+      ],
       "placeholders": [
         "[[tytuł komentarza]]",
-        "[[krótka odpowiedź na pytanie kupującego gaz: do uzupełnienia, nie więcej niż limit słów z briefu]]",
+        "[[tytuł komentarza]]",
+        "[[komentarz: krótka odpowiedź o zmianie na rynku i znaczeniu dla kupującego gaz]]",
         "[[data]]",
         "[[data]]",
         "[[imię i nazwisko, stanowisko]]",
         "[[komentarz]]",
-        "[[komentarz]]",
-        "[[nazwa źródła, data, link: do uzupełnienia po weryfikacji]]"
+        "[[obserwacja z potwierdzonym źródłem]]",
+        "[[znaczenie dla profilu zakupu]]",
+        "[[ograniczenie i niepewność analizy]]",
+        "[[źródło danych: instytucja, publikacja, data i URL]]",
+        "[[weryfikacja merytoryczna i zatwierdzenie komentarza]]",
+        "[[data]]",
+        "[[autor]]"
       ],
-      "sha256": "ec3d2814251c259d7597b41cf361673780b227ceb5b38380788f69ee7feee4d2",
+      "sha256": "b6e2726a8c09e35b99e07c9ea94afa1c4de1a08461e8ba61191fdf3a7fd1d687",
       "import_id": 301,
       "post_type": "post",
       "slug": "komentarz-rynkowy-szablon",
       "title": "[[tytuł komentarza]]",
       "parent_import_id": 0,
-      "public_path": "/komentarz-rynkowy-szablon/"
+      "public_path": "/wiedza/komentarz-rynkowy-szablon/",
+      "categories": [
+        "komentarz-rynkowy"
+      ]
     },
     {
       "file": "content/posts/perspektywa-rynku-szablon.html",
       "blocks": {
-        "core/group": 2,
+        "core/block": 2,
+        "core/group": 5,
         "core/heading": 4,
-        "core/paragraph": 8
+        "core/list": 2,
+        "core/list-item": 5,
+        "core/paragraph": 7
       },
       "h1_count": 1,
       "top_sections": [
-        "Perspektywa rynku: szablon",
-        "Perspektywa rynku: treść do uzupełnienia"
+        "Otwarcie: [[tytuł komentarza]]",
+        "Data i autor",
+        "Co sprawdzić przed decyzją zakupową",
+        "Źródła i aktualizacja",
+        "Następny krok"
       ],
-      "refs": [],
+      "refs": [
+        102,
+        103
+      ],
       "placeholders": [
         "[[tytuł komentarza]]",
-        "[[krótka odpowiedź na pytanie o perspektywę rynku: do uzupełnienia]]",
+        "[[tytuł komentarza]]",
+        "[[komentarz: krótka odpowiedź o zmianie na rynku i znaczeniu dla kupującego gaz]]",
         "[[data]]",
         "[[data]]",
         "[[imię i nazwisko, stanowisko]]",
         "[[komentarz]]",
-        "[[komentarz]]",
-        "[[nazwa źródła, data, link: do uzupełnienia po weryfikacji]]"
+        "[[obserwacja z potwierdzonym źródłem]]",
+        "[[znaczenie dla profilu zakupu]]",
+        "[[ograniczenie i niepewność analizy]]",
+        "[[źródło danych: instytucja, publikacja, data i URL]]",
+        "[[weryfikacja merytoryczna i zatwierdzenie komentarza]]",
+        "[[data]]",
+        "[[autor]]"
       ],
-      "sha256": "4b1b656b91763cf6ed6a300709b4a887fd641b15d5c285daaf50d8dcaf2b0f3a",
+      "sha256": "0672f78d0cb3659731413794812ed919dd4c5e149708a5831b3b1e548c107a5d",
       "import_id": 302,
       "post_type": "post",
       "slug": "perspektywa-rynku-szablon",
       "title": "[[tytuł komentarza]]",
       "parent_import_id": 0,
-      "public_path": "/perspektywa-rynku-szablon/"
+      "public_path": "/wiedza/perspektywa-rynku-szablon/",
+      "categories": [
+        "komentarz-rynkowy"
+      ]
+    },
+    {
+      "file": "content/posts/jak-zmienic-sprzedawce-gazu-w-firmie.html",
+      "blocks": {
+        "core/block": 1,
+        "core/button": 1,
+        "core/buttons": 1,
+        "core/group": 5,
+        "core/heading": 7,
+        "core/list": 3,
+        "core/list-item": 9,
+        "core/paragraph": 13,
+        "core/table": 1
+      },
+      "h1_count": 1,
+      "top_sections": [
+        "Nagłówek artykułu",
+        "Spis treści",
+        "Treść artykułu",
+        "Źródła i aktualizacja",
+        "Przygotuj dokumenty do analizy."
+      ],
+      "refs": [
+        102
+      ],
+      "placeholders": [
+        "[[data]]",
+        "[[autor]]",
+        "[[do weryfikacji prawnej]]",
+        "[[do weryfikacji prawnej]]",
+        "[[źródło: aktualne Prawo energetyczne, przepisy zmiany sprzedawcy i terminy — do weryfikacji prawnej]]",
+        "[[źródło: właściwa instrukcja operatora i zasady zgłoszeń]]",
+        "[[umowa klienta, regulamin, aneksy i procedura PBM]]",
+        "[[data]]",
+        "[[autor]]"
+      ],
+      "sha256": "51252858ac6c63da99e19ba1d2ce447640f3ab11db1ee2f60c76be5b3d469535",
+      "import_id": 303,
+      "post_type": "post",
+      "slug": "jak-zmienic-sprzedawce-gazu-w-firmie",
+      "title": "Jak zmienić sprzedawcę gazu w firmie: kolejność kroków i terminy",
+      "parent_import_id": 0,
+      "public_path": "/wiedza/jak-zmienic-sprzedawce-gazu-w-firmie/",
+      "categories": [
+        "zmiana-sprzedawcy"
+      ]
+    },
+    {
+      "file": "content/posts/okres-wypowiedzenia-klauzula-prolongacyjna.html",
+      "blocks": {
+        "core/button": 1,
+        "core/buttons": 1,
+        "core/group": 5,
+        "core/heading": 7,
+        "core/list": 3,
+        "core/list-item": 8,
+        "core/paragraph": 13,
+        "core/table": 1
+      },
+      "h1_count": 1,
+      "top_sections": [
+        "Nagłówek artykułu",
+        "Spis treści",
+        "Treść artykułu",
+        "Źródła i aktualizacja",
+        "Uporządkuj dane, zanim ustalisz termin."
+      ],
+      "refs": [],
+      "placeholders": [
+        "[[data]]",
+        "[[autor]]",
+        "[[data]]",
+        "[[paragraf / aneks]]",
+        "[[wartość i jednostka]]",
+        "[[pełna klauzula]]",
+        "[[warunek]]",
+        "[[pełna klauzula]]",
+        "[[forma, adresat, moment]]",
+        "[[umowa i przepisy]]",
+        "[[do weryfikacji prawnej]]",
+        "[[do weryfikacji prawnej]]",
+        "[[źródło: umowa, regulamin i aneksy klienta]]",
+        "[[źródło: aktualne przepisy o liczeniu terminów i doręczeniu — do weryfikacji prawnej]]",
+        "[[data]]",
+        "[[autor]]"
+      ],
+      "sha256": "4aaa31ddab3be98c58c6d05a6bae35db5a505b4cf89023fb72d714c86a79376f",
+      "import_id": 304,
+      "post_type": "post",
+      "slug": "okres-wypowiedzenia-klauzula-prolongacyjna",
+      "title": "Okres wypowiedzenia i klauzula prolongacyjna w umowie na gaz: jak policzyć termin",
+      "parent_import_id": 0,
+      "public_path": "/wiedza/okres-wypowiedzenia-klauzula-prolongacyjna/",
+      "categories": [
+        "umowy-i-wypowiedzenia"
+      ]
+    },
+    {
+      "file": "content/posts/sprzedaz-rezerwowa-gazu.html",
+      "blocks": {
+        "core/block": 1,
+        "core/button": 1,
+        "core/buttons": 1,
+        "core/group": 5,
+        "core/heading": 7,
+        "core/list": 3,
+        "core/list-item": 9,
+        "core/paragraph": 13,
+        "core/table": 1
+      },
+      "h1_count": 1,
+      "top_sections": [
+        "Nagłówek artykułu",
+        "Spis treści",
+        "Treść artykułu",
+        "Źródła i aktualizacja",
+        "Wyjaśnij status, zanim wykonasz kolejny krok."
+      ],
+      "refs": [
+        102
+      ],
+      "placeholders": [
+        "[[data]]",
+        "[[autor]]",
+        "[[do weryfikacji prawnej]]",
+        "[[źródło]]",
+        "[[do weryfikacji prawnej]]",
+        "[[do weryfikacji prawnej]]",
+        "[[do weryfikacji prawnej]]",
+        "[[źródło: aktualne przepisy o sprzedaży rezerwowej — do weryfikacji prawnej]]",
+        "[[źródło: właściwy cennik, umowa i informacje operatora]]",
+        "[[data]]",
+        "[[autor]]"
+      ],
+      "sha256": "bcd854677a4b21d0bdf84ae035c7165bf669fe27e137b23c0a50e31d77f2c46f",
+      "import_id": 305,
+      "post_type": "post",
+      "slug": "sprzedaz-rezerwowa-gazu",
+      "title": "Sprzedaż rezerwowa gazu: kiedy grozi i ile kosztuje",
+      "parent_import_id": 0,
+      "public_path": "/wiedza/sprzedaz-rezerwowa-gazu/",
+      "categories": [
+        "sprzedaz-rezerwowa"
+      ]
+    },
+    {
+      "file": "content/posts/cena-stala-czy-indeksowana-tge.html",
+      "blocks": {
+        "core/block": 1,
+        "core/button": 1,
+        "core/buttons": 1,
+        "core/group": 5,
+        "core/heading": 7,
+        "core/list": 3,
+        "core/list-item": 9,
+        "core/paragraph": 13,
+        "core/table": 1
+      },
+      "h1_count": 1,
+      "top_sections": [
+        "Nagłówek artykułu",
+        "Spis treści",
+        "Treść artykułu",
+        "Źródła i aktualizacja",
+        "Porównaj modele dla swojego zużycia."
+      ],
+      "refs": [
+        102
+      ],
+      "placeholders": [
+        "[[data]]",
+        "[[autor]]",
+        "[[nazwa indeksu i link]]",
+        "[[źródło]]",
+        "[[warunki produktów PBM i zasady rozliczenia]]",
+        "[[dane zużycia i założenia klienta — bez publikacji danych poufnych]]",
+        "[[data]]",
+        "[[autor]]"
+      ],
+      "sha256": "898a1ff2f41d9a0048da591100dd9c19a371f4387e8cb4492f0fd03544888a1f",
+      "import_id": 306,
+      "post_type": "post",
+      "slug": "cena-stala-czy-indeksowana-tge",
+      "title": "Cena stała czy indeksowana do TGE: dla jakiego profilu zużycia",
+      "parent_import_id": 0,
+      "public_path": "/wiedza/cena-stala-czy-indeksowana-tge/",
+      "categories": [
+        "ceny-i-rynek"
+      ]
+    },
+    {
+      "file": "content/posts/art-4j-ust-3b-ms-p-kary.html",
+      "blocks": {
+        "core/block": 1,
+        "core/button": 1,
+        "core/buttons": 1,
+        "core/group": 5,
+        "core/heading": 7,
+        "core/list": 2,
+        "core/list-item": 6,
+        "core/paragraph": 14,
+        "core/table": 1
+      },
+      "h1_count": 1,
+      "top_sections": [
+        "Nagłówek artykułu",
+        "Spis treści",
+        "Treść artykułu",
+        "Źródła i aktualizacja",
+        "Zacznij od dokumentów, nie od wypowiedzenia."
+      ],
+      "refs": [
+        102
+      ],
+      "placeholders": [
+        "[[do weryfikacji prawnej]]",
+        "[[data]]",
+        "[[autor]]",
+        "[[do weryfikacji prawnej]]",
+        "[[do weryfikacji prawnej]]",
+        "[[do weryfikacji prawnej]]",
+        "[[do weryfikacji prawnej]]",
+        "[[do weryfikacji prawnej]]",
+        "[[do weryfikacji prawnej]]",
+        "[[do weryfikacji prawnej]]",
+        "[[do weryfikacji prawnej]]",
+        "[[źródło pierwotne: aktualny tekst Prawa energetycznego i art. 4j ust. 3b — do weryfikacji prawnej]]",
+        "[[źródło pierwotne: akt zmieniający, data wejścia w życie i przepisy przejściowe — do weryfikacji prawnej]]",
+        "[[akceptacja prawna: osoba, data, zakres i odwołania do przepisów]]",
+        "[[data]]",
+        "[[autor]]"
+      ],
+      "sha256": "d30b7ee3817687f62b1db9f650302274f8dd9a6a8d8ef0dd3ac7d6787248a826",
+      "import_id": 307,
+      "post_type": "post",
+      "slug": "art-4j-ust-3b-ms-p-kary",
+      "title": "Co zmienia art. 4j ust. 3b Prawa energetycznego dla MŚP (od 21.07.2026): kary za wcześniejsze rozwiązanie umowy — do weryfikacji prawnej",
+      "parent_import_id": 0,
+      "public_path": "/wiedza/art-4j-ust-3b-ms-p-kary/",
+      "categories": [
+        "umowy-i-wypowiedzenia"
+      ]
     }
   ],
-  "wxr_sha256": "697f1a21f05042c1e833c00de26b600f3371838b1301ae0fdf2f52e3fe6f68d8",
+  "wxr_sha256": "630fada54aed23177acac20f093e637f075c110857da706a05764304fb7c5107",
   "item_counts": {
-    "wp_block": 7,
-    "page": 7,
-    "post": 2
+    "wp_block": 10,
+    "page": 26,
+    "post": 7
   },
   "css_classes": [
     "gdp-article-body",
-    "gdp-article-hero",
     "gdp-audience-card",
     "gdp-audience-grid",
     "gdp-author",
+    "gdp-card",
     "gdp-consent",
-    "gdp-contact",
-    "gdp-contact-slot",
     "gdp-data-note",
     "gdp-disclaimer",
+    "gdp-document-row",
     "gdp-eyebrow",
     "gdp-faq",
     "gdp-faq-list",
@@ -547,7 +1895,6 @@
     "gdp-hero-market",
     "gdp-hero-upload",
     "gdp-lead",
-    "gdp-legal-stub",
     "gdp-market",
     "gdp-market-card",
     "gdp-market-query",
@@ -572,15 +1919,12 @@
     "gdp-segments",
     "gdp-small",
     "gdp-step",
-    "gdp-stub-hero",
     "gdp-threshold",
     "gdp-tools",
     "gdp-trust",
     "gdp-trust-grid",
     "gdp-trust-item",
-    "gdp-upload",
-    "gdp-upload-info",
-    "gdp-upload-section"
+    "gdp-upload"
   ],
   "result": "PASS (structural source checks)"
 }

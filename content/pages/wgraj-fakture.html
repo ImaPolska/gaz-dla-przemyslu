@@ -1,44 +1,155 @@
-<!-- wp:group {"metadata":{"name":"Wgraj fakturę: strona pomocnicza"},"templateLock":"contentOnly","className":"gdp-section gdp-stub-hero"} -->
-<div class="wp-block-group gdp-section gdp-stub-hero">
-<!-- wp:paragraph {"className":"gdp-eyebrow"} -->
-<p class="gdp-eyebrow">DANE DO ROZMOWY</p>
-<!-- /wp:paragraph -->
+<!-- wp:group {"metadata":{"name":"Otwarcie: Jedna faktura. Konkretne pytania o zakup gazu."},"templateLock":"contentOnly","className":"gdp-section gdp-product-hero"} -->
+<div class="wp-block-group gdp-section gdp-product-hero">
 <!-- wp:heading {"level":1} -->
-<h1 class="wp-block-heading">Zacznij od faktury za gaz.</h1>
+<h1 class="wp-block-heading">Jedna faktura. Konkretne pytania o zakup gazu.</h1>
 <!-- /wp:heading -->
 <!-- wp:paragraph {"className":"gdp-lead"} -->
-<p class="gdp-lead">Faktura będzie punktem wyjścia do zebrania informacji o zużyciu i obecnych rozliczeniach. W tym prototypie nie można wybrać ani przesłać pliku. Pokazujemy wyłącznie przyszły układ formularza.</p>
+<p class="gdp-lead">Faktura pomaga rozpoznać zużycie, punkt poboru i składniki rachunku. Przygotuj ją do rozmowy o warunkach zakupu gazu. W tym prototypie nie przesyłasz pliku ani danych; docelowa ścieżka oferty indykatywnej wymaga uruchomienia i zatwierdzenia.</p>
+<!-- /wp:paragraph -->
+<!-- wp:buttons -->
+<div class="wp-block-buttons">
+<!-- wp:button -->
+<div class="wp-block-button"><a class="wp-block-button__link wp-element-button" href="#upload">Wgraj fakturę</a></div>
+<!-- /wp:button -->
+</div>
+<!-- /wp:buttons -->
+<!-- wp:paragraph {"className":"gdp-small"} -->
+<p class="gdp-small">Miejsce na upload jest nieaktywne; nie przechowujemy tu dokumentu.</p>
 <!-- /wp:paragraph -->
 </div>
 <!-- /wp:group -->
-<!-- wp:group {"metadata":{"name":"Upload faktury: demonstracja"},"templateLock":"contentOnly","className":"gdp-section gdp-upload-section"} -->
-<div class="wp-block-group gdp-section gdp-upload-section">
+<!-- wp:group {"metadata":{"name":"Prześlij fakturę: podgląd modułu"},"templateLock":"contentOnly","className":"gdp-section","anchor":"upload"} -->
+<div class="wp-block-group gdp-section" id="upload">
 <!-- wp:block {"ref":101} /-->
 </div>
 <!-- /wp:group -->
-<!-- wp:group {"metadata":{"name":"Zakres danych i bezpieczeństwo: zapowiedź"},"templateLock":"contentOnly","className":"gdp-section gdp-upload-info"} -->
-<div class="wp-block-group gdp-section gdp-upload-info">
+<!-- wp:group {"metadata":{"name":"Co odczytamy z faktury"},"templateLock":"contentOnly","className":"gdp-section"} -->
+<div class="wp-block-group gdp-section">
 <!-- wp:heading -->
-<h2 class="wp-block-heading">Co będzie potrzebne?</h2>
+<h2 class="wp-block-heading">Co odczytamy z faktury</h2>
 <!-- /wp:heading -->
 <!-- wp:list -->
 <ul class="wp-block-list">
 <!-- wp:list-item -->
-<li>Dane punktów poboru i zużycie gazu</li>
+<li>Dane firmy i identyfikator punktu poboru — do sprawdzenia z dokumentem.</li>
 <!-- /wp:list-item -->
 <!-- wp:list-item -->
-<li>Okres rozliczenia i składniki obecnej ceny</li>
+<li>Okres rozliczenia oraz zużycie z podaną jednostką.</li>
 <!-- /wp:list-item -->
 <!-- wp:list-item -->
-<li>Obecna umowa oraz planowany okres dostaw</li>
+<li>Elementy dotyczące paliwa i dystrybucji, bez ich automatycznego utożsamiania.</li>
+<!-- /wp:list-item -->
+<!-- wp:list-item -->
+<li>Nazwy opłat i podatków pokazanych w dokumencie.</li>
+<!-- /wp:list-item -->
+<!-- wp:list-item -->
+<li>Dane potrzebne do dalszych pytań; braków nie zastąpimy wymyślonymi wartościami.</li>
 <!-- /wp:list-item -->
 </ul>
 <!-- /wp:list -->
+</div>
+<!-- /wp:group -->
+<!-- wp:group {"metadata":{"name":"Co dostaniesz w 24 h — cel do potwierdzenia"},"templateLock":"contentOnly","className":"gdp-section"} -->
+<div class="wp-block-group gdp-section">
+<!-- wp:heading -->
+<h2 class="wp-block-heading">Co dostaniesz w 24 h — cel do potwierdzenia</h2>
+<!-- /wp:heading -->
 <!-- wp:paragraph -->
-<p>Zakres odczytu, zasady przetwarzania i retencja: [[dostarczy zleceniodawca]]. Prototyp nie przechowuje przesyłanych faktur, ponieważ nie przyjmuje plików.</p>
+<p>Oferta indykatywna w 24 h to roboczy, niepotwierdzony cel obsługi z briefu, nie gwarancja. Prototyp nie przygotowuje oferty i nie uruchamia biegu terminu.</p>
+<!-- /wp:paragraph -->
+<!-- wp:list -->
+<ul class="wp-block-list">
+<!-- wp:list-item -->
+<li>Docelowo: uporządkowane dane o profilu i zakresie zapytania.</li>
+<!-- /wp:list-item -->
+<!-- wp:list-item -->
+<li>Docelowo: wskazanie brakujących dokumentów lub parametrów.</li>
+<!-- /wp:list-item -->
+<!-- wp:list-item -->
+<li>Docelowo: indywidualne warunki indykatywne po potwierdzeniu danych i procesu: [[zakres odpowiedzi]].</li>
+<!-- /wp:list-item -->
+</ul>
+<!-- /wp:list -->
+<!-- wp:block {"ref":102} /-->
+</div>
+<!-- /wp:group -->
+<!-- wp:group {"metadata":{"name":"Co przygotować poza fakturą"},"templateLock":"contentOnly","className":"gdp-section"} -->
+<div class="wp-block-group gdp-section">
+<!-- wp:heading -->
+<h2 class="wp-block-heading">Co przygotować poza fakturą</h2>
+<!-- /wp:heading -->
+<!-- wp:paragraph -->
+<p>Pojedynczy rachunek nie musi opisywać sezonowości. Przygotuj zestawienie zużycia z dostępnych okresów, plan zmian produkcji oraz obecną umowę z aneksami.</p>
 <!-- /wp:paragraph -->
 <!-- wp:paragraph -->
-<p><a href="/polityka-prywatnosci/">Polityka prywatności: treść do uzupełnienia</a></p>
+<p>Jeśli nie znasz terminu zakończenia, przejdź do <a href="/analiza-umowy/">analizy umowy</a>. Nie wysyłaj wypowiedzenia na podstawie samej faktury.</p>
+<!-- /wp:paragraph -->
+</div>
+<!-- /wp:group -->
+<!-- wp:group {"metadata":{"name":"Bezpieczeństwo danych"},"templateLock":"contentOnly","className":"gdp-section"} -->
+<div class="wp-block-group gdp-section">
+<!-- wp:heading -->
+<h2 class="wp-block-heading">Bezpieczeństwo danych</h2>
+<!-- /wp:heading -->
+<!-- wp:paragraph -->
+<p>Nie przesyłaj tu dokumentów poufnych. Pola są tekstową makietą; nie ma uploadu, skrzynki odbiorczej ani połączenia z CRM.</p>
+<!-- /wp:paragraph -->
+<!-- wp:table -->
+<figure class="wp-block-table"><table class="has-fixed-layout"><thead><tr><th>Zasada przyszłego procesu</th><th>Status</th></tr></thead><tbody><tr><td>Retencja i usuwanie dokumentów</td><td>[[okres retencji i procedura]]</td></tr><tr><td>Dostęp do danych i odbiorcy</td><td>[[role, podmioty i zasady dostępu]]</td></tr><tr><td>Cel i podstawa przetwarzania</td><td>[[treść dostarczy zleceniodawca]]</td></tr><tr><td>Bezpieczny kanał przekazania</td><td>[[do zatwierdzenia przed uruchomieniem]]</td></tr></tbody></table></figure>
+<!-- /wp:table -->
+<!-- wp:paragraph -->
+<p>Szczegóły: <a href="/polityka-prywatnosci/">Polityka prywatności</a>.</p>
+<!-- /wp:paragraph -->
+</div>
+<!-- /wp:group -->
+<!-- wp:group {"metadata":{"name":"Pytania o przygotowanie faktury"},"templateLock":"contentOnly","className":"gdp-section"} -->
+<div class="wp-block-group gdp-section">
+<!-- wp:heading -->
+<h2 class="wp-block-heading">Pytania o przygotowanie faktury</h2>
+<!-- /wp:heading -->
+<!-- wp:details -->
+<details class="wp-block-details"><summary>Czy faktura zastąpi umowę?</summary>
+<!-- wp:paragraph -->
+<p>Nie zakładaj tego. Klauzule wypowiedzenia, przedłużenia i odpowiedzialności sprawdza się w komplecie dokumentów umownych.</p>
+<!-- /wp:paragraph -->
+</details>
+<!-- /wp:details -->
+<!-- wp:details -->
+<details class="wp-block-details"><summary>Czy mogę usunąć dane z kopii?</summary>
+<!-- wp:paragraph -->
+<p>Zakres anonimizacji i niezbędnych danych należy ustalić przed przekazaniem. W prototypie nie wysyłaj żadnego pliku.</p>
+<!-- /wp:paragraph -->
+</details>
+<!-- /wp:details -->
+<!-- wp:details -->
+<details class="wp-block-details"><summary>Czy ta ścieżka obejmuje kilka punktów poboru?</summary>
+<!-- wp:paragraph -->
+<p>Przygotuj listę punktów oraz przypisanie dokumentów do każdego z nich. Docelowy zakres obsługi: [[do potwierdzenia]].</p>
+<!-- /wp:paragraph -->
+</details>
+<!-- /wp:details -->
+</div>
+<!-- /wp:group -->
+<!-- wp:group {"metadata":{"name":"Źródła i aktualizacja"},"templateLock":"contentOnly","className":"gdp-section"} -->
+<div class="wp-block-group gdp-section">
+<!-- wp:heading -->
+<h2 class="wp-block-heading">Źródła i aktualizacja</h2>
+<!-- /wp:heading -->
+<!-- wp:list -->
+<ul class="wp-block-list">
+<!-- wp:list-item -->
+<li>[[warunki produktu PBM — dokument do zatwierdzenia]]</li>
+<!-- /wp:list-item -->
+<!-- wp:list-item -->
+<li>[[źródło: dokument, wersja i link po weryfikacji merytorycznej]]</li>
+<!-- /wp:list-item -->
+</ul>
+<!-- /wp:list -->
+<!-- wp:paragraph {"className":"gdp-small"} -->
+<p class="gdp-small">Ostatnia aktualizacja: [[data]]. Autor: [[autor]].</p>
+<!-- /wp:paragraph -->
+<!-- wp:paragraph {"className":"gdp-small"} -->
+<p class="gdp-small">Materiał roboczy. Zakres oferty i odwołania do źródeł wymagają zatwierdzenia przed publikacją.</p>
 <!-- /wp:paragraph -->
 </div>
 <!-- /wp:group -->

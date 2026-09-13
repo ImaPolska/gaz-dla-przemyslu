@@ -1,0 +1,207 @@
+{
+  "timestamp": "2026-09-13T20:59:35.466Z",
+  "scope": "Local Playground only; public repository and Playground URL not delivered",
+  "bundle_sha256": "1de68df03e7228d40de2f167bb86da240929bd36c99bb6c3911ef95583b7bd73",
+  "objects": {
+    "page": 26,
+    "post": 7,
+    "wp_block": 10
+  },
+  "routes": {
+    "count": 41,
+    "failures": []
+  },
+  "blocks": {
+    "core/html": 0,
+    "core/freeform": 0,
+    "core/shortcode": 0,
+    "shortcode": 0,
+    "non_core": 0
+  },
+  "sectionExceptions": [
+    "art-4j-ust-3b-ms-p-kary: editable article prose required by section 14",
+    "jak-zmienic-sprzedawce-gazu-w-firmie: editable article prose required by section 14",
+    "okres-wypowiedzenia-klauzula-prolongacyjna: editable article prose required by section 14",
+    "sprzedaz-rezerwowa-gazu: editable article prose required by section 14",
+    "cena-stala-czy-indeksowana-tge: editable article prose required by section 14"
+  ],
+  "schema": {
+    "main": {
+      "valid": true,
+      "errors": null,
+      "noPluginInstallSteps": true,
+      "source": "https://playground.wordpress.net/blueprint-schema.json",
+      "fetched": "2026-09-13"
+    }
+  },
+  "environment": {
+    "wp": "7.1",
+    "php": "8.3.33",
+    "parent": "blocksy",
+    "parentVersion": "2.1.57",
+    "child": "gdp-child",
+    "plugins": [],
+    "paletteMatches": true
+  },
+  "php": {
+    "debug": {
+      "enabled": true,
+      "log": true,
+      "display": false
+    },
+    "logExists": false,
+    "bytes": 0,
+    "noticesOrWarnings": 0
+  },
+  "themeReproduction": {
+    "checkedFiles": 23,
+    "mismatches": []
+  },
+  "axe": [
+    {
+      "path": "/",
+      "violations": 0,
+      "incomplete": 0
+    },
+    {
+      "path": "/oferta/cena-stala/",
+      "violations": 0,
+      "incomplete": 0
+    },
+    {
+      "path": "/ceny-orientacyjne/",
+      "violations": 0,
+      "incomplete": 0
+    },
+    {
+      "path": "/wiedza/jak-zmienic-sprzedawce-gazu-w-firmie/",
+      "violations": 0,
+      "incomplete": 0
+    }
+  ],
+  "responsive": {
+    "views": 15,
+    "issues": []
+  },
+  "hosts": [
+    "127.0.0.1:9403"
+  ],
+  "jsErrors": [],
+  "failedRequests": [],
+  "content": {
+    "placeholders": 400,
+    "issues": [],
+    "tables": 30,
+    "tablesWithoutHead": []
+  },
+  "serialization": {
+    "objects": 43,
+    "pass": true,
+    "invalid": []
+  },
+  "editing": {
+    "hero": {
+      "actual": "Gaz dla Twojej firmy. Test edycji."
+    },
+    "restGuard": {
+      "code": "gdp_layout_locked",
+      "status": 403
+    },
+    "article": {
+      "paragraph": true,
+      "tables": [
+        {
+          "rows": 3,
+          "columns": 3,
+          "head": true,
+          "width": "590px"
+        },
+        {
+          "rows": 5,
+          "columns": 2,
+          "head": true,
+          "width": "590px"
+        }
+      ],
+      "sequence": [
+        "H2: Zbierz dokumenty, zanim porównasz terminy",
+        "P: Połóż obok siebie umowę sprzedaży, aneksy, regulamin, fakturę i dokumenty dystrybucyjne. S",
+        "P: Przygotuj także opis sezonowości oraz planowanych zmian produkcji. Dzięki temu rozmowa o n",
+        "UL: \nUmowa i aneksy: okres, prolongata, doręczenie.\n\n\n\nPunkty poboru: identyfikatory i operato",
+        "H2: Ustal kolejność i osobę odpowiedzialną",
+        "P: Akapit testowy dodany przez Redaktora.",
+        "FIGURE: PoleDaneStatusUmowaTestDo sprawdzeniaPunktTestDo sprawdzenia",
+        "P: Rozdziel porównanie ofert od formalnego uruchomienia zmiany. Zestaw zakres ceny, okres dos",
+        "FIGURE: Krok PBMCo trzeba potwierdzićUmowa z PBMZakres, okres i warunki współpracyPełnomocnictwoOs",
+        "P: Dokument wypowiedzenia jest weryfikowany przez człowieka przed wysyłką. Skutki błędnego wy",
+        "H2: Zapisz terminy razem z ich podstawą",
+        "P: Dla każdej daty zapisz, z którego paragrafu lub dokumentu wynika. Oddziel koniec dostaw, t",
+        "P: Zachowaj potwierdzenia i przypisz kolejne działania do konkretnych osób. Jeżeli termin zal",
+        "P: Jeżeli PBM nie ma zawartej generalnej umowy dystrybucyjnej z Twoim operatorem, podpiszesz ",
+        "P: Przed rozmową przygotuj fakturę. Niejasne klauzule skieruj do analizy umowy, a daty porząd",
+        "DIV: \n\nPrezentowane pasma cen mają charakter orientacyjny i nie stanowią oferty w rozumieniu ar"
+      ]
+    },
+    "admin": {
+      "id": "2cb7bd5e-9b5c-4bd8-a408-1bf2d376f548",
+      "canMove": true,
+      "canLock": true,
+      "insideMove": false,
+      "savedOrder": [
+        "Otwarcie: gaz dla Twojej firmy",
+        "Podmiot i dane do potwierdzenia",
+        "Dla kogo kupujesz gaz",
+        "Pasma cen orientacyjnych",
+        "Jak to działa",
+        "Komentarze rynkowe",
+        "Narzędzia do sprawdzenia umowy",
+        "Pytania przed pierwszą rozmową",
+        "Następny krok: Twoja faktura"
+      ]
+    },
+    "overrides": {
+      "saved": true,
+      "front": {
+        "question": true,
+        "answer": true,
+        "title": true,
+        "subtitle": true
+      }
+    },
+    "propagation": [
+      {
+        "path": "/",
+        "main": true,
+        "footer": true
+      },
+      {
+        "path": "/ceny-orientacyjne/",
+        "main": true,
+        "footer": true
+      }
+    ],
+    "starter": {
+      "before": {
+        "status": "auto-draft"
+      },
+      "patterns": [
+        "gdp/dla-kogo",
+        "gdp/hero-produkt",
+        "gdp/jak-to-dziala",
+        "gdp/naglowek-artykulu",
+        "gdp/przyklad-liczbowy",
+        "gdp/ryzyka-i-ograniczenia",
+        "gdp/tabela-porownawcza",
+        "gdp/zrodla"
+      ],
+      "blocksAfter": 1,
+      "after": {
+        "status": "draft",
+        "templateLock": "all",
+        "canMove": false
+      }
+    }
+  },
+  "localPass": true,
+  "completeP12Delivery": false
+}

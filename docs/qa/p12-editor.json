@@ -1,0 +1,157 @@
+{
+  "hero": {
+    "actual": "Gaz dla Twojej firmy. Test edycji."
+  },
+  "locks": {
+    "canLock": false,
+    "sections": [
+      {
+        "name": "Otwarcie: gaz dla Twojej firmy",
+        "remove": false,
+        "move": false
+      },
+      {
+        "name": "Podmiot i dane do potwierdzenia",
+        "remove": false,
+        "move": false
+      },
+      {
+        "name": "Dla kogo kupujesz gaz",
+        "remove": false,
+        "move": false
+      },
+      {
+        "name": "Jak to działa",
+        "remove": false,
+        "move": false
+      },
+      {
+        "name": "Pasma cen orientacyjnych",
+        "remove": false,
+        "move": false
+      },
+      {
+        "name": "Komentarze rynkowe",
+        "remove": false,
+        "move": false
+      },
+      {
+        "name": "Narzędzia do sprawdzenia umowy",
+        "remove": false,
+        "move": false
+      },
+      {
+        "name": "Pytania przed pierwszą rozmową",
+        "remove": false,
+        "move": false
+      },
+      {
+        "name": "Następny krok: Twoja faktura",
+        "remove": false,
+        "move": false
+      }
+    ]
+  },
+  "restGuard": {
+    "code": "gdp_layout_locked",
+    "status": 403
+  },
+  "article": {
+    "paragraph": true,
+    "tables": [
+      {
+        "rows": 3,
+        "columns": 3,
+        "head": true,
+        "width": "590px"
+      },
+      {
+        "rows": 5,
+        "columns": 2,
+        "head": true,
+        "width": "590px"
+      }
+    ],
+    "sequence": [
+      "H2: Zbierz dokumenty, zanim porównasz terminy",
+      "P: Połóż obok siebie umowę sprzedaży, aneksy, regulamin, fakturę i dokumenty dystrybucyjne. S",
+      "P: Przygotuj także opis sezonowości oraz planowanych zmian produkcji. Dzięki temu rozmowa o n",
+      "UL: \nUmowa i aneksy: okres, prolongata, doręczenie.\n\n\n\nPunkty poboru: identyfikatory i operato",
+      "H2: Ustal kolejność i osobę odpowiedzialną",
+      "P: Akapit testowy dodany przez Redaktora.",
+      "FIGURE: PoleDaneStatusUmowaTestDo sprawdzeniaPunktTestDo sprawdzenia",
+      "P: Rozdziel porównanie ofert od formalnego uruchomienia zmiany. Zestaw zakres ceny, okres dos",
+      "FIGURE: Krok PBMCo trzeba potwierdzićUmowa z PBMZakres, okres i warunki współpracyPełnomocnictwoOs",
+      "P: Dokument wypowiedzenia jest weryfikowany przez człowieka przed wysyłką. Skutki błędnego wy",
+      "H2: Zapisz terminy razem z ich podstawą",
+      "P: Dla każdej daty zapisz, z którego paragrafu lub dokumentu wynika. Oddziel koniec dostaw, t",
+      "P: Zachowaj potwierdzenia i przypisz kolejne działania do konkretnych osób. Jeżeli termin zal",
+      "P: Jeżeli PBM nie ma zawartej generalnej umowy dystrybucyjnej z Twoim operatorem, podpiszesz ",
+      "P: Przed rozmową przygotuj fakturę. Niejasne klauzule skieruj do analizy umowy, a daty porząd",
+      "DIV: \n\nPrezentowane pasma cen mają charakter orientacyjny i nie stanowią oferty w rozumieniu ar"
+    ]
+  },
+  "admin": {
+    "id": "2cb7bd5e-9b5c-4bd8-a408-1bf2d376f548",
+    "canMove": true,
+    "canLock": true,
+    "insideMove": false,
+    "savedOrder": [
+      "Otwarcie: gaz dla Twojej firmy",
+      "Podmiot i dane do potwierdzenia",
+      "Dla kogo kupujesz gaz",
+      "Pasma cen orientacyjnych",
+      "Jak to działa",
+      "Komentarze rynkowe",
+      "Narzędzia do sprawdzenia umowy",
+      "Pytania przed pierwszą rozmową",
+      "Następny krok: Twoja faktura"
+    ]
+  },
+  "overrides": {
+    "saved": true,
+    "front": {
+      "question": true,
+      "answer": true,
+      "title": true,
+      "subtitle": true
+    }
+  },
+  "propagation": [
+    {
+      "path": "/",
+      "main": true,
+      "footer": true
+    },
+    {
+      "path": "/ceny-orientacyjne/",
+      "main": true,
+      "footer": true
+    }
+  ],
+  "editorFontFinal": {
+    "font": "\"Source Serif 4\", serif",
+    "loaded": true
+  },
+  "starter": {
+    "before": {
+      "status": "auto-draft"
+    },
+    "patterns": [
+      "gdp/dla-kogo",
+      "gdp/hero-produkt",
+      "gdp/jak-to-dziala",
+      "gdp/naglowek-artykulu",
+      "gdp/przyklad-liczbowy",
+      "gdp/ryzyka-i-ograniczenia",
+      "gdp/tabela-porownawcza",
+      "gdp/zrodla"
+    ],
+    "blocksAfter": 1,
+    "after": {
+      "status": "draft",
+      "templateLock": "all",
+      "canMove": false
+    }
+  }
+}

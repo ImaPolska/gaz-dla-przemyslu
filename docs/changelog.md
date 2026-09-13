@@ -11,3 +11,17 @@
 - Usunięto cache domyślnych kolorów Blocksy po imporcie; poprawiono podwójne marginesy sekcji i kontrast obrysowego CTA w B.
 - Sprawdzono serializację wszystkich 16 obiektów przez Gutenberg. Zapisano 12 zrzutów.
 - Nie wykonano publikacji remote ani testu publicznych linków. Nie rozpoczęto P1.2.
+
+## 2026-09-13 · P1.2 · etap1-v0.1
+
+- Po wyborze C rozwijano tylko ten kierunek; A/B/C pozostają niezmienionymi tagami historycznymi.
+- Zbudowano pełną mapę: 26 stron wraz z pomocniczymi źródłami szablonów, pięć artykułów i dwa komentarze-szablony.
+- Dodano dziesięć wzorców zsynchronizowanych, osiem starterów, docelowe menu, stopkę i statyczne sloty.
+- Dodano routing wpisów i archiwów oraz polskie wyniki wyszukiwania oparte na post_content i core Query Loop.
+- Zweryfikowano pytania i odpowiedzi FAQ jako osobne nadpisania, oba pola CTA oraz propagację zastrzeżenia cen do treści i stopki.
+- Przeprowadzono trzy operacje edycji: zapis nagłówka, akapit i tabela 3×3, blokady Redaktora i przesunięcie sekcji przez Administratora. Próba naruszenia układu przez REST otrzymała 403.
+- Dopuszczono startery w nowym auto-draft Redaktora i zablokowano kolejność po pierwszym zapisie.
+- Poprawiono szerokość tekstu artykułu, font nagłówków edytora i sprawdzono w pełni otwarte menu mobilne.
+- Zarejestrowano 400 kanonicznych wystąpień placeholderów; bez danych cenowych, koncesji czy fikcyjnych klientów.
+- Dołączono audyt, zrzuty w trzech rozdzielczościach, instrukcję edycji i odtwarzalny Blueprint Bundle.
+- Nadal nie dostarczono publicznego repo ani linku Playground. Nie deklaruje się pełnego odbioru P1.2 ani akceptacji etapu 1.

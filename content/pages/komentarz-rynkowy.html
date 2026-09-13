@@ -1,0 +1,105 @@
+<!-- wp:group {"metadata":{"name":"Otwarcie: Komentarz rynkowy. Kontekst zamiast prognozy bez podstaw."},"templateLock":"contentOnly","className":"gdp-section gdp-product-hero"} -->
+<div class="wp-block-group gdp-section gdp-product-hero">
+<!-- wp:heading {"level":1} -->
+<h1 class="wp-block-heading">Komentarz rynkowy. Kontekst zamiast prognozy bez podstaw.</h1>
+<!-- /wp:heading -->
+<!-- wp:paragraph {"className":"gdp-lead"} -->
+<p class="gdp-lead">Komentarze rynkowe mają łączyć obserwację rynku z pytaniami o zakup gazu w firmie. Każdy materiał będzie miał autora, datę i źródła. Obecnie publikujemy wyłącznie szablony; nie zawierają aktualnych danych ani rekomendacji zakupowej.</p>
+<!-- /wp:paragraph -->
+<!-- wp:buttons -->
+<div class="wp-block-buttons">
+<!-- wp:button -->
+<div class="wp-block-button"><a class="wp-block-button__link wp-element-button" href="#subskrypcja">Subskrybuj — podgląd</a></div>
+<!-- /wp:button -->
+</div>
+<!-- /wp:buttons -->
+</div>
+<!-- /wp:group -->
+<!-- wp:group {"metadata":{"name":"Wpisy z datą i autorem"},"templateLock":"contentOnly","className":"gdp-section"} -->
+<div class="wp-block-group gdp-section">
+<!-- wp:heading -->
+<h2 class="wp-block-heading">Wpisy z datą i autorem</h2>
+<!-- /wp:heading -->
+<!-- wp:query {"queryId":2,"query":{"perPage":6,"pages":0,"offset":0,"postType":"post","order":"desc","orderBy":"date","author":"","search":"","exclude":[],"sticky":"exclude","inherit":false,"taxQuery":{"category":[50]},"gdpCategory":"komentarz-rynkowy"},"className":"gdp-market-query"} -->
+<div class="wp-block-query gdp-market-query">
+<!-- wp:post-template -->
+<!-- wp:group {"metadata":{"name":"Karta wpisu"},"templateLock":"contentOnly","className":"gdp-market-card"} -->
+<div class="wp-block-group gdp-market-card">
+<!-- wp:paragraph {"className":"gdp-data-note"} -->
+<p class="gdp-data-note">[[data]] · Szablon komentarza</p>
+<!-- /wp:paragraph -->
+<!-- wp:post-title {"level":3,"isLink":true} /-->
+<!-- wp:paragraph -->
+<p>[[komentarz]]</p>
+<!-- /wp:paragraph -->
+<!-- wp:paragraph {"className":"gdp-author"} -->
+<p class="gdp-author">Autor: [[autor]] · Zespół analiz PBM — placeholder</p>
+<!-- /wp:paragraph -->
+</div>
+<!-- /wp:group -->
+
+<!-- /wp:post-template -->
+<!-- wp:query-no-results -->
+<!-- wp:paragraph -->
+<p>Ta kategoria czeka na pierwszy zatwierdzony materiał. Wróć do bazy wiedzy lub porozmawiaj z PBM.</p>
+<!-- /wp:paragraph -->
+
+<!-- /wp:query-no-results -->
+</div>
+<!-- /wp:query -->
+</div>
+<!-- /wp:group -->
+<!-- wp:group {"metadata":{"name":"Subskrypcja: podgląd"},"templateLock":"contentOnly","className":"gdp-section","anchor":"subskrypcja"} -->
+<div class="wp-block-group gdp-section" id="subskrypcja">
+<!-- wp:group {"metadata":{"name":"Slot: subskrypcja komentarza"},"templateLock":"contentOnly","className":"gdp-upload"} -->
+<div class="wp-block-group gdp-upload">
+<!-- wp:heading -->
+<h2 class="wp-block-heading">Subskrypcja komentarza</h2>
+<!-- /wp:heading -->
+<!-- wp:paragraph -->
+<p>Przyszła subskrypcja wymaga zatwierdzenia zasad i zgód. W prototypie nie zapisujemy adresów.</p>
+<!-- /wp:paragraph -->
+<!-- wp:group {"metadata":{"name":"Pola demonstracyjne"},"templateLock":"contentOnly","className":"gdp-fields"} -->
+<div class="wp-block-group gdp-fields">
+<!-- wp:paragraph {"className":"gdp-field"} -->
+<p class="gdp-field"><strong>E-mail</strong> [[adres e-mail]]</p>
+<!-- /wp:paragraph -->
+</div>
+<!-- /wp:group -->
+<!-- wp:buttons -->
+<div class="wp-block-buttons">
+<!-- wp:button -->
+<div class="wp-block-button"><a class="wp-block-button__link wp-element-button" href="/kontakt/">Subskrybuj</a></div>
+<!-- /wp:button -->
+</div>
+<!-- /wp:buttons -->
+<!-- wp:paragraph {"className":"gdp-prototype-note"} -->
+<p class="gdp-prototype-note">Prototyp: pola są nieaktywne. Przycisk prowadzi do kontaktu i nie przesyła danych.</p>
+<!-- /wp:paragraph -->
+<!-- wp:paragraph {"className":"gdp-consent"} -->
+<p class="gdp-consent">[[treść zgody dostarczy zleceniodawca]]. <a href="/polityka-prywatnosci/">Polityka prywatności</a>.</p>
+<!-- /wp:paragraph -->
+</div>
+<!-- /wp:group -->
+</div>
+<!-- /wp:group -->
+<!-- wp:group {"metadata":{"name":"Źródła i aktualizacja"},"templateLock":"contentOnly","className":"gdp-section"} -->
+<div class="wp-block-group gdp-section">
+<!-- wp:heading -->
+<h2 class="wp-block-heading">Źródła i aktualizacja</h2>
+<!-- /wp:heading -->
+<!-- wp:list -->
+<ul class="wp-block-list">
+<!-- wp:list-item -->
+<li>[[źródła rynku podawane osobno w każdym zatwierdzonym komentarzu]]</li>
+<!-- /wp:list-item -->
+</ul>
+<!-- /wp:list -->
+<!-- wp:paragraph {"className":"gdp-small"} -->
+<p class="gdp-small">Ostatnia aktualizacja: [[data]]. Autor: [[autor]].</p>
+<!-- /wp:paragraph -->
+<!-- wp:paragraph {"className":"gdp-small"} -->
+<p class="gdp-small">Materiał roboczy. Zakres oferty i odwołania do źródeł wymagają zatwierdzenia przed publikacją.</p>
+<!-- /wp:paragraph -->
+</div>
+<!-- /wp:group -->

@@ -16,25 +16,25 @@
           },
           {
             "title": "Cena indeksowana TGE",
-            "url": "/oferta/#cena-indeksowana-tge"
+            "url": "/oferta/cena-indeksowana-tge/"
           },
           {
             "title": "Model transzowy",
-            "url": "/oferta/#model-transzowy"
+            "url": "/oferta/model-transzowy/"
           },
           {
             "title": "Umowa dla MŚP",
-            "url": "/oferta/#umowa-kompleksowa-msp"
+            "url": "/oferta/umowa-kompleksowa-msp/"
           },
           {
             "title": "Biometan (wkrótce)",
-            "url": "/oferta/#biometan"
+            "url": "/oferta/biometan/"
           }
         ]
       },
       {
         "title": "Ceny orientacyjne",
-        "url": "/#ceny-orientacyjne"
+        "url": "/ceny-orientacyjne/"
       },
       {
         "title": "Narzędzia",
@@ -46,15 +46,15 @@
           },
           {
             "title": "Kalkulator wypowiedzenia",
-            "url": "/kontakt/"
+            "url": "/kalkulator-wypowiedzenia/"
           },
           {
             "title": "Analiza umowy",
-            "url": "/kontakt/"
+            "url": "/analiza-umowy/"
           },
           {
             "title": "Dla agentów AI",
-            "url": "/kontakt/"
+            "url": "/dla-agentow-ai/"
           }
         ]
       },
@@ -64,11 +64,11 @@
       },
       {
         "title": "Dla doradców",
-        "url": "/kontakt/"
+        "url": "/dla-doradcow/"
       },
       {
         "title": "O nas",
-        "url": "/kontakt/"
+        "url": "/o-nas/"
       },
       {
         "title": "Kontakt",
@@ -85,6 +85,10 @@
       {
         "title": "Polityka prywatności",
         "url": "/polityka-prywatnosci/"
+      },
+      {
+        "title": "Regulamin",
+        "url": "/regulamin/"
       }
     ]
   }

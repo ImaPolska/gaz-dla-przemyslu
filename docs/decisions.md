@@ -39,3 +39,9 @@
 - Permalinki w opcji WordPress pozostają `/%postname%/`; routing i filtr odnośnika wpisu dodają prefiks `/wiedza/` wymagany mapą. `/komentarz-rynkowy/` jest rzeczywistym archiwum kategorii, nie osobną listą ręczną.
 - Jedyny wyjątek od blokady wnętrza sekcji dotyczy prozy artykułu. Sekcja 14 wymaga dodawania akapitu i tabeli przez Redaktora; nagłówki i CTA pozostają sekcjami układu. Zakres wyjątku podlega testowi.
 - Brak własnego konta publikacyjnego nadal blokuje wymagane publiczne repo i link Playground. Nie proszę o dostępy zleceniodawcy, nie używam innego hostingu podglądu i nie uznaję lokalnego testu za publiczny link.
+- Polskie wyniki wyszukiwania mają źródło `content/pages/wyniki-wyszukiwania.html`; `search.php` wyłącznie renderuje ten post_content. Nie pokazujemy technicznego autora ani daty importu jako metadanych publikacji.
+- Pierwszy zimny start z montowaniem motywu zawiesił się; start bez dodatkowego mount zakończył się poprawnie. Kontrola gotowości opiera się na zakończeniu bootstrapu, a nie samym nasłuchiwaniu portu.
+- Role testowano kolejno, po zwolnieniu blokady postu przez poprzednią sesję. Blokada współbieżnej edycji WordPressa nie jest blokadą układu i pozostaje aktywna; instrukcja zaleca jedno konto naraz.
+- FAQ używa core/details. Filtr wspieranych atrybutów dodaje `summary` do natywnych Block Bindings; test zapisu i renderowania pytania, odpowiedzi oraz obu pól CTA zaliczony.
+- Tabela testowa 3×3 składa się z nagłówka i dwóch wierszy danych. Redaktor tworzy trzy kolumny, dwa wiersze i włącza „Header section”; nie wybiera kolorów ani stylów.
+- Nowy `auto-draft` Redaktora dopuszcza wstawienie starterów GDP. Pierwszy zapis wymaga nazwanych grup `contentOnly`; po zapisie blokada kolejności włącza się również w interfejsie. Nie znosi to ochrony istniejących stron.

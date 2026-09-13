@@ -1,0 +1,35 @@
+<!-- wp:group {"metadata":{"name":"Wyszukiwanie wiedzy"},"templateLock":"contentOnly","className":"gdp-section gdp-product-hero"} -->
+<div class="wp-block-group gdp-section gdp-product-hero">
+<!-- wp:heading {"level":1} -->
+<h1 class="wp-block-heading">Wyniki wyszukiwania</h1>
+<!-- /wp:heading -->
+<!-- wp:paragraph -->
+<p>Wyszukaj temat w treściach serwisu. Materiały są robocze; daty, autorzy i źródła wymagają zatwierdzenia przed publikacją.</p>
+<!-- /wp:paragraph -->
+<!-- wp:search {"label":"Szukaj w serwisie","buttonText":"Szukaj"} /-->
+</div>
+<!-- /wp:group -->
+<!-- wp:group {"metadata":{"name":"Znalezione materiały"},"templateLock":"contentOnly","className":"gdp-section"} -->
+<div class="wp-block-group gdp-section">
+<!-- wp:query {"query":{"inherit":true}} -->
+<div class="wp-block-query">
+<!-- wp:post-template -->
+<!-- wp:post-title {"level":2,"isLink":true} /-->
+<!-- wp:paragraph -->
+<p>Ostatnia aktualizacja: [[data]]. Autor: [[autor]].</p>
+<!-- /wp:paragraph -->
+<!-- /wp:post-template -->
+<!-- wp:query-no-results -->
+<!-- wp:paragraph -->
+<p>Nie znaleziono materiałów. Spróbuj krótszego hasła lub przejdź do <a href="/wiedza/">bazy wiedzy</a>.</p>
+<!-- /wp:paragraph -->
+<!-- /wp:query-no-results -->
+<!-- wp:query-pagination -->
+<!-- wp:query-pagination-previous {"label":"Poprzednie"} /-->
+<!-- wp:query-pagination-numbers /-->
+<!-- wp:query-pagination-next {"label":"Następne"} /-->
+<!-- /wp:query-pagination -->
+</div>
+<!-- /wp:query -->
+</div>
+<!-- /wp:group -->

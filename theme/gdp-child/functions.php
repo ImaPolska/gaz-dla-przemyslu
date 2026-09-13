@@ -10,12 +10,15 @@ add_action('after_setup_theme', function () {
     add_theme_support('wp-block-styles');
     add_theme_support('align-wide');
     add_editor_style('style.css');
-});
+}, 99);
 
 add_action('wp_enqueue_scripts', function () {
     wp_enqueue_style('gdp-child', get_stylesheet_uri(), [], wp_get_theme()->get('Version'));
     wp_enqueue_script('gdp-header', get_stylesheet_directory_uri() . '/assets/header.js', [], wp_get_theme()->get('Version'), true);
 }, 50);
+add_action('enqueue_block_editor_assets', function () {
+    wp_enqueue_script('gdp-editor', get_stylesheet_directory_uri() . '/assets/editor.js', ['wp-data', 'wp-dom-ready'], wp_get_theme()->get('Version'), true);
+});
 
 add_action('init', function () {
     register_block_pattern_category('gdp', ['label' => 'Gaz dla Przemysłu']);
@@ -34,11 +37,20 @@ add_filter('blocksy:404:custom-output', function ($output) {
     $page = get_page_by_path('blad-404');
     return $page ? '<div class="gdp-template entry-content">' . apply_filters('the_content', $page->post_content) . '</div>' : $output;
 });
+add_filter('render_block_core/query-title', function ($content, $block) {
+    if ($content === '' && is_page() && (int) ($block['attrs']['level'] ?? 1) === 1) {
+        return '<h1 class="wp-block-query-title">' . esc_html(get_the_title()) . '</h1>';
+    }
+    return $content;
+}, 10, 2);
 
 // Source-owned query selectors use a category slug, never an environment-specific ID.
 add_filter('query_loop_block_query_vars', function ($query, $block) {
     $slug = $block->context['query']['gdpCategory'] ?? '';
-    if ($slug) { $query['category_name'] = sanitize_title($slug); }
+    if ($slug) {
+        unset($query['tax_query'], $query['cat'], $query['category__in']);
+        $query['category_name'] = sanitize_title($slug);
+    }
     return $query;
 }, 10, 2);
 
@@ -56,6 +68,11 @@ add_action('init', function () {
 
 // Blocksy free has a supported filter; no Companion or remote font loader needed.
 add_filter('blocksy:typography:google:use-remote', '__return_false');
+// Core 6.9+ propagates this filter to both rendering and editor settings.
+// Details.summary is rich-text content; enable native pattern overrides.
+add_filter('block_bindings_supported_attributes_core/details', function ($attributes) {
+    return array_values(array_unique([...$attributes, 'summary']));
+});
 add_filter('blocksy:editor-color-palette', function () {
     $json = json_decode(file_get_contents(get_stylesheet_directory() . '/theme.json'), true);
     return $json['settings']['color']['palette'];
@@ -91,7 +108,7 @@ add_filter('block_editor_settings_all', function ($settings, $context) {
     $settings['canLockBlocks'] = $admin;
     $settings['codeEditingEnabled'] = $admin;
     // Top-level movement is forbidden to Editor; inner contentOnly remains editable.
-    if (!$admin && isset($context->post) && in_array($context->post->post_type, ['page','post'], true)) {
+    if (!$admin && isset($context->post) && $context->post->post_status !== 'auto-draft' && in_array($context->post->post_type, ['page','post'], true)) {
         $settings['templateLock'] = 'all';
     }
     return $settings;
@@ -129,6 +146,15 @@ function gdp_guard_layout($prepared, $request) {
         return $walk(parse_blocks($content));
     };
     $old = get_post((int) $request['id']);
+    if ($old && $old->post_status === 'auto-draft' && trim($old->post_content) === '') {
+        foreach (parse_blocks($prepared->post_content) as $section) {
+            if (empty($section['blockName']) && trim($section['innerHTML'] ?? '') === '') { continue; }
+            if ($section['blockName'] !== 'core/group' || ($section['attrs']['templateLock'] ?? '') !== 'contentOnly' || empty($section['attrs']['metadata']['name'])) {
+                return new WP_Error('gdp_starter_required', 'Nową stronę rozpocznij od nazwanego wzorca sekcji GDP.', ['status' => 403]);
+            }
+        }
+        return $prepared;
+    }
     if ($old && $signature($old->post_content) !== $signature($prepared->post_content)) {
         return new WP_Error('gdp_layout_locked', 'Układ strony jest zablokowany dla tej roli.', ['status' => 403]);
     }
