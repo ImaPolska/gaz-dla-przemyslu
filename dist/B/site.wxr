@@ -1,0 +1,1500 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rss version="2.0" xmlns:excerpt="http://wordpress.org/export/1.2/excerpt/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:wfw="http://wellformedweb.org/CommentAPI/" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:wp="http://wordpress.org/export/1.2/">
+<channel>
+<title>Gaz dla Przemysłu</title>
+<link>https://gazdlaprzemyslu.example.invalid</link>
+<description>PBM Sp. z o.o., Grupa IMA Polska. Prototyp P1.1.</description>
+<language>pl-PL</language>
+<wp:wxr_version>1.2</wp:wxr_version>
+<wp:base_site_url>https://gazdlaprzemyslu.example.invalid</wp:base_site_url>
+<wp:base_blog_url>https://gazdlaprzemyslu.example.invalid</wp:base_blog_url>
+<wp:author>
+<wp:author_id>1</wp:author_id>
+<wp:author_login><![CDATA[admin]]></wp:author_login>
+<wp:author_email><![CDATA[prototype@example.invalid]]></wp:author_email>
+<wp:author_display_name><![CDATA[Zespół analiz PBM (placeholder)]]></wp:author_display_name>
+<wp:author_first_name><![CDATA[]]></wp:author_first_name>
+<wp:author_last_name><![CDATA[]]></wp:author_last_name>
+</wp:author>
+<wp:category>
+<wp:term_id>50</wp:term_id>
+<wp:category_nicename><![CDATA[komentarz-rynkowy]]></wp:category_nicename>
+<wp:category_parent><![CDATA[]]></wp:category_parent>
+<wp:cat_name><![CDATA[Komentarz rynkowy]]></wp:cat_name>
+</wp:category>
+<item>
+<title><![CDATA[Slot: upload faktury]]></title>
+<link>https://gazdlaprzemyslu.example.invalid/?post_type=wp_block&amp;name=upload</link>
+<dc:creator><![CDATA[admin]]></dc:creator>
+<guid isPermaLink="false">https://gazdlaprzemyslu.example.invalid/?p=101</guid>
+<description></description>
+<content:encoded><![CDATA[<!-- wp:group {"metadata":{"name":"Slot: upload faktury"},"templateLock":"contentOnly","className":"gdp-upload"} -->
+<div class="wp-block-group gdp-upload">
+<!-- wp:paragraph {"className":"gdp-eyebrow"} -->
+<p class="gdp-eyebrow">TWOJA FAKTURA. PUNKT WYJŚCIA.</p>
+<!-- /wp:paragraph -->
+<!-- wp:heading -->
+<h2 class="wp-block-heading">Sprawdź warunki dla swojej firmy</h2>
+<!-- /wp:heading -->
+<!-- wp:paragraph -->
+<p>Faktura pomoże określić profil zużycia i zakres zapytania.</p>
+<!-- /wp:paragraph -->
+<!-- wp:paragraph {"className":"gdp-file-slot"} -->
+<p class="gdp-file-slot">[[Miejsce na plik faktury: pole nieaktywne]]</p>
+<!-- /wp:paragraph -->
+<!-- wp:group {"metadata":{"name":"Dane kontaktowe: atrapa"},"className":"gdp-fields"} -->
+<div class="wp-block-group gdp-fields">
+<!-- wp:paragraph {"className":"gdp-field"} -->
+<p class="gdp-field"><strong>Email</strong> [[adres e-mail]]</p>
+<!-- /wp:paragraph -->
+<!-- wp:paragraph {"className":"gdp-field"} -->
+<p class="gdp-field"><strong>Telefon</strong> [[numer telefonu]]</p>
+<!-- /wp:paragraph -->
+<!-- wp:paragraph {"className":"gdp-field"} -->
+<p class="gdp-field"><strong>NIP</strong> [[NIP firmy]]</p>
+<!-- /wp:paragraph -->
+</div>
+<!-- /wp:group -->
+<!-- wp:buttons -->
+<div class="wp-block-buttons">
+<!-- wp:button -->
+<div class="wp-block-button"><a class="wp-block-button__link wp-element-button" href="/kontakt/">Wgraj fakturę</a></div>
+<!-- /wp:button -->
+</div>
+<!-- /wp:buttons -->
+<!-- wp:paragraph {"className":"gdp-prototype-note"} -->
+<p class="gdp-prototype-note"><strong>Prototyp. Formularz nie przesyła danych.</strong> Przycisk prowadzi do kontaktu.</p>
+<!-- /wp:paragraph -->
+<!-- wp:paragraph {"className":"gdp-small"} -->
+<p class="gdp-small">Oferta indykatywna w 24 h: roboczy, niepotwierdzony cel obsługi z briefu. Nie jest gwarancją terminu ani działającą usługą w prototypie.</p>
+<!-- /wp:paragraph -->
+<!-- wp:paragraph {"className":"gdp-consent"} -->
+<p class="gdp-consent">[[treść zgody dostarczy zleceniodawca]]. <a href="/polityka-prywatnosci/">Polityka prywatności</a>.</p>
+<!-- /wp:paragraph -->
+</div>
+<!-- /wp:group -->
+]]></content:encoded>
+<excerpt:encoded><![CDATA[]]></excerpt:encoded>
+<wp:post_id>101</wp:post_id>
+<wp:import_id>101</wp:import_id>
+<wp:post_date><![CDATA[2000-01-01 00:00:00]]></wp:post_date>
+<wp:post_date_gmt><![CDATA[2000-01-01 00:00:00]]></wp:post_date_gmt>
+<wp:post_modified><![CDATA[2000-01-01 00:00:00]]></wp:post_modified>
+<wp:post_modified_gmt><![CDATA[2000-01-01 00:00:00]]></wp:post_modified_gmt>
+<wp:comment_status><![CDATA[closed]]></wp:comment_status>
+<wp:ping_status><![CDATA[closed]]></wp:ping_status>
+<wp:post_name><![CDATA[upload]]></wp:post_name>
+<wp:status><![CDATA[publish]]></wp:status>
+<wp:post_parent>0</wp:post_parent>
+<wp:menu_order>0</wp:menu_order>
+<wp:post_type><![CDATA[wp_block]]></wp:post_type>
+<wp:post_password><![CDATA[]]></wp:post_password>
+<wp:is_sticky>0</wp:is_sticky>
+<wp:postmeta><wp:meta_key><![CDATA[_gdp_import_id]]></wp:meta_key><wp:meta_value><![CDATA[101]]></wp:meta_value></wp:postmeta>
+<wp:postmeta><wp:meta_key><![CDATA[_gdp_source_file]]></wp:meta_key><wp:meta_value><![CDATA[content/patterns/upload.html]]></wp:meta_value></wp:postmeta>
+</item>
+<item>
+<title><![CDATA[Zastrzeżenie cen]]></title>
+<link>https://gazdlaprzemyslu.example.invalid/?post_type=wp_block&amp;name=disclaimer</link>
+<dc:creator><![CDATA[admin]]></dc:creator>
+<guid isPermaLink="false">https://gazdlaprzemyslu.example.invalid/?p=102</guid>
+<description></description>
+<content:encoded><![CDATA[<!-- wp:group {"metadata":{"name":"Zastrzeżenie cen"},"templateLock":"contentOnly","className":"gdp-disclaimer"} -->
+<div class="wp-block-group gdp-disclaimer">
+<!-- wp:paragraph -->
+<p>Prezentowane pasma cen mają charakter orientacyjny i nie stanowią oferty w rozumieniu art. 66 Kodeksu cywilnego. Warunki określa indywidualna oferta i umowa.</p>
+<!-- /wp:paragraph -->
+</div>
+<!-- /wp:group -->
+]]></content:encoded>
+<excerpt:encoded><![CDATA[]]></excerpt:encoded>
+<wp:post_id>102</wp:post_id>
+<wp:import_id>102</wp:import_id>
+<wp:post_date><![CDATA[2000-01-01 00:00:00]]></wp:post_date>
+<wp:post_date_gmt><![CDATA[2000-01-01 00:00:00]]></wp:post_date_gmt>
+<wp:post_modified><![CDATA[2000-01-01 00:00:00]]></wp:post_modified>
+<wp:post_modified_gmt><![CDATA[2000-01-01 00:00:00]]></wp:post_modified_gmt>
+<wp:comment_status><![CDATA[closed]]></wp:comment_status>
+<wp:ping_status><![CDATA[closed]]></wp:ping_status>
+<wp:post_name><![CDATA[disclaimer]]></wp:post_name>
+<wp:status><![CDATA[publish]]></wp:status>
+<wp:post_parent>0</wp:post_parent>
+<wp:menu_order>0</wp:menu_order>
+<wp:post_type><![CDATA[wp_block]]></wp:post_type>
+<wp:post_password><![CDATA[]]></wp:post_password>
+<wp:is_sticky>0</wp:is_sticky>
+<wp:postmeta><wp:meta_key><![CDATA[_gdp_import_id]]></wp:meta_key><wp:meta_value><![CDATA[102]]></wp:meta_value></wp:postmeta>
+<wp:postmeta><wp:meta_key><![CDATA[_gdp_source_file]]></wp:meta_key><wp:meta_value><![CDATA[content/patterns/disclaimer.html]]></wp:meta_value></wp:postmeta>
+</item>
+<item>
+<title><![CDATA[CTA: wgraj fakturę]]></title>
+<link>https://gazdlaprzemyslu.example.invalid/?post_type=wp_block&amp;name=final-cta</link>
+<dc:creator><![CDATA[admin]]></dc:creator>
+<guid isPermaLink="false">https://gazdlaprzemyslu.example.invalid/?p=103</guid>
+<description></description>
+<content:encoded><![CDATA[<!-- wp:group {"metadata":{"name":"CTA: wgraj fakturę"},"templateLock":"contentOnly","className":"gdp-final-inner"} -->
+<div class="wp-block-group gdp-final-inner">
+<!-- wp:group {"metadata":{"name":"Treść wezwania"},"className":"gdp-final-copy"} -->
+<div class="wp-block-group gdp-final-copy">
+<!-- wp:paragraph {"className":"gdp-eyebrow"} -->
+<p class="gdp-eyebrow">ZACZNIJ OD SWOICH DANYCH</p>
+<!-- /wp:paragraph -->
+<!-- wp:heading {"metadata":{"name":"Tytuł CTA","bindings":{"__default":{"source":"core/pattern-overrides"}}}} -->
+<h2 class="wp-block-heading">Porozmawiajmy o Twojej umowie.</h2>
+<!-- /wp:heading -->
+<!-- wp:paragraph {"metadata":{"name":"Podtytuł CTA","bindings":{"__default":{"source":"core/pattern-overrides"}}}} -->
+<p>Przygotuj fakturę i sprawdź, jakie informacje będą potrzebne do rozmowy o warunkach.</p>
+<!-- /wp:paragraph -->
+</div>
+<!-- /wp:group -->
+<!-- wp:group {"metadata":{"name":"Przycisk kontaktowy"},"className":"gdp-final-action"} -->
+<div class="wp-block-group gdp-final-action">
+<!-- wp:buttons -->
+<div class="wp-block-buttons">
+<!-- wp:button -->
+<div class="wp-block-button"><a class="wp-block-button__link wp-element-button" href="/kontakt/">Wgraj fakturę</a></div>
+<!-- /wp:button -->
+</div>
+<!-- /wp:buttons -->
+<!-- wp:paragraph {"className":"gdp-small"} -->
+<p class="gdp-small">Prototyp: przejdziesz do kontaktu, bez przesyłania pliku.</p>
+<!-- /wp:paragraph -->
+</div>
+<!-- /wp:group -->
+</div>
+<!-- /wp:group -->
+]]></content:encoded>
+<excerpt:encoded><![CDATA[]]></excerpt:encoded>
+<wp:post_id>103</wp:post_id>
+<wp:import_id>103</wp:import_id>
+<wp:post_date><![CDATA[2000-01-01 00:00:00]]></wp:post_date>
+<wp:post_date_gmt><![CDATA[2000-01-01 00:00:00]]></wp:post_date_gmt>
+<wp:post_modified><![CDATA[2000-01-01 00:00:00]]></wp:post_modified>
+<wp:post_modified_gmt><![CDATA[2000-01-01 00:00:00]]></wp:post_modified_gmt>
+<wp:comment_status><![CDATA[closed]]></wp:comment_status>
+<wp:ping_status><![CDATA[closed]]></wp:ping_status>
+<wp:post_name><![CDATA[final-cta]]></wp:post_name>
+<wp:status><![CDATA[publish]]></wp:status>
+<wp:post_parent>0</wp:post_parent>
+<wp:menu_order>0</wp:menu_order>
+<wp:post_type><![CDATA[wp_block]]></wp:post_type>
+<wp:post_password><![CDATA[]]></wp:post_password>
+<wp:is_sticky>0</wp:is_sticky>
+<wp:postmeta><wp:meta_key><![CDATA[_gdp_import_id]]></wp:meta_key><wp:meta_value><![CDATA[103]]></wp:meta_value></wp:postmeta>
+<wp:postmeta><wp:meta_key><![CDATA[_gdp_source_file]]></wp:meta_key><wp:meta_value><![CDATA[content/patterns/final-cta.html]]></wp:meta_value></wp:postmeta>
+</item>
+<item>
+<title><![CDATA[Slot: tabela cen]]></title>
+<link>https://gazdlaprzemyslu.example.invalid/?post_type=wp_block&amp;name=pricing</link>
+<dc:creator><![CDATA[admin]]></dc:creator>
+<guid isPermaLink="false">https://gazdlaprzemyslu.example.invalid/?p=104</guid>
+<description></description>
+<content:encoded><![CDATA[<!-- wp:group {"metadata":{"name":"Slot: tabela cen"},"templateLock":"contentOnly","className":"gdp-pricing-table"} -->
+<div class="wp-block-group gdp-pricing-table">
+<!-- wp:paragraph {"metadata":{"name":"Data aktualizacji cen","bindings":{"__default":{"source":"core/pattern-overrides"}}},"className":"gdp-data-note"} -->
+<p class="gdp-data-note">Ostatnia aktualizacja: [[data]]. Dane robocze: pasma nie zostały jeszcze uzupełnione.</p>
+<!-- /wp:paragraph -->
+<!-- wp:table {"className":"gdp-numeric"} -->
+<figure class="wp-block-table gdp-numeric"><table class="has-fixed-layout"><thead><tr><th>Model zakupu</th><th>Zużycie roczne</th><th>Pasmo ceny gazu</th><th>Okres dostaw</th></tr></thead><tbody><tr><td>Cena stała</td><td>[[ ]] GWh</td><td>[[ ]] PLN/MWh</td><td>[[ ]]</td></tr><tr><td>Cena indeksowana TGE</td><td>[[ ]] GWh</td><td>[[indeks + składnik ceny]]</td><td>[[ ]]</td></tr><tr><td>Model transzowy</td><td>[[ ]] GWh</td><td>[[ ]] PLN/MWh</td><td>[[ ]]</td></tr></tbody></table><figcaption class="wp-element-caption">Układ demonstracyjny. Brak aktualnych notowań i wyceny.</figcaption></figure>
+<!-- /wp:table -->
+<!-- wp:paragraph -->
+<p><strong>Co składa się na rachunek?</strong> Cena gazu, dystrybucja, akcyza, opłaty i marża. Zakres oraz sposób rozliczenia poszczególnych składników wymagają potwierdzenia w indywidualnej ofercie.</p>
+<!-- /wp:paragraph -->
+<!-- wp:block {"ref":102} /-->
+</div>
+<!-- /wp:group -->
+]]></content:encoded>
+<excerpt:encoded><![CDATA[]]></excerpt:encoded>
+<wp:post_id>104</wp:post_id>
+<wp:import_id>104</wp:import_id>
+<wp:post_date><![CDATA[2000-01-01 00:00:00]]></wp:post_date>
+<wp:post_date_gmt><![CDATA[2000-01-01 00:00:00]]></wp:post_date_gmt>
+<wp:post_modified><![CDATA[2000-01-01 00:00:00]]></wp:post_modified>
+<wp:post_modified_gmt><![CDATA[2000-01-01 00:00:00]]></wp:post_modified_gmt>
+<wp:comment_status><![CDATA[closed]]></wp:comment_status>
+<wp:ping_status><![CDATA[closed]]></wp:ping_status>
+<wp:post_name><![CDATA[pricing]]></wp:post_name>
+<wp:status><![CDATA[publish]]></wp:status>
+<wp:post_parent>0</wp:post_parent>
+<wp:menu_order>0</wp:menu_order>
+<wp:post_type><![CDATA[wp_block]]></wp:post_type>
+<wp:post_password><![CDATA[]]></wp:post_password>
+<wp:is_sticky>0</wp:is_sticky>
+<wp:postmeta><wp:meta_key><![CDATA[_gdp_import_id]]></wp:meta_key><wp:meta_value><![CDATA[104]]></wp:meta_value></wp:postmeta>
+<wp:postmeta><wp:meta_key><![CDATA[_gdp_source_file]]></wp:meta_key><wp:meta_value><![CDATA[content/patterns/pricing.html]]></wp:meta_value></wp:postmeta>
+</item>
+<item>
+<title><![CDATA[Wzorzec: segmenty]]></title>
+<link>https://gazdlaprzemyslu.example.invalid/?post_type=wp_block&amp;name=segments</link>
+<dc:creator><![CDATA[admin]]></dc:creator>
+<guid isPermaLink="false">https://gazdlaprzemyslu.example.invalid/?p=105</guid>
+<description></description>
+<content:encoded><![CDATA[<!-- wp:group {"metadata":{"name":"Wzorzec: segmenty"},"templateLock":"contentOnly","className":"gdp-segment-grid"} -->
+<div class="wp-block-group gdp-segment-grid">
+<!-- wp:group {"metadata":{"name":"Segment MŚP"},"className":"gdp-segment-card"} -->
+<div class="wp-block-group gdp-segment-card">
+<!-- wp:paragraph {"className":"gdp-eyebrow"} -->
+<p class="gdp-eyebrow">MŚP</p>
+<!-- /wp:paragraph -->
+<!-- wp:heading {"level":3,"metadata":{"name":"Tytuł segmentu MŚP","bindings":{"__default":{"source":"core/pattern-overrides"}}}} -->
+<h3 class="wp-block-heading">Gaz dla codziennej pracy</h3>
+<!-- /wp:heading -->
+<!-- wp:paragraph {"metadata":{"name":"Opis segmentu MŚP","bindings":{"__default":{"source":"core/pattern-overrides"}}}} -->
+<p>Piekarnia, suszarnia, przetwórstwo lub szklarnia. Zacznij od faktury i oczekiwań wobec umowy.</p>
+<!-- /wp:paragraph -->
+<!-- wp:paragraph {"className":"gdp-threshold"} -->
+<p class="gdp-threshold">Do [[X]] GWh rocznie: próg roboczy.</p>
+<!-- /wp:paragraph -->
+<!-- wp:paragraph -->
+<p><a href="/kontakt/">Zapytaj o gaz dla MŚP</a></p>
+<!-- /wp:paragraph -->
+</div>
+<!-- /wp:group -->
+<!-- wp:group {"metadata":{"name":"Segment przemysłowy"},"className":"gdp-segment-card"} -->
+<div class="wp-block-group gdp-segment-card">
+<!-- wp:paragraph {"className":"gdp-eyebrow"} -->
+<p class="gdp-eyebrow">PRZEMYSŁ</p>
+<!-- /wp:paragraph -->
+<!-- wp:heading {"level":3,"metadata":{"name":"Tytuł segmentu przemysł","bindings":{"__default":{"source":"core/pattern-overrides"}}}} -->
+<h3 class="wp-block-heading">Warunki pod profil zakładu</h3>
+<!-- /wp:heading -->
+<!-- wp:paragraph {"metadata":{"name":"Opis segmentu przemysł","bindings":{"__default":{"source":"core/pattern-overrides"}}}} -->
+<p>Omów profil poboru, sezonowość i podejście do ryzyka cenowego z perspektywy Twojej produkcji.</p>
+<!-- /wp:paragraph -->
+<!-- wp:paragraph {"className":"gdp-threshold"} -->
+<p class="gdp-threshold">Powyżej [[X]] GWh rocznie: próg roboczy.</p>
+<!-- /wp:paragraph -->
+<!-- wp:paragraph -->
+<p><a href="/kontakt/">Porozmawiaj o potrzebach zakładu</a></p>
+<!-- /wp:paragraph -->
+</div>
+<!-- /wp:group -->
+<!-- wp:group {"metadata":{"name":"Segment doradcy"},"className":"gdp-segment-card"} -->
+<div class="wp-block-group gdp-segment-card">
+<!-- wp:paragraph {"className":"gdp-eyebrow"} -->
+<p class="gdp-eyebrow">DORADCY</p>
+<!-- /wp:paragraph -->
+<!-- wp:heading {"level":3,"metadata":{"name":"Tytuł segmentu doradcy","bindings":{"__default":{"source":"core/pattern-overrides"}}}} -->
+<h3 class="wp-block-heading">Rozmowa o portfelu klientów</h3>
+<!-- /wp:heading -->
+<!-- wp:paragraph {"metadata":{"name":"Opis segmentu doradcy","bindings":{"__default":{"source":"core/pattern-overrides"}}}} -->
+<p>Reprezentujesz firmy kupujące gaz? Przedstaw zakres zapytań i sposób współpracy, którego potrzebujesz.</p>
+<!-- /wp:paragraph -->
+<!-- wp:paragraph {"className":"gdp-threshold"} -->
+<p class="gdp-threshold">Warunki współpracy: [[do uzgodnienia]].</p>
+<!-- /wp:paragraph -->
+<!-- wp:paragraph -->
+<p><a href="/kontakt/">Zapytaj o współpracę</a></p>
+<!-- /wp:paragraph -->
+</div>
+<!-- /wp:group -->
+</div>
+<!-- /wp:group -->
+]]></content:encoded>
+<excerpt:encoded><![CDATA[]]></excerpt:encoded>
+<wp:post_id>105</wp:post_id>
+<wp:import_id>105</wp:import_id>
+<wp:post_date><![CDATA[2000-01-01 00:00:00]]></wp:post_date>
+<wp:post_date_gmt><![CDATA[2000-01-01 00:00:00]]></wp:post_date_gmt>
+<wp:post_modified><![CDATA[2000-01-01 00:00:00]]></wp:post_modified>
+<wp:post_modified_gmt><![CDATA[2000-01-01 00:00:00]]></wp:post_modified_gmt>
+<wp:comment_status><![CDATA[closed]]></wp:comment_status>
+<wp:ping_status><![CDATA[closed]]></wp:ping_status>
+<wp:post_name><![CDATA[segments]]></wp:post_name>
+<wp:status><![CDATA[publish]]></wp:status>
+<wp:post_parent>0</wp:post_parent>
+<wp:menu_order>0</wp:menu_order>
+<wp:post_type><![CDATA[wp_block]]></wp:post_type>
+<wp:post_password><![CDATA[]]></wp:post_password>
+<wp:is_sticky>0</wp:is_sticky>
+<wp:postmeta><wp:meta_key><![CDATA[_gdp_import_id]]></wp:meta_key><wp:meta_value><![CDATA[105]]></wp:meta_value></wp:postmeta>
+<wp:postmeta><wp:meta_key><![CDATA[_gdp_source_file]]></wp:meta_key><wp:meta_value><![CDATA[content/patterns/segments.html]]></wp:meta_value></wp:postmeta>
+</item>
+<item>
+<title><![CDATA[Pasek zaufania]]></title>
+<link>https://gazdlaprzemyslu.example.invalid/?post_type=wp_block&amp;name=trust</link>
+<dc:creator><![CDATA[admin]]></dc:creator>
+<guid isPermaLink="false">https://gazdlaprzemyslu.example.invalid/?p=106</guid>
+<description></description>
+<content:encoded><![CDATA[<!-- wp:group {"metadata":{"name":"Pasek zaufania"},"templateLock":"contentOnly","className":"gdp-trust-grid"} -->
+<div class="wp-block-group gdp-trust-grid">
+<!-- wp:group {"metadata":{"name":"Podmiot"},"className":"gdp-trust-item"} -->
+<div class="wp-block-group gdp-trust-item">
+<!-- wp:paragraph {"metadata":{"name":"Podmiot: tekst","bindings":{"__default":{"source":"core/pattern-overrides"}}}} -->
+<p><strong>PBM Sp. z o.o.</strong></p>
+<!-- /wp:paragraph -->
+<!-- wp:paragraph -->
+<p>Kanał Gaz dla Przemysłu</p>
+<!-- /wp:paragraph -->
+</div>
+<!-- /wp:group -->
+<!-- wp:group {"metadata":{"name":"Grupa"},"className":"gdp-trust-item"} -->
+<div class="wp-block-group gdp-trust-item">
+<!-- wp:paragraph {"metadata":{"name":"Grupa: tekst","bindings":{"__default":{"source":"core/pattern-overrides"}}}} -->
+<p><strong>Grupa IMA Polska</strong></p>
+<!-- /wp:paragraph -->
+<!-- wp:paragraph -->
+<p>Przemysł i energetyka odnawialna</p>
+<!-- /wp:paragraph -->
+</div>
+<!-- /wp:group -->
+<!-- wp:group {"metadata":{"name":"Koncesja"},"className":"gdp-trust-item"} -->
+<div class="wp-block-group gdp-trust-item">
+<!-- wp:paragraph {"metadata":{"name":"Koncesja: tekst","bindings":{"__default":{"source":"core/pattern-overrides"}}}} -->
+<p><strong>Koncesja OPG: [[ ]]</strong></p>
+<!-- /wp:paragraph -->
+<!-- wp:paragraph -->
+<p>Numer i dokument do uzupełnienia</p>
+<!-- /wp:paragraph -->
+</div>
+<!-- /wp:group -->
+<!-- wp:group {"metadata":{"name":"Aktywa Grupy"},"className":"gdp-trust-item"} -->
+<div class="wp-block-group gdp-trust-item">
+<!-- wp:paragraph {"metadata":{"name":"Aktywa: tekst","bindings":{"__default":{"source":"core/pattern-overrides"}}}} -->
+<p><strong>Aktywa Grupy: [[ ]]</strong></p>
+<!-- /wp:paragraph -->
+<!-- wp:paragraph -->
+<p>Opis i dane do potwierdzenia</p>
+<!-- /wp:paragraph -->
+</div>
+<!-- /wp:group -->
+</div>
+<!-- /wp:group -->
+]]></content:encoded>
+<excerpt:encoded><![CDATA[]]></excerpt:encoded>
+<wp:post_id>106</wp:post_id>
+<wp:import_id>106</wp:import_id>
+<wp:post_date><![CDATA[2000-01-01 00:00:00]]></wp:post_date>
+<wp:post_date_gmt><![CDATA[2000-01-01 00:00:00]]></wp:post_date_gmt>
+<wp:post_modified><![CDATA[2000-01-01 00:00:00]]></wp:post_modified>
+<wp:post_modified_gmt><![CDATA[2000-01-01 00:00:00]]></wp:post_modified_gmt>
+<wp:comment_status><![CDATA[closed]]></wp:comment_status>
+<wp:ping_status><![CDATA[closed]]></wp:ping_status>
+<wp:post_name><![CDATA[trust]]></wp:post_name>
+<wp:status><![CDATA[publish]]></wp:status>
+<wp:post_parent>0</wp:post_parent>
+<wp:menu_order>0</wp:menu_order>
+<wp:post_type><![CDATA[wp_block]]></wp:post_type>
+<wp:post_password><![CDATA[]]></wp:post_password>
+<wp:is_sticky>0</wp:is_sticky>
+<wp:postmeta><wp:meta_key><![CDATA[_gdp_import_id]]></wp:meta_key><wp:meta_value><![CDATA[106]]></wp:meta_value></wp:postmeta>
+<wp:postmeta><wp:meta_key><![CDATA[_gdp_source_file]]></wp:meta_key><wp:meta_value><![CDATA[content/patterns/trust.html]]></wp:meta_value></wp:postmeta>
+</item>
+<item>
+<title><![CDATA[FAQ: produkt]]></title>
+<link>https://gazdlaprzemyslu.example.invalid/?post_type=wp_block&amp;name=faq-product</link>
+<dc:creator><![CDATA[admin]]></dc:creator>
+<guid isPermaLink="false">https://gazdlaprzemyslu.example.invalid/?p=107</guid>
+<description></description>
+<content:encoded><![CDATA[<!-- wp:group {"metadata":{"name":"FAQ: produkt"},"templateLock":"contentOnly","className":"gdp-faq-list"} -->
+<div class="wp-block-group gdp-faq-list">
+<!-- wp:details {"metadata":{"name":"FAQ: zakres ceny stałej"}} -->
+<details class="wp-block-details"><summary>Czy cena stała oznacza stały rachunek?</summary>
+<!-- wp:paragraph {"metadata":{"name":"Odpowiedź: stały rachunek","bindings":{"__default":{"source":"core/pattern-overrides"}}}} -->
+<p>Nie. Stała jest uzgodniona cena gazu w zakresie wskazanym w umowie. Kwota rachunku zależy także od zużycia, dystrybucji i pozostałych składników rozliczenia.</p>
+<!-- /wp:paragraph -->
+</details>
+<!-- /wp:details -->
+<!-- wp:details {"metadata":{"name":"FAQ: dane do wyceny"}} -->
+<details class="wp-block-details"><summary>Jakich danych potrzebuję do rozmowy o ofercie?</summary>
+<!-- wp:paragraph {"metadata":{"name":"Odpowiedź: dane do wyceny","bindings":{"__default":{"source":"core/pattern-overrides"}}}} -->
+<p>Przygotuj fakturę, profil zużycia, informacje o punktach poboru oraz obecną umowę z datą zakończenia i zapisami o wypowiedzeniu. Zakres potrzebnych danych zostanie potwierdzony podczas rozmowy.</p>
+<!-- /wp:paragraph -->
+</details>
+<!-- /wp:details -->
+<!-- wp:details {"metadata":{"name":"FAQ: spadek cen rynkowych"}} -->
+<details class="wp-block-details"><summary>Co, jeśli cena rynkowa spadnie?</summary>
+<!-- wp:paragraph {"metadata":{"name":"Odpowiedź: spadek cen","bindings":{"__default":{"source":"core/pattern-overrides"}}}} -->
+<p>Uzgodniona cena stała nie musi podążać za spadkiem notowań. To ograniczenie tego modelu, które warto rozważyć obok przewidywalności ceny gazu.</p>
+<!-- /wp:paragraph -->
+</details>
+<!-- /wp:details -->
+<!-- wp:details {"metadata":{"name":"FAQ: zmiana zużycia"}} -->
+<details class="wp-block-details"><summary>Co, jeśli zakład zużyje inną ilość gazu?</summary>
+<!-- wp:paragraph {"metadata":{"name":"Odpowiedź: zmiana zużycia","bindings":{"__default":{"source":"core/pattern-overrides"}}}} -->
+<p>To zależy od ustaleń dotyczących wolumenu, tolerancji i sposobu rozliczenia odchyleń. Przed podpisaniem umowy sprawdź te zapisy dla swojego profilu poboru.</p>
+<!-- /wp:paragraph -->
+</details>
+<!-- /wp:details -->
+<!-- wp:details {"metadata":{"name":"FAQ: dystrybucja"}} -->
+<details class="wp-block-details"><summary>Czy umowa obejmuje dystrybucję?</summary>
+<!-- wp:paragraph {"metadata":{"name":"Odpowiedź: dystrybucja","bindings":{"__default":{"source":"core/pattern-overrides"}}}} -->
+<p>Jeżeli PBM nie ma zawartej generalnej umowy dystrybucyjnej z Twoim operatorem, podpiszesz osobno umowę dystrybucyjną; pomożemy w tym.</p>
+<!-- /wp:paragraph -->
+</details>
+<!-- /wp:details -->
+<!-- wp:details {"metadata":{"name":"FAQ: charakter przykładu"}} -->
+<details class="wp-block-details"><summary>Czy pokazany przykład jest ofertą dla mojej firmy?</summary>
+<!-- wp:paragraph {"metadata":{"name":"Odpowiedź: charakter przykładu","bindings":{"__default":{"source":"core/pattern-overrides"}}}} -->
+<p>Nie. Przykład pokazuje wyłącznie układ danych. Cenę, okres dostaw, wolumen i pozostałe warunki określą indywidualna oferta oraz umowa.</p>
+<!-- /wp:paragraph -->
+</details>
+<!-- /wp:details -->
+</div>
+<!-- /wp:group -->
+]]></content:encoded>
+<excerpt:encoded><![CDATA[]]></excerpt:encoded>
+<wp:post_id>107</wp:post_id>
+<wp:import_id>107</wp:import_id>
+<wp:post_date><![CDATA[2000-01-01 00:00:00]]></wp:post_date>
+<wp:post_date_gmt><![CDATA[2000-01-01 00:00:00]]></wp:post_date_gmt>
+<wp:post_modified><![CDATA[2000-01-01 00:00:00]]></wp:post_modified>
+<wp:post_modified_gmt><![CDATA[2000-01-01 00:00:00]]></wp:post_modified_gmt>
+<wp:comment_status><![CDATA[closed]]></wp:comment_status>
+<wp:ping_status><![CDATA[closed]]></wp:ping_status>
+<wp:post_name><![CDATA[faq-product]]></wp:post_name>
+<wp:status><![CDATA[publish]]></wp:status>
+<wp:post_parent>0</wp:post_parent>
+<wp:menu_order>0</wp:menu_order>
+<wp:post_type><![CDATA[wp_block]]></wp:post_type>
+<wp:post_password><![CDATA[]]></wp:post_password>
+<wp:is_sticky>0</wp:is_sticky>
+<wp:postmeta><wp:meta_key><![CDATA[_gdp_import_id]]></wp:meta_key><wp:meta_value><![CDATA[107]]></wp:meta_value></wp:postmeta>
+<wp:postmeta><wp:meta_key><![CDATA[_gdp_source_file]]></wp:meta_key><wp:meta_value><![CDATA[content/patterns/faq-product.html]]></wp:meta_value></wp:postmeta>
+</item>
+<item>
+<title><![CDATA[Start]]></title>
+<link>https://gazdlaprzemyslu.example.invalid/</link>
+<dc:creator><![CDATA[admin]]></dc:creator>
+<guid isPermaLink="false">https://gazdlaprzemyslu.example.invalid/?p=201</guid>
+<description></description>
+<content:encoded><![CDATA[<!-- wp:group {"metadata":{"name":"Otwarcie: gaz dla Twojej firmy"},"templateLock":"contentOnly","className":"gdp-section gdp-hero"} -->
+<div class="wp-block-group gdp-section gdp-hero">
+<!-- wp:group {"metadata":{"name":"Układ otwarcia"},"className":"gdp-hero-grid"} -->
+<div class="wp-block-group gdp-hero-grid">
+<!-- wp:group {"metadata":{"name":"Obietnica i pierwszy krok"},"className":"gdp-hero-copy"} -->
+<div class="wp-block-group gdp-hero-copy">
+<!-- wp:paragraph {"className":"gdp-eyebrow"} -->
+<p class="gdp-eyebrow">GAZ DLA PRZEMYSŁU I MŚP</p>
+<!-- /wp:paragraph -->
+<!-- wp:heading {"level":1} -->
+<h1 class="wp-block-heading">Gaz dla Twojej firmy. Warunki pod kontrolą.</h1>
+<!-- /wp:heading -->
+<!-- wp:paragraph {"className":"gdp-lead"} -->
+<p class="gdp-lead">Gaz dla Przemysłu to kanał PBM dla firm kupujących gaz. Porównaj modele zakupu, sprawdź składniki ceny i przygotuj dane do rozmowy o umowie. Zacznij od swojej faktury.</p>
+<!-- /wp:paragraph -->
+<!-- wp:buttons -->
+<div class="wp-block-buttons">
+<!-- wp:button -->
+<div class="wp-block-button"><a class="wp-block-button__link wp-element-button" href="/kontakt/">Wgraj fakturę</a></div>
+<!-- /wp:button -->
+<!-- wp:button {"className":"is-style-outline"} -->
+<div class="wp-block-button is-style-outline"><a class="wp-block-button__link wp-element-button" href="/oferta/cena-stala/">Poznaj cenę stałą</a></div>
+<!-- /wp:button -->
+</div>
+<!-- /wp:buttons -->
+<!-- wp:paragraph {"className":"gdp-small"} -->
+<p class="gdp-small">Prototyp serwisu. CTA prowadzi do kontaktu; nie przesyła faktury.</p>
+<!-- /wp:paragraph -->
+</div>
+<!-- /wp:group -->
+<!-- wp:group {"metadata":{"name":"Komentarz rynkowy: zapowiedź"},"className":"gdp-hero-market"} -->
+<div class="wp-block-group gdp-hero-market">
+<!-- wp:paragraph {"className":"gdp-eyebrow"} -->
+<p class="gdp-eyebrow">PERSPEKTYWA RYNKU</p>
+<!-- /wp:paragraph -->
+<!-- wp:paragraph {"className":"gdp-data-note"} -->
+<p class="gdp-data-note">[[data]] · Materiał demonstracyjny</p>
+<!-- /wp:paragraph -->
+<!-- wp:heading -->
+<h2 class="wp-block-heading">[[tytuł komentarza]]</h2>
+<!-- /wp:heading -->
+<!-- wp:paragraph -->
+<p>[[krótka odpowiedź: co zmieniło się na rynku i co to oznacza dla kupującego gaz]]</p>
+<!-- /wp:paragraph -->
+<!-- wp:paragraph {"className":"gdp-author"} -->
+<p class="gdp-author">Zespół analiz PBM: placeholder autora.</p>
+<!-- /wp:paragraph -->
+<!-- wp:paragraph -->
+<p><a href="/komentarz-rynkowy-szablon/">Zobacz szablon komentarza</a></p>
+<!-- /wp:paragraph -->
+</div>
+<!-- /wp:group -->
+<!-- wp:group {"metadata":{"name":"Miejsce na fakturę"},"className":"gdp-hero-upload"} -->
+<div class="wp-block-group gdp-hero-upload">
+<!-- wp:block {"ref":101} /-->
+</div>
+<!-- /wp:group -->
+</div>
+<!-- /wp:group -->
+</div>
+<!-- /wp:group -->
+
+<!-- wp:group {"metadata":{"name":"Podmiot i dane do potwierdzenia"},"templateLock":"contentOnly","className":"gdp-section gdp-trust"} -->
+<div class="wp-block-group gdp-section gdp-trust">
+<!-- wp:block {"ref":106} /-->
+</div>
+<!-- /wp:group -->
+
+<!-- wp:group {"metadata":{"name":"Dla kogo kupujesz gaz"},"templateLock":"contentOnly","className":"gdp-section gdp-segments"} -->
+<div class="wp-block-group gdp-section gdp-segments">
+<!-- wp:paragraph {"className":"gdp-eyebrow"} -->
+<p class="gdp-eyebrow">TWÓJ PROFIL ZAKUPU</p>
+<!-- /wp:paragraph -->
+<!-- wp:heading -->
+<h2 class="wp-block-heading">Inne potrzeby. Wspólny punkt wyjścia.</h2>
+<!-- /wp:heading -->
+<!-- wp:paragraph -->
+<p>Wybierz kontekst rozmowy. Progi zużycia są robocze; w prototypie każda ścieżka prowadzi do kontaktu.</p>
+<!-- /wp:paragraph -->
+<!-- wp:block {"ref":105} /-->
+</div>
+<!-- /wp:group -->
+
+<!-- wp:group {"metadata":{"name":"Jak to działa"},"templateLock":"contentOnly","className":"gdp-section gdp-process"} -->
+<div class="wp-block-group gdp-section gdp-process">
+<!-- wp:paragraph {"className":"gdp-eyebrow"} -->
+<p class="gdp-eyebrow">OD FAKTURY DO WARUNKÓW</p>
+<!-- /wp:paragraph -->
+<!-- wp:heading -->
+<h2 class="wp-block-heading">Najpierw dane. Potem decyzja.</h2>
+<!-- /wp:heading -->
+<!-- wp:paragraph -->
+<p>Tak ma wyglądać docelowa ścieżka. Ten prototyp pokazuje proces, ale go nie uruchamia.</p>
+<!-- /wp:paragraph -->
+<!-- wp:group {"metadata":{"name":"Kroki procesu"},"className":"gdp-process-grid"} -->
+<div class="wp-block-group gdp-process-grid">
+<!-- wp:group {"metadata":{"name":"Przygotowanie danych"},"className":"gdp-step"} -->
+<div class="wp-block-group gdp-step">
+<!-- wp:heading {"level":3} -->
+<h3 class="wp-block-heading">Przygotuj fakturę</h3>
+<!-- /wp:heading -->
+<!-- wp:paragraph -->
+<p>Zbierz dane o zużyciu, punktach poboru i obecnej umowie.</p>
+<!-- /wp:paragraph -->
+</div>
+<!-- /wp:group -->
+<!-- wp:group {"metadata":{"name":"Sprawdzenie potrzeb"},"className":"gdp-step"} -->
+<div class="wp-block-group gdp-step">
+<!-- wp:heading {"level":3} -->
+<h3 class="wp-block-heading">Omów swój profil</h3>
+<!-- /wp:heading -->
+<!-- wp:paragraph -->
+<p>Określ sezonowość, plan produkcji i oczekiwania wobec ceny.</p>
+<!-- /wp:paragraph -->
+</div>
+<!-- /wp:group -->
+<!-- wp:group {"metadata":{"name":"Porównanie warunków"},"className":"gdp-step"} -->
+<div class="wp-block-group gdp-step">
+<!-- wp:heading {"level":3} -->
+<h3 class="wp-block-heading">Porównaj warunki</h3>
+<!-- /wp:heading -->
+<!-- wp:paragraph -->
+<p>Sprawdź model ceny, zakres opłat, wolumen i zasady rozliczenia.</p>
+<!-- /wp:paragraph -->
+</div>
+<!-- /wp:group -->
+<!-- wp:group {"metadata":{"name":"Decyzja i dokumenty"},"className":"gdp-step"} -->
+<div class="wp-block-group gdp-step">
+<!-- wp:heading {"level":3} -->
+<h3 class="wp-block-heading">Zdecyduj po weryfikacji</h3>
+<!-- /wp:heading -->
+<!-- wp:paragraph -->
+<p>Przed podpisaniem przeanalizuj warunki oferty i umowy.</p>
+<!-- /wp:paragraph -->
+</div>
+<!-- /wp:group -->
+</div>
+<!-- /wp:group -->
+</div>
+<!-- /wp:group -->
+
+<!-- wp:group {"metadata":{"name":"Pasma cen orientacyjnych"},"templateLock":"contentOnly","className":"gdp-section gdp-prices","anchor":"pasma-cen"} -->
+<div class="wp-block-group gdp-section gdp-prices" id="pasma-cen">
+<!-- wp:paragraph {"className":"gdp-eyebrow"} -->
+<p class="gdp-eyebrow">CENA BEZ NIEDOMÓWIEŃ</p>
+<!-- /wp:paragraph -->
+<!-- wp:heading -->
+<h2 class="wp-block-heading">Patrz na składniki, nie tylko stawkę.</h2>
+<!-- /wp:heading -->
+<!-- wp:paragraph -->
+<p>Porównuj warunki dla tego samego profilu zużycia i okresu dostaw. Poniżej miejsce na orientacyjne pasma cen, bez wymyślonych notowań.</p>
+<!-- /wp:paragraph -->
+<!-- wp:block {"ref":104} /-->
+<!-- wp:paragraph -->
+<p><a href="/oferta/cena-stala/">Sprawdź, co obejmuje cena stała</a></p>
+<!-- /wp:paragraph -->
+</div>
+<!-- /wp:group -->
+
+<!-- wp:group {"metadata":{"name":"Komentarze rynkowe"},"templateLock":"contentOnly","className":"gdp-section gdp-market"} -->
+<div class="wp-block-group gdp-section gdp-market">
+<!-- wp:paragraph {"className":"gdp-eyebrow"} -->
+<p class="gdp-eyebrow">WIEDZA DO DECYZJI</p>
+<!-- /wp:paragraph -->
+<!-- wp:heading -->
+<h2 class="wp-block-heading">Rynek w kontekście Twojej umowy.</h2>
+<!-- /wp:heading -->
+<!-- wp:paragraph -->
+<p>To miejsce na komentarze z datą, autorem i źródłami. Obecne wpisy są szablonami, nie analizą bieżącego rynku.</p>
+<!-- /wp:paragraph -->
+<!-- wp:query {"queryId":1,"query":{"perPage":3,"pages":0,"offset":0,"postType":"post","order":"desc","orderBy":"date","author":"","search":"","exclude":[],"sticky":"exclude","inherit":false},"className":"gdp-market-query"} -->
+<div class="wp-block-query gdp-market-query">
+<!-- wp:post-template -->
+<!-- wp:group {"metadata":{"name":"Karta komentarza"},"className":"gdp-market-card"} -->
+<div class="wp-block-group gdp-market-card">
+<!-- wp:paragraph {"className":"gdp-data-note"} -->
+<p class="gdp-data-note">[[data]] · Szablon komentarza</p>
+<!-- /wp:paragraph -->
+<!-- wp:post-title {"level":3,"isLink":true} /-->
+<!-- wp:paragraph -->
+<p>[[komentarz: treść do opracowania i zatwierdzenia]]</p>
+<!-- /wp:paragraph -->
+<!-- wp:paragraph {"className":"gdp-author"} -->
+<p class="gdp-author">Zespół analiz PBM: placeholder autora.</p>
+<!-- /wp:paragraph -->
+</div>
+<!-- /wp:group -->
+<!-- /wp:post-template -->
+<!-- wp:query-no-results -->
+<!-- wp:paragraph -->
+<p>[[Komentarze rynkowe zostaną dodane po zatwierdzeniu treści.]]</p>
+<!-- /wp:paragraph -->
+<!-- /wp:query-no-results -->
+</div>
+<!-- /wp:query -->
+<!-- wp:paragraph -->
+<p><a href="/wiedza/">Przejdź do wiedzy</a></p>
+<!-- /wp:paragraph -->
+</div>
+<!-- /wp:group -->
+
+<!-- wp:group {"metadata":{"name":"Narzędzia do sprawdzenia umowy"},"templateLock":"contentOnly","className":"gdp-section gdp-tools"} -->
+<div class="wp-block-group gdp-section gdp-tools">
+<!-- wp:paragraph {"className":"gdp-eyebrow"} -->
+<p class="gdp-eyebrow">ZANIM ZMIENISZ SPRZEDAWCĘ</p>
+<!-- /wp:paragraph -->
+<!-- wp:heading -->
+<h2 class="wp-block-heading">Sprawdź umowę, nie zgaduj terminu.</h2>
+<!-- /wp:heading -->
+<!-- wp:paragraph -->
+<p>Planowany kalkulator pomoże uporządkować dane o końcu umowy, okresie wypowiedzenia i prolongacie. W prototypie narzędzie nie oblicza terminów.</p>
+<!-- /wp:paragraph -->
+<!-- wp:paragraph -->
+<p>Nie wypowiadaj umowy przed weryfikacją warunków. Dokument ma sprawdzić człowiek przed wysyłką. Skutki błędnego wypowiedzenia, w tym sprzedaż rezerwowa i kary, ponosi klient. Kolejność procesu PBM: umowa z PBM → pełnomocnictwo → wypowiedzenie i zgłoszenie do OSD.</p>
+<!-- /wp:paragraph -->
+<!-- wp:paragraph -->
+<p><a href="/kontakt/">Zapytaj o sprawdzenie danych z umowy</a></p>
+<!-- /wp:paragraph -->
+</div>
+<!-- /wp:group -->
+
+<!-- wp:group {"metadata":{"name":"Pytania przed pierwszą rozmową"},"templateLock":"contentOnly","className":"gdp-section gdp-faq"} -->
+<div class="wp-block-group gdp-section gdp-faq">
+<!-- wp:paragraph {"className":"gdp-eyebrow"} -->
+<p class="gdp-eyebrow">KRÓTKO I WPROST</p>
+<!-- /wp:paragraph -->
+<!-- wp:heading -->
+<h2 class="wp-block-heading">Co warto wiedzieć na początku?</h2>
+<!-- /wp:heading -->
+<!-- wp:details -->
+<details class="wp-block-details"><summary>Dla jakich firm powstaje ten serwis?</summary>
+<!-- wp:paragraph -->
+<p>Dla odbiorców przemysłowych, MŚP z istotnym zużyciem gazu oraz doradców energetycznych. Próg rozdzielający ścieżki obsługi pozostaje do potwierdzenia: [[X]] GWh rocznie.</p>
+<!-- /wp:paragraph -->
+</details>
+<!-- /wp:details -->
+<!-- wp:details -->
+<details class="wp-block-details"><summary>Czy mogę już wysłać fakturę?</summary>
+<!-- wp:paragraph -->
+<p>Nie. To statyczny prototyp. Pola nie przyjmują danych, a przycisk „Wgraj fakturę” prowadzi do strony kontaktowej. Docelowy upload należy do późniejszego etapu.</p>
+<!-- /wp:paragraph -->
+</details>
+<!-- /wp:details -->
+<!-- wp:details -->
+<details class="wp-block-details"><summary>Jakie modele zakupu gazu są przewidziane?</summary>
+<!-- wp:paragraph -->
+<p>Cena stała, cena indeksowana do TGE i model transzowy lub mieszany. W strukturze przewidziano także umowę kompleksową dla MŚP oraz biometan jako „wkrótce”. Lista i warunki wymagają potwierdzenia.</p>
+<!-- /wp:paragraph -->
+</details>
+<!-- /wp:details -->
+<!-- wp:details -->
+<details class="wp-block-details"><summary>Czy pasma cen są wiążącą ofertą?</summary>
+<!-- wp:paragraph -->
+<p>Nie. Obecna tabela zawiera wyłącznie placeholdery. Pasma mają charakter orientacyjny, a warunki określają indywidualna oferta i umowa.</p>
+<!-- /wp:paragraph -->
+</details>
+<!-- /wp:details -->
+<!-- wp:details -->
+<details class="wp-block-details"><summary>Czy podpiszę osobną umowę dystrybucyjną?</summary>
+<!-- wp:paragraph -->
+<p>Jeżeli PBM nie ma zawartej generalnej umowy dystrybucyjnej z Twoim operatorem, podpiszesz osobno umowę dystrybucyjną; pomożemy w tym.</p>
+<!-- /wp:paragraph -->
+</details>
+<!-- /wp:details -->
+<!-- wp:details -->
+<details class="wp-block-details"><summary>Co oznacza termin odpowiedzi podany przy fakturze?</summary>
+<!-- wp:paragraph -->
+<p>Oferta indykatywna w 24 h to roboczy, niepotwierdzony cel obsługi zapisany w briefie. Nie jest gwarancją terminu. W prototypie nie działa ani przesyłanie dokumentu, ani przygotowanie oferty.</p>
+<!-- /wp:paragraph -->
+</details>
+<!-- /wp:details -->
+<!-- wp:paragraph {"className":"gdp-small"} -->
+<p class="gdp-small">Treść robocza. Ostatnia aktualizacja: [[data]]. Autor: [[imię i nazwisko, stanowisko]]. Źródła i weryfikacja merytoryczna: [[linki do źródeł]].</p>
+<!-- /wp:paragraph -->
+</div>
+<!-- /wp:group -->
+
+<!-- wp:group {"metadata":{"name":"Następny krok: Twoja faktura"},"templateLock":"contentOnly","className":"gdp-section gdp-final"} -->
+<div class="wp-block-group gdp-section gdp-final">
+<!-- wp:block {"ref":103,"content":{"Tytuł CTA":{"content":"Twoja faktura. Początek konkretnej rozmowy."},"Podtytuł CTA":{"content":"Przygotuj dane o zużyciu i obecnej umowie. Sprawdź, od czego zacząć rozmowę o zakupie gazu."}}} /-->
+</div>
+<!-- /wp:group -->
+]]></content:encoded>
+<excerpt:encoded><![CDATA[]]></excerpt:encoded>
+<wp:post_id>201</wp:post_id>
+<wp:import_id>201</wp:import_id>
+<wp:post_date><![CDATA[2000-01-01 00:00:00]]></wp:post_date>
+<wp:post_date_gmt><![CDATA[2000-01-01 00:00:00]]></wp:post_date_gmt>
+<wp:post_modified><![CDATA[2000-01-01 00:00:00]]></wp:post_modified>
+<wp:post_modified_gmt><![CDATA[2000-01-01 00:00:00]]></wp:post_modified_gmt>
+<wp:comment_status><![CDATA[closed]]></wp:comment_status>
+<wp:ping_status><![CDATA[closed]]></wp:ping_status>
+<wp:post_name><![CDATA[start]]></wp:post_name>
+<wp:status><![CDATA[publish]]></wp:status>
+<wp:post_parent>0</wp:post_parent>
+<wp:menu_order>0</wp:menu_order>
+<wp:post_type><![CDATA[page]]></wp:post_type>
+<wp:post_password><![CDATA[]]></wp:post_password>
+<wp:is_sticky>0</wp:is_sticky>
+<wp:postmeta><wp:meta_key><![CDATA[_gdp_import_id]]></wp:meta_key><wp:meta_value><![CDATA[201]]></wp:meta_value></wp:postmeta>
+<wp:postmeta><wp:meta_key><![CDATA[_gdp_source_file]]></wp:meta_key><wp:meta_value><![CDATA[content/pages/start.html]]></wp:meta_value></wp:postmeta>
+<wp:postmeta><wp:meta_key><![CDATA[ct_page_title]]></wp:meta_key><wp:meta_value><![CDATA[no]]></wp:meta_value></wp:postmeta>
+</item>
+<item>
+<title><![CDATA[Oferta]]></title>
+<link>https://gazdlaprzemyslu.example.invalid/oferta/</link>
+<dc:creator><![CDATA[admin]]></dc:creator>
+<guid isPermaLink="false">https://gazdlaprzemyslu.example.invalid/?p=202</guid>
+<description></description>
+<content:encoded><![CDATA[<!-- wp:group {"metadata":{"name":"Oferta: strona pomocnicza"},"templateLock":"contentOnly","className":"gdp-section gdp-stub-hero"} -->
+<div class="wp-block-group gdp-section gdp-stub-hero">
+<!-- wp:paragraph {"className":"gdp-eyebrow"} -->
+<p class="gdp-eyebrow">MODELE ZAKUPU GAZU</p>
+<!-- /wp:paragraph -->
+<!-- wp:heading {"level":1} -->
+<h1 class="wp-block-heading">Oferta dla Twojego profilu zużycia.</h1>
+<!-- /wp:heading -->
+<!-- wp:paragraph {"className":"gdp-lead"} -->
+<p class="gdp-lead">Model zakupu gazu określa sposób ustalania ceny i podział ryzyk. W prototypie możesz sprawdzić stronę ceny stałej. Pozostałe produkty są zapowiedziami do rozwinięcia po wyborze kierunku wizualnego.</p>
+<!-- /wp:paragraph -->
+<!-- wp:paragraph {"className":"gdp-prototype-note"} -->
+<p class="gdp-prototype-note">Strona pomocnicza punktu kontrolnego wyboru kierunku. Nie jest pełnym katalogiem ani wiążącą ofertą.</p>
+<!-- /wp:paragraph -->
+<!-- wp:heading -->
+<h2 class="wp-block-heading">Planowana struktura produktów</h2>
+<!-- /wp:heading -->
+<!-- wp:list -->
+<ul class="wp-block-list">
+<!-- wp:list-item -->
+<li><a href="/oferta/cena-stala/">Cena stała: zobacz prototyp produktu</a></li>
+<!-- /wp:list-item -->
+<!-- wp:list-item -->
+<li>Cena indeksowana do TGE: [[warunki do potwierdzenia]]</li>
+<!-- /wp:list-item -->
+<!-- wp:list-item -->
+<li>Model transzowy lub mieszany: [[warunki do potwierdzenia]]</li>
+<!-- /wp:list-item -->
+<!-- wp:list-item -->
+<li>Umowa kompleksowa dla MŚP: [[zakres do potwierdzenia]]</li>
+<!-- /wp:list-item -->
+<!-- wp:list-item -->
+<li>Biometan: wkrótce, bez deklaracji terminu, cen i wolumenów</li>
+<!-- /wp:list-item -->
+</ul>
+<!-- /wp:list -->
+<!-- wp:paragraph -->
+<p>Jeżeli PBM nie ma zawartej generalnej umowy dystrybucyjnej z Twoim operatorem, podpiszesz osobno umowę dystrybucyjną; pomożemy w tym.</p>
+<!-- /wp:paragraph -->
+<!-- wp:block {"ref":102} /-->
+<!-- wp:paragraph {"className":"gdp-small"} -->
+<p class="gdp-small">Ostatnia aktualizacja: [[data]]. Autor: [[ ]]. Źródła: [[zatwierdzone warunki produktów]].</p>
+<!-- /wp:paragraph -->
+</div>
+<!-- /wp:group -->
+<!-- wp:group {"metadata":{"name":"Następny krok: wybór modelu"},"templateLock":"contentOnly","className":"gdp-section gdp-final"} -->
+<div class="wp-block-group gdp-section gdp-final">
+<!-- wp:block {"ref":103,"content":{"Tytuł CTA":{"content":"Zacznij od potrzeb Twojej firmy."}}} /-->
+</div>
+<!-- /wp:group -->
+]]></content:encoded>
+<excerpt:encoded><![CDATA[]]></excerpt:encoded>
+<wp:post_id>202</wp:post_id>
+<wp:import_id>202</wp:import_id>
+<wp:post_date><![CDATA[2000-01-01 00:00:00]]></wp:post_date>
+<wp:post_date_gmt><![CDATA[2000-01-01 00:00:00]]></wp:post_date_gmt>
+<wp:post_modified><![CDATA[2000-01-01 00:00:00]]></wp:post_modified>
+<wp:post_modified_gmt><![CDATA[2000-01-01 00:00:00]]></wp:post_modified_gmt>
+<wp:comment_status><![CDATA[closed]]></wp:comment_status>
+<wp:ping_status><![CDATA[closed]]></wp:ping_status>
+<wp:post_name><![CDATA[oferta]]></wp:post_name>
+<wp:status><![CDATA[publish]]></wp:status>
+<wp:post_parent>0</wp:post_parent>
+<wp:menu_order>0</wp:menu_order>
+<wp:post_type><![CDATA[page]]></wp:post_type>
+<wp:post_password><![CDATA[]]></wp:post_password>
+<wp:is_sticky>0</wp:is_sticky>
+<wp:postmeta><wp:meta_key><![CDATA[_gdp_import_id]]></wp:meta_key><wp:meta_value><![CDATA[202]]></wp:meta_value></wp:postmeta>
+<wp:postmeta><wp:meta_key><![CDATA[_gdp_source_file]]></wp:meta_key><wp:meta_value><![CDATA[content/pages/oferta.html]]></wp:meta_value></wp:postmeta>
+<wp:postmeta><wp:meta_key><![CDATA[ct_page_title]]></wp:meta_key><wp:meta_value><![CDATA[no]]></wp:meta_value></wp:postmeta>
+</item>
+<item>
+<title><![CDATA[Cena stała]]></title>
+<link>https://gazdlaprzemyslu.example.invalid/oferta/cena-stala/</link>
+<dc:creator><![CDATA[admin]]></dc:creator>
+<guid isPermaLink="false">https://gazdlaprzemyslu.example.invalid/?p=203</guid>
+<description></description>
+<content:encoded><![CDATA[<!-- wp:group {"metadata":{"name":"Otwarcie: cena stała"},"templateLock":"contentOnly","className":"gdp-section gdp-product-hero"} -->
+<div class="wp-block-group gdp-section gdp-product-hero">
+<!-- wp:group {"metadata":{"name":"Układ otwarcia produktu"},"className":"gdp-product-hero-grid"} -->
+<div class="wp-block-group gdp-product-hero-grid">
+<!-- wp:group {"metadata":{"name":"Definicja ceny stałej"},"className":"gdp-product-copy"} -->
+<div class="wp-block-group gdp-product-copy">
+<!-- wp:paragraph {"className":"gdp-eyebrow"} -->
+<p class="gdp-eyebrow">OFERTA / CENA STAŁA</p>
+<!-- /wp:paragraph -->
+<!-- wp:heading {"level":1} -->
+<h1 class="wp-block-heading">Cena stała. Jasny punkt odniesienia dla budżetu.</h1>
+<!-- /wp:heading -->
+<!-- wp:paragraph {"className":"gdp-lead"} -->
+<p class="gdp-lead">Cena stała to model zakupu gazu z ceną uzgodnioną na określony w umowie okres i zakres dostaw. Ułatwia planowanie kosztu paliwa, ale nie oznacza stałego rachunku. Zużycie, dystrybucja i pozostałe składniki rozliczenia nadal mają znaczenie.</p>
+<!-- /wp:paragraph -->
+<!-- wp:buttons -->
+<div class="wp-block-buttons">
+<!-- wp:button -->
+<div class="wp-block-button"><a class="wp-block-button__link wp-element-button" href="/kontakt/">Wgraj fakturę</a></div>
+<!-- /wp:button -->
+<!-- wp:button {"className":"is-style-outline"} -->
+<div class="wp-block-button is-style-outline"><a class="wp-block-button__link wp-element-button" href="#ryzyka">Sprawdź ograniczenia</a></div>
+<!-- /wp:button -->
+</div>
+<!-- /wp:buttons -->
+<!-- wp:paragraph {"className":"gdp-small"} -->
+<p class="gdp-small">Prototyp: przycisk prowadzi do kontaktu. Nie przesyła danych.</p>
+<!-- /wp:paragraph -->
+</div>
+<!-- /wp:group -->
+<!-- wp:group {"metadata":{"name":"Najważniejsze ustalenia"},"className":"gdp-product-summary"} -->
+<div class="wp-block-group gdp-product-summary">
+<!-- wp:paragraph {"className":"gdp-eyebrow"} -->
+<p class="gdp-eyebrow">CO USTALASZ W UMOWIE</p>
+<!-- /wp:paragraph -->
+<!-- wp:heading -->
+<h2 class="wp-block-heading">Nie tylko cena.</h2>
+<!-- /wp:heading -->
+<!-- wp:list -->
+<ul class="wp-block-list">
+<!-- wp:list-item -->
+<li>Okres i zakres dostaw: [[ ]]</li>
+<!-- /wp:list-item -->
+<!-- wp:list-item -->
+<li>Wolumen i profil poboru: [[ ]]</li>
+<!-- /wp:list-item -->
+<!-- wp:list-item -->
+<li>Zasady rozliczenia odchyleń: [[ ]]</li>
+<!-- /wp:list-item -->
+<!-- wp:list-item -->
+<li>Składniki ceny i opłaty: [[ ]]</li>
+<!-- /wp:list-item -->
+</ul>
+<!-- /wp:list -->
+<!-- wp:paragraph -->
+<p>Parametry zostaną uzupełnione po potwierdzeniu oferty produktowej.</p>
+<!-- /wp:paragraph -->
+</div>
+<!-- /wp:group -->
+</div>
+<!-- /wp:group -->
+<!-- wp:block {"ref":102} /-->
+</div>
+<!-- /wp:group -->
+
+<!-- wp:group {"metadata":{"name":"Dla kogo cena stała"},"templateLock":"contentOnly","className":"gdp-section gdp-product-audience"} -->
+<div class="wp-block-group gdp-section gdp-product-audience">
+<!-- wp:paragraph {"className":"gdp-eyebrow"} -->
+<p class="gdp-eyebrow">DOPASOWANIE DO FIRMY</p>
+<!-- /wp:paragraph -->
+<!-- wp:heading -->
+<h2 class="wp-block-heading">Gdy punktem wyjścia jest plan kosztów.</h2>
+<!-- /wp:heading -->
+<!-- wp:paragraph -->
+<p>Rozważ ten model, jeśli cenisz znaną stawkę gazu w uzgodnionym okresie. Dopasowanie zależy od profilu poboru, planu produkcji i Twojej gotowości do przyjęcia ograniczeń ceny stałej.</p>
+<!-- /wp:paragraph -->
+<!-- wp:group {"metadata":{"name":"Kryteria wyboru"},"className":"gdp-audience-grid"} -->
+<div class="wp-block-group gdp-audience-grid">
+<!-- wp:group {"metadata":{"name":"Planowanie budżetu"},"className":"gdp-audience-card"} -->
+<div class="wp-block-group gdp-audience-card">
+<!-- wp:heading {"level":3} -->
+<h3 class="wp-block-heading">Planujesz budżet</h3>
+<!-- /wp:heading -->
+<!-- wp:paragraph -->
+<p>Chcesz odnieść plan kosztów paliwa do uzgodnionej ceny, zamiast bieżących zmian indeksu.</p>
+<!-- /wp:paragraph -->
+</div>
+<!-- /wp:group -->
+<!-- wp:group {"metadata":{"name":"Profil poboru"},"className":"gdp-audience-card"} -->
+<div class="wp-block-group gdp-audience-card">
+<!-- wp:heading {"level":3} -->
+<h3 class="wp-block-heading">Znasz swój profil</h3>
+<!-- /wp:heading -->
+<!-- wp:paragraph -->
+<p>Potrafisz opisać sezonowość oraz planowane zmiany zużycia i chcesz uwzględnić je w umowie.</p>
+<!-- /wp:paragraph -->
+</div>
+<!-- /wp:group -->
+<!-- wp:group {"metadata":{"name":"Podejście do ryzyka"},"className":"gdp-audience-card"} -->
+<div class="wp-block-group gdp-audience-card">
+<!-- wp:heading {"level":3} -->
+<h3 class="wp-block-heading">Ważysz ograniczenia</h3>
+<!-- /wp:heading -->
+<!-- wp:paragraph -->
+<p>Akceptujesz, że uzgodniona cena nie musi obniżyć się wraz ze spadkiem notowań rynkowych.</p>
+<!-- /wp:paragraph -->
+</div>
+<!-- /wp:group -->
+</div>
+<!-- /wp:group -->
+</div>
+<!-- /wp:group -->
+
+<!-- wp:group {"metadata":{"name":"Jak działa cena stała"},"templateLock":"contentOnly","className":"gdp-section gdp-product-mechanism"} -->
+<div class="wp-block-group gdp-section gdp-product-mechanism">
+<!-- wp:paragraph {"className":"gdp-eyebrow"} -->
+<p class="gdp-eyebrow">MECHANIZM</p>
+<!-- /wp:paragraph -->
+<!-- wp:heading -->
+<h2 class="wp-block-heading">Uzgodniona stawka. Opisany zakres.</h2>
+<!-- /wp:heading -->
+<!-- wp:list {"ordered":true} -->
+<ol class="wp-block-list">
+<!-- wp:list-item -->
+<li><strong>Profil i okres.</strong> Punktem wyjścia są dane o zużyciu oraz planowanym okresie dostaw.</li>
+<!-- /wp:list-item -->
+<!-- wp:list-item -->
+<li><strong>Warunki ceny.</strong> Oferta określa cenę gazu oraz to, co obejmuje i czego nie obejmuje.</li>
+<!-- /wp:list-item -->
+<!-- wp:list-item -->
+<li><strong>Wolumen i odchylenia.</strong> Umowa opisuje tolerancje poboru i sposób rozliczenia zmian.</li>
+<!-- /wp:list-item -->
+<!-- wp:list-item -->
+<li><strong>Rozliczenie.</strong> Rachunek uwzględnia rzeczywiste rozliczane zużycie i składniki wynikające z umów.</li>
+<!-- /wp:list-item -->
+</ol>
+<!-- /wp:list -->
+<!-- wp:paragraph -->
+<p>Jeżeli PBM nie ma zawartej generalnej umowy dystrybucyjnej z Twoim operatorem, podpiszesz osobno umowę dystrybucyjną; pomożemy w tym.</p>
+<!-- /wp:paragraph -->
+</div>
+<!-- /wp:group -->
+
+<!-- wp:group {"metadata":{"name":"Ryzyka i ograniczenia"},"templateLock":"contentOnly","className":"gdp-section gdp-product-risks","anchor":"ryzyka"} -->
+<div class="wp-block-group gdp-section gdp-product-risks" id="ryzyka">
+<!-- wp:paragraph {"className":"gdp-eyebrow"} -->
+<p class="gdp-eyebrow">PRZED PODPISANIEM</p>
+<!-- /wp:paragraph -->
+<!-- wp:heading -->
+<h2 class="wp-block-heading">Cena stała nie usuwa każdego ryzyka.</h2>
+<!-- /wp:heading -->
+<!-- wp:list -->
+<ul class="wp-block-list">
+<!-- wp:list-item -->
+<li><strong>Spadek rynku.</strong> Uzgodniona stawka może pozostać wyższa od późniejszych cen rynkowych.</li>
+<!-- /wp:list-item -->
+<!-- wp:list-item -->
+<li><strong>Zmiana poboru.</strong> Sprawdź dopuszczalne odchylenia i skutki zmiany planu produkcji.</li>
+<!-- /wp:list-item -->
+<!-- wp:list-item -->
+<li><strong>Pozostałe składniki.</strong> Nie zakładaj, że stała cena gazu zamraża opłaty dystrybucyjne, podatki lub wszystkie opłaty umowne.</li>
+<!-- /wp:list-item -->
+<!-- wp:list-item -->
+<li><strong>Warunki umowy.</strong> Zweryfikuj okres obowiązywania, zabezpieczenia, płatności i zasady zakończenia współpracy.</li>
+<!-- /wp:list-item -->
+</ul>
+<!-- /wp:list -->
+<!-- wp:paragraph {"className":"gdp-prototype-note"} -->
+<p class="gdp-prototype-note">Treść robocza do weryfikacji produktowej i prawnej: [[zakres warunków oraz ograniczeń]]. Nie stanowi rekomendacji rozwiązania obecnej umowy.</p>
+<!-- /wp:paragraph -->
+</div>
+<!-- /wp:group -->
+
+<!-- wp:group {"metadata":{"name":"Przykład liczbowy: dane do uzupełnienia"},"templateLock":"contentOnly","className":"gdp-section gdp-product-example"} -->
+<div class="wp-block-group gdp-section gdp-product-example">
+<!-- wp:paragraph {"className":"gdp-eyebrow"} -->
+<p class="gdp-eyebrow">PRZYKŁAD BEZ ZMYŚLONYCH LICZB</p>
+<!-- /wp:paragraph -->
+<!-- wp:heading -->
+<h2 class="wp-block-heading">Tak porównasz koszt samego gazu.</h2>
+<!-- /wp:heading -->
+<!-- wp:paragraph -->
+<p>To schemat, nie kalkulacja dla klienta. Koszt paliwa w przykładzie powstanie z pomnożenia rozliczanego zużycia przez uzgodnioną cenę gazu. Pozostałe składniki wymagają osobnego pokazania.</p>
+<!-- /wp:paragraph -->
+<!-- wp:table {"className":"gdp-numeric"} -->
+<figure class="wp-block-table gdp-numeric"><table class="has-fixed-layout"><thead><tr><th>Parametr</th><th>Wartość robocza</th><th>Co trzeba potwierdzić</th></tr></thead><tbody><tr><td>Okres dostaw</td><td>[[ ]]</td><td>Daty w umowie</td></tr><tr><td>Zużycie do przykładu</td><td>[[ ]] MWh</td><td>Profil i wolumen</td></tr><tr><td>Cena samego gazu</td><td>[[ ]] PLN/MWh</td><td>Zakres ceny</td></tr><tr><td>Koszt samego gazu</td><td>[[ ]] PLN</td><td>Zużycie × cena gazu</td></tr><tr><td>Pozostałe składniki</td><td>[[ ]] PLN</td><td>Dystrybucja, akcyza, opłaty, marża: zakres do potwierdzenia</td></tr></tbody></table><figcaption class="wp-element-caption">Wszystkie wartości są placeholderami. Podstawa podatkowa i sposób prezentacji kwot: [[do potwierdzenia]].</figcaption></figure>
+<!-- /wp:table -->
+<!-- wp:block {"ref":102} /-->
+</div>
+<!-- /wp:group -->
+
+<!-- wp:group {"metadata":{"name":"Pytania o cenę stałą"},"templateLock":"contentOnly","className":"gdp-section gdp-faq gdp-product-faq"} -->
+<div class="wp-block-group gdp-section gdp-faq gdp-product-faq">
+<!-- wp:paragraph {"className":"gdp-eyebrow"} -->
+<p class="gdp-eyebrow">FAQ / CENA STAŁA</p>
+<!-- /wp:paragraph -->
+<!-- wp:heading -->
+<h2 class="wp-block-heading">Zanim wybierzesz model.</h2>
+<!-- /wp:heading -->
+<!-- wp:block {"ref":107} /-->
+<!-- wp:paragraph {"className":"gdp-small"} -->
+<p class="gdp-small">Ostatnia aktualizacja: [[data]]. Autor: [[imię i nazwisko, stanowisko]].</p>
+<!-- /wp:paragraph -->
+<!-- wp:heading {"level":3} -->
+<h3 class="wp-block-heading">Źródła</h3>
+<!-- /wp:heading -->
+<!-- wp:paragraph -->
+<p>[[warunki produktu PBM: dokument do zatwierdzenia]], [[linki do źródeł po weryfikacji merytorycznej i prawnej]].</p>
+<!-- /wp:paragraph -->
+</div>
+<!-- /wp:group -->
+
+<!-- wp:group {"metadata":{"name":"Następny krok: zapytaj o cenę stałą"},"templateLock":"contentOnly","className":"gdp-section gdp-final"} -->
+<div class="wp-block-group gdp-section gdp-final">
+<!-- wp:block {"ref":103,"content":{"Tytuł CTA":{"content":"Sprawdź cenę stałą dla Twojego profilu."},"Podtytuł CTA":{"content":"Przygotuj fakturę i plan dostaw. Zacznij od rozmowy o zakresie ceny, wolumenie i warunkach umowy."}}} /-->
+</div>
+<!-- /wp:group -->
+]]></content:encoded>
+<excerpt:encoded><![CDATA[]]></excerpt:encoded>
+<wp:post_id>203</wp:post_id>
+<wp:import_id>203</wp:import_id>
+<wp:post_date><![CDATA[2000-01-01 00:00:00]]></wp:post_date>
+<wp:post_date_gmt><![CDATA[2000-01-01 00:00:00]]></wp:post_date_gmt>
+<wp:post_modified><![CDATA[2000-01-01 00:00:00]]></wp:post_modified>
+<wp:post_modified_gmt><![CDATA[2000-01-01 00:00:00]]></wp:post_modified_gmt>
+<wp:comment_status><![CDATA[closed]]></wp:comment_status>
+<wp:ping_status><![CDATA[closed]]></wp:ping_status>
+<wp:post_name><![CDATA[cena-stala]]></wp:post_name>
+<wp:status><![CDATA[publish]]></wp:status>
+<wp:post_parent>202</wp:post_parent>
+<wp:menu_order>0</wp:menu_order>
+<wp:post_type><![CDATA[page]]></wp:post_type>
+<wp:post_password><![CDATA[]]></wp:post_password>
+<wp:is_sticky>0</wp:is_sticky>
+<wp:postmeta><wp:meta_key><![CDATA[_gdp_import_id]]></wp:meta_key><wp:meta_value><![CDATA[203]]></wp:meta_value></wp:postmeta>
+<wp:postmeta><wp:meta_key><![CDATA[_gdp_source_file]]></wp:meta_key><wp:meta_value><![CDATA[content/pages/cena-stala.html]]></wp:meta_value></wp:postmeta>
+<wp:postmeta><wp:meta_key><![CDATA[ct_page_title]]></wp:meta_key><wp:meta_value><![CDATA[no]]></wp:meta_value></wp:postmeta>
+</item>
+<item>
+<title><![CDATA[Kontakt]]></title>
+<link>https://gazdlaprzemyslu.example.invalid/kontakt/</link>
+<dc:creator><![CDATA[admin]]></dc:creator>
+<guid isPermaLink="false">https://gazdlaprzemyslu.example.invalid/?p=204</guid>
+<description></description>
+<content:encoded><![CDATA[<!-- wp:group {"metadata":{"name":"Kontakt: strona pomocnicza"},"templateLock":"contentOnly","className":"gdp-section gdp-stub-hero gdp-contact"} -->
+<div class="wp-block-group gdp-section gdp-stub-hero gdp-contact">
+<!-- wp:paragraph {"className":"gdp-eyebrow"} -->
+<p class="gdp-eyebrow">POROZMAWIAJMY O TWOJEJ UMOWIE</p>
+<!-- /wp:paragraph -->
+<!-- wp:heading {"level":1} -->
+<h1 class="wp-block-heading">Kontakt z PBM.</h1>
+<!-- /wp:heading -->
+<!-- wp:paragraph {"className":"gdp-lead"} -->
+<p class="gdp-lead">To strona kontaktowa prototypu Gaz dla Przemysłu. Dane kontaktowe zostaną uzupełnione przez PBM. Nie wpisuj danych ani nie próbuj przesyłać dokumentów: formularz jest wyłącznie demonstracją układu.</p>
+<!-- /wp:paragraph -->
+<!-- wp:heading -->
+<h2 class="wp-block-heading">Dane do uzupełnienia</h2>
+<!-- /wp:heading -->
+<!-- wp:list -->
+<ul class="wp-block-list">
+<!-- wp:list-item -->
+<li>PBM Sp. z o.o., Grupa IMA Polska</li>
+<!-- /wp:list-item -->
+<!-- wp:list-item -->
+<li>Adres: [[adres siedziby]]</li>
+<!-- /wp:list-item -->
+<!-- wp:list-item -->
+<li>Email: [[adres e-mail]]</li>
+<!-- /wp:list-item -->
+<!-- wp:list-item -->
+<li>Telefon: [[numer telefonu]]</li>
+<!-- /wp:list-item -->
+<!-- wp:list-item -->
+<li>Godziny kontaktu: [[godziny]]</li>
+<!-- /wp:list-item -->
+<!-- wp:list-item -->
+<li>Dane rejestrowe: [[NIP, KRS, kapitał zakładowy]]</li>
+<!-- /wp:list-item -->
+</ul>
+<!-- /wp:list -->
+<!-- wp:paragraph -->
+<p>[[Miejsce na mapę: bez osadzenia zewnętrznego]]</p>
+<!-- /wp:paragraph -->
+</div>
+<!-- /wp:group -->
+<!-- wp:group {"metadata":{"name":"Formularz kontaktowy: demonstracja"},"templateLock":"contentOnly","className":"gdp-section gdp-contact-slot"} -->
+<div class="wp-block-group gdp-section gdp-contact-slot">
+<!-- wp:block {"ref":101} /-->
+<!-- wp:paragraph -->
+<p><a href="/">Wróć na stronę główną</a> lub <a href="/oferta/cena-stala/">poznaj cenę stałą</a>.</p>
+<!-- /wp:paragraph -->
+</div>
+<!-- /wp:group -->
+]]></content:encoded>
+<excerpt:encoded><![CDATA[]]></excerpt:encoded>
+<wp:post_id>204</wp:post_id>
+<wp:import_id>204</wp:import_id>
+<wp:post_date><![CDATA[2000-01-01 00:00:00]]></wp:post_date>
+<wp:post_date_gmt><![CDATA[2000-01-01 00:00:00]]></wp:post_date_gmt>
+<wp:post_modified><![CDATA[2000-01-01 00:00:00]]></wp:post_modified>
+<wp:post_modified_gmt><![CDATA[2000-01-01 00:00:00]]></wp:post_modified_gmt>
+<wp:comment_status><![CDATA[closed]]></wp:comment_status>
+<wp:ping_status><![CDATA[closed]]></wp:ping_status>
+<wp:post_name><![CDATA[kontakt]]></wp:post_name>
+<wp:status><![CDATA[publish]]></wp:status>
+<wp:post_parent>0</wp:post_parent>
+<wp:menu_order>0</wp:menu_order>
+<wp:post_type><![CDATA[page]]></wp:post_type>
+<wp:post_password><![CDATA[]]></wp:post_password>
+<wp:is_sticky>0</wp:is_sticky>
+<wp:postmeta><wp:meta_key><![CDATA[_gdp_import_id]]></wp:meta_key><wp:meta_value><![CDATA[204]]></wp:meta_value></wp:postmeta>
+<wp:postmeta><wp:meta_key><![CDATA[_gdp_source_file]]></wp:meta_key><wp:meta_value><![CDATA[content/pages/kontakt.html]]></wp:meta_value></wp:postmeta>
+<wp:postmeta><wp:meta_key><![CDATA[ct_page_title]]></wp:meta_key><wp:meta_value><![CDATA[no]]></wp:meta_value></wp:postmeta>
+</item>
+<item>
+<title><![CDATA[Wiedza]]></title>
+<link>https://gazdlaprzemyslu.example.invalid/wiedza/</link>
+<dc:creator><![CDATA[admin]]></dc:creator>
+<guid isPermaLink="false">https://gazdlaprzemyslu.example.invalid/?p=205</guid>
+<description></description>
+<content:encoded><![CDATA[<!-- wp:group {"metadata":{"name":"Wiedza: strona pomocnicza"},"templateLock":"contentOnly","className":"gdp-section gdp-stub-hero"} -->
+<div class="wp-block-group gdp-section gdp-stub-hero">
+<!-- wp:paragraph {"className":"gdp-eyebrow"} -->
+<p class="gdp-eyebrow">DANE I KONTEKST</p>
+<!-- /wp:paragraph -->
+<!-- wp:heading {"level":1} -->
+<h1 class="wp-block-heading">Wiedza przed decyzją.</h1>
+<!-- /wp:heading -->
+<!-- wp:paragraph {"className":"gdp-lead"} -->
+<p class="gdp-lead">Baza wiedzy ma pomagać w porównywaniu modeli zakupu i czytaniu warunków umowy. Na tym etapie dostępne są jedynie szablony komentarzy rynkowych. Nie zawierają aktualnej analizy ani rekomendacji zakupu.</p>
+<!-- /wp:paragraph -->
+<!-- wp:heading -->
+<h2 class="wp-block-heading">Komentarze rynkowe: szablony</h2>
+<!-- /wp:heading -->
+<!-- wp:list -->
+<ul class="wp-block-list">
+<!-- wp:list-item -->
+<li><a href="/komentarz-rynkowy-szablon/">[[tytuł komentarza]]: szablon redakcyjny</a></li>
+<!-- /wp:list-item -->
+<!-- wp:list-item -->
+<li><a href="/perspektywa-rynku-szablon/">[[tytuł komentarza]]: szablon perspektywy rynku</a></li>
+<!-- /wp:list-item -->
+</ul>
+<!-- /wp:list -->
+<!-- wp:paragraph -->
+<p>Ostatnia aktualizacja: [[data]]. Autor: Zespół analiz PBM (placeholder). Artykuły startowe powstaną po wyborze kierunku wizualnego.</p>
+<!-- /wp:paragraph -->
+</div>
+<!-- /wp:group -->
+]]></content:encoded>
+<excerpt:encoded><![CDATA[]]></excerpt:encoded>
+<wp:post_id>205</wp:post_id>
+<wp:import_id>205</wp:import_id>
+<wp:post_date><![CDATA[2000-01-01 00:00:00]]></wp:post_date>
+<wp:post_date_gmt><![CDATA[2000-01-01 00:00:00]]></wp:post_date_gmt>
+<wp:post_modified><![CDATA[2000-01-01 00:00:00]]></wp:post_modified>
+<wp:post_modified_gmt><![CDATA[2000-01-01 00:00:00]]></wp:post_modified_gmt>
+<wp:comment_status><![CDATA[closed]]></wp:comment_status>
+<wp:ping_status><![CDATA[closed]]></wp:ping_status>
+<wp:post_name><![CDATA[wiedza]]></wp:post_name>
+<wp:status><![CDATA[publish]]></wp:status>
+<wp:post_parent>0</wp:post_parent>
+<wp:menu_order>0</wp:menu_order>
+<wp:post_type><![CDATA[page]]></wp:post_type>
+<wp:post_password><![CDATA[]]></wp:post_password>
+<wp:is_sticky>0</wp:is_sticky>
+<wp:postmeta><wp:meta_key><![CDATA[_gdp_import_id]]></wp:meta_key><wp:meta_value><![CDATA[205]]></wp:meta_value></wp:postmeta>
+<wp:postmeta><wp:meta_key><![CDATA[_gdp_source_file]]></wp:meta_key><wp:meta_value><![CDATA[content/pages/wiedza.html]]></wp:meta_value></wp:postmeta>
+<wp:postmeta><wp:meta_key><![CDATA[ct_page_title]]></wp:meta_key><wp:meta_value><![CDATA[no]]></wp:meta_value></wp:postmeta>
+</item>
+<item>
+<title><![CDATA[Wgraj fakturę]]></title>
+<link>https://gazdlaprzemyslu.example.invalid/wgraj-fakture/</link>
+<dc:creator><![CDATA[admin]]></dc:creator>
+<guid isPermaLink="false">https://gazdlaprzemyslu.example.invalid/?p=206</guid>
+<description></description>
+<content:encoded><![CDATA[<!-- wp:group {"metadata":{"name":"Wgraj fakturę: strona pomocnicza"},"templateLock":"contentOnly","className":"gdp-section gdp-stub-hero"} -->
+<div class="wp-block-group gdp-section gdp-stub-hero">
+<!-- wp:paragraph {"className":"gdp-eyebrow"} -->
+<p class="gdp-eyebrow">DANE DO ROZMOWY</p>
+<!-- /wp:paragraph -->
+<!-- wp:heading {"level":1} -->
+<h1 class="wp-block-heading">Zacznij od faktury za gaz.</h1>
+<!-- /wp:heading -->
+<!-- wp:paragraph {"className":"gdp-lead"} -->
+<p class="gdp-lead">Faktura będzie punktem wyjścia do zebrania informacji o zużyciu i obecnych rozliczeniach. W tym prototypie nie można wybrać ani przesłać pliku. Pokazujemy wyłącznie przyszły układ formularza.</p>
+<!-- /wp:paragraph -->
+</div>
+<!-- /wp:group -->
+<!-- wp:group {"metadata":{"name":"Upload faktury: demonstracja"},"templateLock":"contentOnly","className":"gdp-section gdp-upload-section"} -->
+<div class="wp-block-group gdp-section gdp-upload-section">
+<!-- wp:block {"ref":101} /-->
+</div>
+<!-- /wp:group -->
+<!-- wp:group {"metadata":{"name":"Zakres danych i bezpieczeństwo: zapowiedź"},"templateLock":"contentOnly","className":"gdp-section gdp-upload-info"} -->
+<div class="wp-block-group gdp-section gdp-upload-info">
+<!-- wp:heading -->
+<h2 class="wp-block-heading">Co będzie potrzebne?</h2>
+<!-- /wp:heading -->
+<!-- wp:list -->
+<ul class="wp-block-list">
+<!-- wp:list-item -->
+<li>Dane punktów poboru i zużycie gazu</li>
+<!-- /wp:list-item -->
+<!-- wp:list-item -->
+<li>Okres rozliczenia i składniki obecnej ceny</li>
+<!-- /wp:list-item -->
+<!-- wp:list-item -->
+<li>Obecna umowa oraz planowany okres dostaw</li>
+<!-- /wp:list-item -->
+</ul>
+<!-- /wp:list -->
+<!-- wp:paragraph -->
+<p>Zakres odczytu, zasady przetwarzania i retencja: [[dostarczy zleceniodawca]]. Prototyp nie przechowuje przesyłanych faktur, ponieważ nie przyjmuje plików.</p>
+<!-- /wp:paragraph -->
+<!-- wp:paragraph -->
+<p><a href="/polityka-prywatnosci/">Polityka prywatności: treść do uzupełnienia</a></p>
+<!-- /wp:paragraph -->
+</div>
+<!-- /wp:group -->
+]]></content:encoded>
+<excerpt:encoded><![CDATA[]]></excerpt:encoded>
+<wp:post_id>206</wp:post_id>
+<wp:import_id>206</wp:import_id>
+<wp:post_date><![CDATA[2000-01-01 00:00:00]]></wp:post_date>
+<wp:post_date_gmt><![CDATA[2000-01-01 00:00:00]]></wp:post_date_gmt>
+<wp:post_modified><![CDATA[2000-01-01 00:00:00]]></wp:post_modified>
+<wp:post_modified_gmt><![CDATA[2000-01-01 00:00:00]]></wp:post_modified_gmt>
+<wp:comment_status><![CDATA[closed]]></wp:comment_status>
+<wp:ping_status><![CDATA[closed]]></wp:ping_status>
+<wp:post_name><![CDATA[wgraj-fakture]]></wp:post_name>
+<wp:status><![CDATA[publish]]></wp:status>
+<wp:post_parent>0</wp:post_parent>
+<wp:menu_order>0</wp:menu_order>
+<wp:post_type><![CDATA[page]]></wp:post_type>
+<wp:post_password><![CDATA[]]></wp:post_password>
+<wp:is_sticky>0</wp:is_sticky>
+<wp:postmeta><wp:meta_key><![CDATA[_gdp_import_id]]></wp:meta_key><wp:meta_value><![CDATA[206]]></wp:meta_value></wp:postmeta>
+<wp:postmeta><wp:meta_key><![CDATA[_gdp_source_file]]></wp:meta_key><wp:meta_value><![CDATA[content/pages/wgraj-fakture.html]]></wp:meta_value></wp:postmeta>
+<wp:postmeta><wp:meta_key><![CDATA[ct_page_title]]></wp:meta_key><wp:meta_value><![CDATA[no]]></wp:meta_value></wp:postmeta>
+</item>
+<item>
+<title><![CDATA[Polityka prywatności]]></title>
+<link>https://gazdlaprzemyslu.example.invalid/polityka-prywatnosci/</link>
+<dc:creator><![CDATA[admin]]></dc:creator>
+<guid isPermaLink="false">https://gazdlaprzemyslu.example.invalid/?p=207</guid>
+<description></description>
+<content:encoded><![CDATA[<!-- wp:group {"metadata":{"name":"Polityka prywatności: placeholder"},"templateLock":"contentOnly","className":"gdp-section gdp-legal-stub"} -->
+<div class="wp-block-group gdp-section gdp-legal-stub">
+<!-- wp:heading {"level":1} -->
+<h1 class="wp-block-heading">Polityka prywatności.</h1>
+<!-- /wp:heading -->
+<!-- wp:paragraph -->
+<p>To miejsce na zatwierdzoną politykę prywatności. Treść prawna nie jest jeszcze dostępna. Formularze tego prototypu są statyczne i nie przesyłają danych.</p>
+<!-- /wp:paragraph -->
+<!-- wp:heading -->
+<h2 class="wp-block-heading">Administrator danych</h2>
+<!-- /wp:heading -->
+<!-- wp:paragraph -->
+<p>[[treść dostarczy zleceniodawca]]</p>
+<!-- /wp:paragraph -->
+<!-- wp:heading -->
+<h2 class="wp-block-heading">Cele i podstawy przetwarzania</h2>
+<!-- /wp:heading -->
+<!-- wp:paragraph -->
+<p>[[treść dostarczy zleceniodawca]]</p>
+<!-- /wp:paragraph -->
+<!-- wp:heading -->
+<h2 class="wp-block-heading">Odbiorcy danych i okres przechowywania</h2>
+<!-- /wp:heading -->
+<!-- wp:paragraph -->
+<p>[[treść dostarczy zleceniodawca]]</p>
+<!-- /wp:paragraph -->
+<!-- wp:heading -->
+<h2 class="wp-block-heading">Prawa i kontakt w sprawach danych</h2>
+<!-- /wp:heading -->
+<!-- wp:paragraph -->
+<p>[[treść dostarczy zleceniodawca]]</p>
+<!-- /wp:paragraph -->
+<!-- wp:heading -->
+<h2 class="wp-block-heading">Pliki cookie</h2>
+<!-- /wp:heading -->
+<!-- wp:paragraph -->
+<p>[[treść dostarczy zleceniodawca; slot CMP: etap późniejszy]]</p>
+<!-- /wp:paragraph -->
+</div>
+<!-- /wp:group -->
+]]></content:encoded>
+<excerpt:encoded><![CDATA[]]></excerpt:encoded>
+<wp:post_id>207</wp:post_id>
+<wp:import_id>207</wp:import_id>
+<wp:post_date><![CDATA[2000-01-01 00:00:00]]></wp:post_date>
+<wp:post_date_gmt><![CDATA[2000-01-01 00:00:00]]></wp:post_date_gmt>
+<wp:post_modified><![CDATA[2000-01-01 00:00:00]]></wp:post_modified>
+<wp:post_modified_gmt><![CDATA[2000-01-01 00:00:00]]></wp:post_modified_gmt>
+<wp:comment_status><![CDATA[closed]]></wp:comment_status>
+<wp:ping_status><![CDATA[closed]]></wp:ping_status>
+<wp:post_name><![CDATA[polityka-prywatnosci]]></wp:post_name>
+<wp:status><![CDATA[publish]]></wp:status>
+<wp:post_parent>0</wp:post_parent>
+<wp:menu_order>0</wp:menu_order>
+<wp:post_type><![CDATA[page]]></wp:post_type>
+<wp:post_password><![CDATA[]]></wp:post_password>
+<wp:is_sticky>0</wp:is_sticky>
+<wp:postmeta><wp:meta_key><![CDATA[_gdp_import_id]]></wp:meta_key><wp:meta_value><![CDATA[207]]></wp:meta_value></wp:postmeta>
+<wp:postmeta><wp:meta_key><![CDATA[_gdp_source_file]]></wp:meta_key><wp:meta_value><![CDATA[content/pages/polityka-prywatnosci.html]]></wp:meta_value></wp:postmeta>
+<wp:postmeta><wp:meta_key><![CDATA[ct_page_title]]></wp:meta_key><wp:meta_value><![CDATA[no]]></wp:meta_value></wp:postmeta>
+</item>
+<item>
+<title><![CDATA[[[tytuł komentarza]]]]></title>
+<link>https://gazdlaprzemyslu.example.invalid/komentarz-rynkowy-szablon/</link>
+<dc:creator><![CDATA[admin]]></dc:creator>
+<guid isPermaLink="false">https://gazdlaprzemyslu.example.invalid/?p=301</guid>
+<description></description>
+<content:encoded><![CDATA[<!-- wp:group {"metadata":{"name":"Nagłówek komentarza: szablon"},"templateLock":"contentOnly","className":"gdp-section gdp-article-hero"} -->
+<div class="wp-block-group gdp-section gdp-article-hero">
+<!-- wp:paragraph {"className":"gdp-eyebrow"} -->
+<p class="gdp-eyebrow">KOMENTARZ RYNKOWY / SZABLON</p>
+<!-- /wp:paragraph -->
+<!-- wp:heading {"level":1} -->
+<h1 class="wp-block-heading">[[tytuł komentarza]]</h1>
+<!-- /wp:heading -->
+<!-- wp:paragraph {"className":"gdp-lead"} -->
+<p class="gdp-lead">[[krótka odpowiedź na pytanie kupującego gaz: do uzupełnienia, nie więcej niż limit słów z briefu]]</p>
+<!-- /wp:paragraph -->
+<!-- wp:paragraph {"className":"gdp-data-note"} -->
+<p class="gdp-data-note">Data publikacji: [[data]]. Ostatnia aktualizacja: [[data]].</p>
+<!-- /wp:paragraph -->
+<!-- wp:paragraph {"className":"gdp-author"} -->
+<p class="gdp-author">Zespół analiz PBM: placeholder autora. Docelowo: [[imię i nazwisko, stanowisko]].</p>
+<!-- /wp:paragraph -->
+<!-- wp:paragraph {"className":"gdp-prototype-note"} -->
+<p class="gdp-prototype-note">Materiał demonstracyjny. Nie jest komentarzem do bieżącej sytuacji rynkowej.</p>
+<!-- /wp:paragraph -->
+</div>
+<!-- /wp:group -->
+<!-- wp:group {"metadata":{"name":"Treść komentarza: placeholder"},"templateLock":"contentOnly","className":"gdp-section gdp-article-body"} -->
+<div class="wp-block-group gdp-section gdp-article-body">
+<!-- wp:heading -->
+<h2 class="wp-block-heading">Co zmieniło się na rynku?</h2>
+<!-- /wp:heading -->
+<!-- wp:paragraph -->
+<p>[[komentarz]]</p>
+<!-- /wp:paragraph -->
+<!-- wp:heading -->
+<h2 class="wp-block-heading">Co to oznacza dla Twojej umowy?</h2>
+<!-- /wp:heading -->
+<!-- wp:paragraph -->
+<p>[[komentarz]]</p>
+<!-- /wp:paragraph -->
+<!-- wp:heading -->
+<h2 class="wp-block-heading">Źródła</h2>
+<!-- /wp:heading -->
+<!-- wp:paragraph -->
+<p>[[nazwa źródła, data, link: do uzupełnienia po weryfikacji]]</p>
+<!-- /wp:paragraph -->
+</div>
+<!-- /wp:group -->
+]]></content:encoded>
+<excerpt:encoded><![CDATA[[[komentarz]]]]></excerpt:encoded>
+<wp:post_id>301</wp:post_id>
+<wp:import_id>301</wp:import_id>
+<wp:post_date><![CDATA[2000-01-01 00:00:00]]></wp:post_date>
+<wp:post_date_gmt><![CDATA[2000-01-01 00:00:00]]></wp:post_date_gmt>
+<wp:post_modified><![CDATA[2000-01-01 00:00:00]]></wp:post_modified>
+<wp:post_modified_gmt><![CDATA[2000-01-01 00:00:00]]></wp:post_modified_gmt>
+<wp:comment_status><![CDATA[closed]]></wp:comment_status>
+<wp:ping_status><![CDATA[closed]]></wp:ping_status>
+<wp:post_name><![CDATA[komentarz-rynkowy-szablon]]></wp:post_name>
+<wp:status><![CDATA[publish]]></wp:status>
+<wp:post_parent>0</wp:post_parent>
+<wp:menu_order>0</wp:menu_order>
+<wp:post_type><![CDATA[post]]></wp:post_type>
+<wp:post_password><![CDATA[]]></wp:post_password>
+<wp:is_sticky>0</wp:is_sticky>
+<wp:postmeta><wp:meta_key><![CDATA[_gdp_import_id]]></wp:meta_key><wp:meta_value><![CDATA[301]]></wp:meta_value></wp:postmeta>
+<wp:postmeta><wp:meta_key><![CDATA[_gdp_source_file]]></wp:meta_key><wp:meta_value><![CDATA[content/posts/komentarz-rynkowy-szablon.html]]></wp:meta_value></wp:postmeta>
+<wp:postmeta><wp:meta_key><![CDATA[ct_page_title]]></wp:meta_key><wp:meta_value><![CDATA[no]]></wp:meta_value></wp:postmeta>
+<category domain="category" nicename="komentarz-rynkowy"><![CDATA[Komentarz rynkowy]]></category>
+</item>
+<item>
+<title><![CDATA[[[tytuł komentarza]]]]></title>
+<link>https://gazdlaprzemyslu.example.invalid/perspektywa-rynku-szablon/</link>
+<dc:creator><![CDATA[admin]]></dc:creator>
+<guid isPermaLink="false">https://gazdlaprzemyslu.example.invalid/?p=302</guid>
+<description></description>
+<content:encoded><![CDATA[<!-- wp:group {"metadata":{"name":"Perspektywa rynku: szablon"},"templateLock":"contentOnly","className":"gdp-section gdp-article-hero"} -->
+<div class="wp-block-group gdp-section gdp-article-hero">
+<!-- wp:paragraph {"className":"gdp-eyebrow"} -->
+<p class="gdp-eyebrow">PERSPEKTYWA RYNKU / SZABLON</p>
+<!-- /wp:paragraph -->
+<!-- wp:heading {"level":1} -->
+<h1 class="wp-block-heading">[[tytuł komentarza]]</h1>
+<!-- /wp:heading -->
+<!-- wp:paragraph {"className":"gdp-lead"} -->
+<p class="gdp-lead">[[krótka odpowiedź na pytanie o perspektywę rynku: do uzupełnienia]]</p>
+<!-- /wp:paragraph -->
+<!-- wp:paragraph {"className":"gdp-data-note"} -->
+<p class="gdp-data-note">Data publikacji: [[data]]. Ostatnia aktualizacja: [[data]].</p>
+<!-- /wp:paragraph -->
+<!-- wp:paragraph {"className":"gdp-author"} -->
+<p class="gdp-author">Zespół analiz PBM: placeholder autora. Docelowo: [[imię i nazwisko, stanowisko]].</p>
+<!-- /wp:paragraph -->
+<!-- wp:paragraph {"className":"gdp-prototype-note"} -->
+<p class="gdp-prototype-note">Materiał demonstracyjny. Nie zawiera prognozy cen ani rekomendacji zakupu.</p>
+<!-- /wp:paragraph -->
+</div>
+<!-- /wp:group -->
+<!-- wp:group {"metadata":{"name":"Perspektywa rynku: treść do uzupełnienia"},"templateLock":"contentOnly","className":"gdp-section gdp-article-body"} -->
+<div class="wp-block-group gdp-section gdp-article-body">
+<!-- wp:heading -->
+<h2 class="wp-block-heading">Jakie czynniki warto obserwować?</h2>
+<!-- /wp:heading -->
+<!-- wp:paragraph -->
+<p>[[komentarz]]</p>
+<!-- /wp:paragraph -->
+<!-- wp:heading -->
+<h2 class="wp-block-heading">Jak odnieść je do profilu poboru?</h2>
+<!-- /wp:heading -->
+<!-- wp:paragraph -->
+<p>[[komentarz]]</p>
+<!-- /wp:paragraph -->
+<!-- wp:heading -->
+<h2 class="wp-block-heading">Źródła</h2>
+<!-- /wp:heading -->
+<!-- wp:paragraph -->
+<p>[[nazwa źródła, data, link: do uzupełnienia po weryfikacji]]</p>
+<!-- /wp:paragraph -->
+</div>
+<!-- /wp:group -->
+]]></content:encoded>
+<excerpt:encoded><![CDATA[[[komentarz]]]]></excerpt:encoded>
+<wp:post_id>302</wp:post_id>
+<wp:import_id>302</wp:import_id>
+<wp:post_date><![CDATA[2000-01-01 00:00:00]]></wp:post_date>
+<wp:post_date_gmt><![CDATA[2000-01-01 00:00:00]]></wp:post_date_gmt>
+<wp:post_modified><![CDATA[2000-01-01 00:00:00]]></wp:post_modified>
+<wp:post_modified_gmt><![CDATA[2000-01-01 00:00:00]]></wp:post_modified_gmt>
+<wp:comment_status><![CDATA[closed]]></wp:comment_status>
+<wp:ping_status><![CDATA[closed]]></wp:ping_status>
+<wp:post_name><![CDATA[perspektywa-rynku-szablon]]></wp:post_name>
+<wp:status><![CDATA[publish]]></wp:status>
+<wp:post_parent>0</wp:post_parent>
+<wp:menu_order>0</wp:menu_order>
+<wp:post_type><![CDATA[post]]></wp:post_type>
+<wp:post_password><![CDATA[]]></wp:post_password>
+<wp:is_sticky>0</wp:is_sticky>
+<wp:postmeta><wp:meta_key><![CDATA[_gdp_import_id]]></wp:meta_key><wp:meta_value><![CDATA[302]]></wp:meta_value></wp:postmeta>
+<wp:postmeta><wp:meta_key><![CDATA[_gdp_source_file]]></wp:meta_key><wp:meta_value><![CDATA[content/posts/perspektywa-rynku-szablon.html]]></wp:meta_value></wp:postmeta>
+<wp:postmeta><wp:meta_key><![CDATA[ct_page_title]]></wp:meta_key><wp:meta_value><![CDATA[no]]></wp:meta_value></wp:postmeta>
+<category domain="category" nicename="komentarz-rynkowy"><![CDATA[Komentarz rynkowy]]></category>
+</item>
+</channel>
+</rss>

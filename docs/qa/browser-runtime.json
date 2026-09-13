@@ -1,0 +1,671 @@
+{
+  "scope": "P1.1 local CLI; not a public blueprint-url test",
+  "directions": {
+    "A": {
+      "urls": [
+        {
+          "path": "/",
+          "status": 200,
+          "finalURL": "http://127.0.0.1:9400/",
+          "h1": 1
+        },
+        {
+          "path": "/",
+          "status": 200,
+          "finalURL": "http://127.0.0.1:9400/",
+          "h1": 1
+        },
+        {
+          "path": "/oferta/",
+          "status": 200,
+          "finalURL": "http://127.0.0.1:9400/oferta/",
+          "h1": 1
+        },
+        {
+          "path": "/oferta/cena-stala/",
+          "status": 200,
+          "finalURL": "http://127.0.0.1:9400/oferta/cena-stala/",
+          "h1": 1
+        },
+        {
+          "path": "/kontakt/",
+          "status": 200,
+          "finalURL": "http://127.0.0.1:9400/kontakt/",
+          "h1": 1
+        },
+        {
+          "path": "/wiedza/",
+          "status": 200,
+          "finalURL": "http://127.0.0.1:9400/wiedza/",
+          "h1": 0
+        },
+        {
+          "path": "/wgraj-fakture/",
+          "status": 200,
+          "finalURL": "http://127.0.0.1:9400/wgraj-fakture/",
+          "h1": 1
+        },
+        {
+          "path": "/polityka-prywatnosci/",
+          "status": 200,
+          "finalURL": "http://127.0.0.1:9400/polityka-prywatnosci/",
+          "h1": 1
+        },
+        {
+          "path": "/komentarz-rynkowy-szablon/",
+          "status": 200,
+          "finalURL": "http://127.0.0.1:9400/komentarz-rynkowy-szablon/",
+          "h1": 2
+        },
+        {
+          "path": "/perspektywa-rynku-szablon/",
+          "status": 200,
+          "finalURL": "http://127.0.0.1:9400/perspektywa-rynku-szablon/",
+          "h1": 2
+        }
+      ],
+      "views": [
+        {
+          "slug": "home",
+          "device": "desktop",
+          "width": 1440,
+          "scrollWidth": 1440,
+          "h1": 1,
+          "ctaAboveFold": true,
+          "heroLeft": 0,
+          "palette": "#b8420b",
+          "font": "\"IBM Plex Sans\", sans-serif",
+          "heroHeading": "\"IBM Plex Sans\", sans-serif",
+          "finalHeading": "Twoja faktura. Początek konkretnej rozmowy."
+        },
+        {
+          "slug": "home",
+          "device": "mobile",
+          "width": 360,
+          "scrollWidth": 360,
+          "h1": 1,
+          "ctaAboveFold": true,
+          "heroLeft": 0,
+          "palette": "#b8420b",
+          "font": "\"IBM Plex Sans\", sans-serif",
+          "heroHeading": "\"IBM Plex Sans\", sans-serif",
+          "finalHeading": "Twoja faktura. Początek konkretnej rozmowy."
+        },
+        {
+          "slug": "home",
+          "device": "tablet",
+          "width": 768,
+          "scrollWidth": 768,
+          "h1": 1,
+          "ctaAboveFold": true,
+          "heroLeft": 0,
+          "palette": "#b8420b",
+          "font": "\"IBM Plex Sans\", sans-serif",
+          "heroHeading": "\"IBM Plex Sans\", sans-serif",
+          "finalHeading": "Twoja faktura. Początek konkretnej rozmowy."
+        },
+        {
+          "slug": "cena-stala",
+          "device": "desktop",
+          "width": 1440,
+          "scrollWidth": 1440,
+          "h1": 1,
+          "ctaAboveFold": true,
+          "heroLeft": 0,
+          "palette": "#b8420b",
+          "font": "\"IBM Plex Sans\", sans-serif",
+          "heroHeading": "\"IBM Plex Sans\", sans-serif",
+          "finalHeading": "Sprawdź cenę stałą dla Twojego profilu."
+        },
+        {
+          "slug": "cena-stala",
+          "device": "mobile",
+          "width": 360,
+          "scrollWidth": 360,
+          "h1": 1,
+          "ctaAboveFold": true,
+          "heroLeft": 0,
+          "palette": "#b8420b",
+          "font": "\"IBM Plex Sans\", sans-serif",
+          "heroHeading": "\"IBM Plex Sans\", sans-serif",
+          "finalHeading": "Sprawdź cenę stałą dla Twojego profilu."
+        },
+        {
+          "slug": "cena-stala",
+          "device": "tablet",
+          "width": 768,
+          "scrollWidth": 768,
+          "h1": 1,
+          "ctaAboveFold": true,
+          "heroLeft": 0,
+          "palette": "#b8420b",
+          "font": "\"IBM Plex Sans\", sans-serif",
+          "heroHeading": "\"IBM Plex Sans\", sans-serif",
+          "finalHeading": "Sprawdź cenę stałą dla Twojego profilu."
+        }
+      ],
+      "hosts": [
+        "127.0.0.1:9400"
+      ],
+      "failedRequests": [],
+      "pageErrors": [],
+      "audit": {
+        "counts": {
+          "core/html": 0,
+          "core/freeform": 0,
+          "core/shortcode": 0,
+          "shortcode": 0,
+          "non_core": 0
+        },
+        "pages": [
+          {
+            "slug": "start",
+            "id": 11,
+            "h1": 1,
+            "sections_locked_named": true
+          },
+          {
+            "slug": "oferta",
+            "id": 12,
+            "h1": 1,
+            "sections_locked_named": true
+          },
+          {
+            "slug": "cena-stala",
+            "id": 13,
+            "h1": 1,
+            "sections_locked_named": true
+          },
+          {
+            "slug": "kontakt",
+            "id": 14,
+            "h1": 1,
+            "sections_locked_named": true
+          },
+          {
+            "slug": "wiedza",
+            "id": 15,
+            "h1": 1,
+            "sections_locked_named": true
+          },
+          {
+            "slug": "wgraj-fakture",
+            "id": 16,
+            "h1": 1,
+            "sections_locked_named": true
+          },
+          {
+            "slug": "polityka-prywatnosci",
+            "id": 17,
+            "h1": 1,
+            "sections_locked_named": true
+          }
+        ],
+        "issues": [],
+        "wp": "7.1",
+        "php": "8.3.33",
+        "stylesheet": "gdp-child",
+        "parent": "blocksy",
+        "plugins": [],
+        "mu_runtime": [],
+        "palette_matches": true,
+        "pass": true
+      },
+      "mobileMenu": {
+        "present": 1,
+        "open": "ct-panel ct-header active",
+        "visibleLinks": 7
+      },
+      "faqOpens": true,
+      "sticky": {
+        "classApplied": true,
+        "top": 0
+      },
+      "pass": true
+    },
+    "B": {
+      "urls": [
+        {
+          "path": "/",
+          "status": 200,
+          "finalURL": "http://127.0.0.1:9401/",
+          "h1": 1
+        },
+        {
+          "path": "/",
+          "status": 200,
+          "finalURL": "http://127.0.0.1:9401/",
+          "h1": 1
+        },
+        {
+          "path": "/oferta/",
+          "status": 200,
+          "finalURL": "http://127.0.0.1:9401/oferta/",
+          "h1": 1
+        },
+        {
+          "path": "/oferta/cena-stala/",
+          "status": 200,
+          "finalURL": "http://127.0.0.1:9401/oferta/cena-stala/",
+          "h1": 1
+        },
+        {
+          "path": "/kontakt/",
+          "status": 200,
+          "finalURL": "http://127.0.0.1:9401/kontakt/",
+          "h1": 1
+        },
+        {
+          "path": "/wiedza/",
+          "status": 200,
+          "finalURL": "http://127.0.0.1:9401/wiedza/",
+          "h1": 0
+        },
+        {
+          "path": "/wgraj-fakture/",
+          "status": 200,
+          "finalURL": "http://127.0.0.1:9401/wgraj-fakture/",
+          "h1": 1
+        },
+        {
+          "path": "/polityka-prywatnosci/",
+          "status": 200,
+          "finalURL": "http://127.0.0.1:9401/polityka-prywatnosci/",
+          "h1": 1
+        },
+        {
+          "path": "/komentarz-rynkowy-szablon/",
+          "status": 200,
+          "finalURL": "http://127.0.0.1:9401/komentarz-rynkowy-szablon/",
+          "h1": 2
+        },
+        {
+          "path": "/perspektywa-rynku-szablon/",
+          "status": 200,
+          "finalURL": "http://127.0.0.1:9401/perspektywa-rynku-szablon/",
+          "h1": 2
+        }
+      ],
+      "views": [
+        {
+          "slug": "home",
+          "device": "desktop",
+          "width": 1440,
+          "scrollWidth": 1440,
+          "h1": 1,
+          "ctaAboveFold": true,
+          "heroLeft": 0,
+          "palette": "#006d80",
+          "font": "\"Source Sans 3\", sans-serif",
+          "heroHeading": "Manrope, sans-serif",
+          "finalHeading": "Twoja faktura. Początek konkretnej rozmowy."
+        },
+        {
+          "slug": "home",
+          "device": "mobile",
+          "width": 360,
+          "scrollWidth": 360,
+          "h1": 1,
+          "ctaAboveFold": true,
+          "heroLeft": 0,
+          "palette": "#006d80",
+          "font": "\"Source Sans 3\", sans-serif",
+          "heroHeading": "Manrope, sans-serif",
+          "finalHeading": "Twoja faktura. Początek konkretnej rozmowy."
+        },
+        {
+          "slug": "home",
+          "device": "tablet",
+          "width": 768,
+          "scrollWidth": 768,
+          "h1": 1,
+          "ctaAboveFold": true,
+          "heroLeft": 0,
+          "palette": "#006d80",
+          "font": "\"Source Sans 3\", sans-serif",
+          "heroHeading": "Manrope, sans-serif",
+          "finalHeading": "Twoja faktura. Początek konkretnej rozmowy."
+        },
+        {
+          "slug": "cena-stala",
+          "device": "desktop",
+          "width": 1440,
+          "scrollWidth": 1440,
+          "h1": 1,
+          "ctaAboveFold": true,
+          "heroLeft": 0,
+          "palette": "#006d80",
+          "font": "\"Source Sans 3\", sans-serif",
+          "heroHeading": "Manrope, sans-serif",
+          "finalHeading": "Sprawdź cenę stałą dla Twojego profilu."
+        },
+        {
+          "slug": "cena-stala",
+          "device": "mobile",
+          "width": 360,
+          "scrollWidth": 360,
+          "h1": 1,
+          "ctaAboveFold": true,
+          "heroLeft": 0,
+          "palette": "#006d80",
+          "font": "\"Source Sans 3\", sans-serif",
+          "heroHeading": "Manrope, sans-serif",
+          "finalHeading": "Sprawdź cenę stałą dla Twojego profilu."
+        },
+        {
+          "slug": "cena-stala",
+          "device": "tablet",
+          "width": 768,
+          "scrollWidth": 768,
+          "h1": 1,
+          "ctaAboveFold": true,
+          "heroLeft": 0,
+          "palette": "#006d80",
+          "font": "\"Source Sans 3\", sans-serif",
+          "heroHeading": "Manrope, sans-serif",
+          "finalHeading": "Sprawdź cenę stałą dla Twojego profilu."
+        }
+      ],
+      "hosts": [
+        "127.0.0.1:9401"
+      ],
+      "failedRequests": [],
+      "pageErrors": [],
+      "audit": {
+        "counts": {
+          "core/html": 0,
+          "core/freeform": 0,
+          "core/shortcode": 0,
+          "shortcode": 0,
+          "non_core": 0
+        },
+        "pages": [
+          {
+            "slug": "start",
+            "id": 11,
+            "h1": 1,
+            "sections_locked_named": true
+          },
+          {
+            "slug": "oferta",
+            "id": 12,
+            "h1": 1,
+            "sections_locked_named": true
+          },
+          {
+            "slug": "cena-stala",
+            "id": 13,
+            "h1": 1,
+            "sections_locked_named": true
+          },
+          {
+            "slug": "kontakt",
+            "id": 14,
+            "h1": 1,
+            "sections_locked_named": true
+          },
+          {
+            "slug": "wiedza",
+            "id": 15,
+            "h1": 1,
+            "sections_locked_named": true
+          },
+          {
+            "slug": "wgraj-fakture",
+            "id": 16,
+            "h1": 1,
+            "sections_locked_named": true
+          },
+          {
+            "slug": "polityka-prywatnosci",
+            "id": 17,
+            "h1": 1,
+            "sections_locked_named": true
+          }
+        ],
+        "issues": [],
+        "wp": "7.1",
+        "php": "8.3.33",
+        "stylesheet": "gdp-child",
+        "parent": "blocksy",
+        "plugins": [],
+        "mu_runtime": [],
+        "palette_matches": true,
+        "pass": true
+      },
+      "mobileMenu": {
+        "present": 1,
+        "open": "ct-panel ct-header active",
+        "visibleLinks": 7
+      },
+      "faqOpens": true,
+      "sticky": {
+        "classApplied": true,
+        "top": 0
+      },
+      "pass": true
+    },
+    "C": {
+      "urls": [
+        {
+          "path": "/",
+          "status": 200,
+          "finalURL": "http://127.0.0.1:9402/",
+          "h1": 1
+        },
+        {
+          "path": "/",
+          "status": 200,
+          "finalURL": "http://127.0.0.1:9402/",
+          "h1": 1
+        },
+        {
+          "path": "/oferta/",
+          "status": 200,
+          "finalURL": "http://127.0.0.1:9402/oferta/",
+          "h1": 1
+        },
+        {
+          "path": "/oferta/cena-stala/",
+          "status": 200,
+          "finalURL": "http://127.0.0.1:9402/oferta/cena-stala/",
+          "h1": 1
+        },
+        {
+          "path": "/kontakt/",
+          "status": 200,
+          "finalURL": "http://127.0.0.1:9402/kontakt/",
+          "h1": 1
+        },
+        {
+          "path": "/wiedza/",
+          "status": 200,
+          "finalURL": "http://127.0.0.1:9402/wiedza/",
+          "h1": 0
+        },
+        {
+          "path": "/wgraj-fakture/",
+          "status": 200,
+          "finalURL": "http://127.0.0.1:9402/wgraj-fakture/",
+          "h1": 1
+        },
+        {
+          "path": "/polityka-prywatnosci/",
+          "status": 200,
+          "finalURL": "http://127.0.0.1:9402/polityka-prywatnosci/",
+          "h1": 1
+        },
+        {
+          "path": "/komentarz-rynkowy-szablon/",
+          "status": 200,
+          "finalURL": "http://127.0.0.1:9402/komentarz-rynkowy-szablon/",
+          "h1": 2
+        },
+        {
+          "path": "/perspektywa-rynku-szablon/",
+          "status": 200,
+          "finalURL": "http://127.0.0.1:9402/perspektywa-rynku-szablon/",
+          "h1": 2
+        }
+      ],
+      "views": [
+        {
+          "slug": "home",
+          "device": "desktop",
+          "width": 1440,
+          "scrollWidth": 1440,
+          "h1": 1,
+          "ctaAboveFold": true,
+          "heroLeft": 0,
+          "palette": "#22503a",
+          "font": "\"Source Sans 3\", sans-serif",
+          "heroHeading": "\"Source Serif 4\", serif",
+          "finalHeading": "Twoja faktura. Początek konkretnej rozmowy."
+        },
+        {
+          "slug": "home",
+          "device": "mobile",
+          "width": 360,
+          "scrollWidth": 360,
+          "h1": 1,
+          "ctaAboveFold": true,
+          "heroLeft": 0,
+          "palette": "#22503a",
+          "font": "\"Source Sans 3\", sans-serif",
+          "heroHeading": "\"Source Serif 4\", serif",
+          "finalHeading": "Twoja faktura. Początek konkretnej rozmowy."
+        },
+        {
+          "slug": "home",
+          "device": "tablet",
+          "width": 768,
+          "scrollWidth": 768,
+          "h1": 1,
+          "ctaAboveFold": true,
+          "heroLeft": 0,
+          "palette": "#22503a",
+          "font": "\"Source Sans 3\", sans-serif",
+          "heroHeading": "\"Source Serif 4\", serif",
+          "finalHeading": "Twoja faktura. Początek konkretnej rozmowy."
+        },
+        {
+          "slug": "cena-stala",
+          "device": "desktop",
+          "width": 1440,
+          "scrollWidth": 1440,
+          "h1": 1,
+          "ctaAboveFold": true,
+          "heroLeft": 0,
+          "palette": "#22503a",
+          "font": "\"Source Sans 3\", sans-serif",
+          "heroHeading": "\"Source Serif 4\", serif",
+          "finalHeading": "Sprawdź cenę stałą dla Twojego profilu."
+        },
+        {
+          "slug": "cena-stala",
+          "device": "mobile",
+          "width": 360,
+          "scrollWidth": 360,
+          "h1": 1,
+          "ctaAboveFold": true,
+          "heroLeft": 0,
+          "palette": "#22503a",
+          "font": "\"Source Sans 3\", sans-serif",
+          "heroHeading": "\"Source Serif 4\", serif",
+          "finalHeading": "Sprawdź cenę stałą dla Twojego profilu."
+        },
+        {
+          "slug": "cena-stala",
+          "device": "tablet",
+          "width": 768,
+          "scrollWidth": 768,
+          "h1": 1,
+          "ctaAboveFold": true,
+          "heroLeft": 0,
+          "palette": "#22503a",
+          "font": "\"Source Sans 3\", sans-serif",
+          "heroHeading": "\"Source Serif 4\", serif",
+          "finalHeading": "Sprawdź cenę stałą dla Twojego profilu."
+        }
+      ],
+      "hosts": [
+        "127.0.0.1:9402"
+      ],
+      "failedRequests": [],
+      "pageErrors": [],
+      "audit": {
+        "counts": {
+          "core/html": 0,
+          "core/freeform": 0,
+          "core/shortcode": 0,
+          "shortcode": 0,
+          "non_core": 0
+        },
+        "pages": [
+          {
+            "slug": "start",
+            "id": 11,
+            "h1": 1,
+            "sections_locked_named": true
+          },
+          {
+            "slug": "oferta",
+            "id": 12,
+            "h1": 1,
+            "sections_locked_named": true
+          },
+          {
+            "slug": "cena-stala",
+            "id": 13,
+            "h1": 1,
+            "sections_locked_named": true
+          },
+          {
+            "slug": "kontakt",
+            "id": 14,
+            "h1": 1,
+            "sections_locked_named": true
+          },
+          {
+            "slug": "wiedza",
+            "id": 15,
+            "h1": 1,
+            "sections_locked_named": true
+          },
+          {
+            "slug": "wgraj-fakture",
+            "id": 16,
+            "h1": 1,
+            "sections_locked_named": true
+          },
+          {
+            "slug": "polityka-prywatnosci",
+            "id": 17,
+            "h1": 1,
+            "sections_locked_named": true
+          }
+        ],
+        "issues": [],
+        "wp": "7.1",
+        "php": "8.3.33",
+        "stylesheet": "gdp-child",
+        "parent": "blocksy",
+        "plugins": [],
+        "mu_runtime": [],
+        "palette_matches": true,
+        "pass": true
+      },
+      "mobileMenu": {
+        "present": 1,
+        "open": "ct-panel ct-header active",
+        "visibleLinks": 7
+      },
+      "faqOpens": true,
+      "sticky": {
+        "classApplied": true,
+        "top": 0
+      },
+      "pass": true
+    }
+  }
+}

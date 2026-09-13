@@ -1,0 +1,6 @@
+/* A: industrial, technical, precise. */
+.gdp-hero h1 { max-width:570px; }
+.gdp-hero .gdp-eyebrow { color:var(--wp--preset--color--primary); }
+.gdp-hero-market { border-top:2px solid var(--wp--preset--color--contrast); }
+.gdp-numeric td:not(:first-child) { font-family:ui-monospace,monospace; }
+.gdp-trust { background:#fff; }

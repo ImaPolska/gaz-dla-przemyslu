@@ -1,0 +1,17 @@
+[
+  {
+    "direction": "A",
+    "wxr_sha256": "697f1a21f05042c1e833c00de26b600f3371838b1301ae0fdf2f52e3fe6f68d8",
+    "bundle_sha256": "c4561f47d0928b034fbce152a46147b9203018f116ee5a6515f1aab235cff443"
+  },
+  {
+    "direction": "B",
+    "wxr_sha256": "697f1a21f05042c1e833c00de26b600f3371838b1301ae0fdf2f52e3fe6f68d8",
+    "bundle_sha256": "9bf375187a57824c3d1c667e89c98fc6d746a35b0edf0069deb563e1b3c8697f"
+  },
+  {
+    "direction": "C",
+    "wxr_sha256": "697f1a21f05042c1e833c00de26b600f3371838b1301ae0fdf2f52e3fe6f68d8",
+    "bundle_sha256": "1dec7185f8edc0dae22daf8e75d9144b8273ea5d4deedfe87a5b25b88b08f5f2"
+  }
+]

@@ -1,0 +1,23 @@
+{
+  "A": {
+    "valid": true,
+    "errors": null,
+    "noPluginInstallSteps": true,
+    "source": "https://playground.wordpress.net/blueprint-schema.json",
+    "fetched": "2026-09-13"
+  },
+  "B": {
+    "valid": true,
+    "errors": null,
+    "noPluginInstallSteps": true,
+    "source": "https://playground.wordpress.net/blueprint-schema.json",
+    "fetched": "2026-09-13"
+  },
+  "C": {
+    "valid": true,
+    "errors": null,
+    "noPluginInstallSteps": true,
+    "source": "https://playground.wordpress.net/blueprint-schema.json",
+    "fetched": "2026-09-13"
+  }
+}

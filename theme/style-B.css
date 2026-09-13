@@ -1,0 +1,23 @@
+/* B: dark hero and geometric headings, one turquoise accent. */
+#header,.gdp-hero,.gdp-product-hero { background:#0c2433; color:#fff; border-color:#395362; }
+#header { --theme-text-color:#fff; --theme-link-initial-color:#fff; --theme-palette-color-3:#fff; --theme-palette-color-4:#fff; }
+#header [data-row] { background:transparent !important; }
+#header .site-title a,#header .menu > li > a,#header .ct-header-trigger { color:#fff; }
+#header .ct-button,.gdp-hero .gdp-hero-copy .wp-block-button__link,.gdp-product-hero .wp-block-button__link { background:#65d9da; color:#0c2433; }
+.gdp-hero { min-height:780px; padding-block:68px; }
+.gdp-hero-grid { grid-template-columns:1.15fr 1fr; }
+.gdp-hero .gdp-hero-copy { padding-top:26px; }
+.gdp-hero .gdp-eyebrow { color:#88e1df; }
+.gdp-hero .gdp-hero-market { border-color:#49616f; }
+.gdp-hero .gdp-hero-market a { color:#88e1df; }
+.entry-content .gdp-hero .wp-block-button.is-style-outline > .wp-block-button__link:not(.has-text-color),.entry-content .gdp-product-hero .wp-block-button.is-style-outline > .wp-block-button__link:not(.has-text-color) { color:#fff; border-color:#79919e; background:transparent; }
+.gdp-upload { box-shadow:0 18px 60px #0002; border:0; }
+.gdp-upload .gdp-eyebrow { color:var(--wp--preset--color--primary); }
+.gdp-segment-grid { gap:24px; }
+.gdp-segment-grid > *, .gdp-segment-grid > * + * { padding:28px; border:1px solid var(--wp--preset--color--line); border-radius:14px; }
+.gdp-prices .wp-block-table { border:1px solid var(--wp--preset--color--line); border-radius:14px; background:#fff; }
+@media(max-width:689px) {
+ .gdp-hero { padding-block:36px; min-height:0; }
+ .gdp-hero .gdp-hero-copy { padding-top:0; }
+ .gdp-section h1 { font-size:38px; }
+}

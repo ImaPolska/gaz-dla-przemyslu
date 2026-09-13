@@ -1,0 +1,91 @@
+[
+  {
+    "slug": "gdp-main",
+    "locations": [
+      "menu_1",
+      "menu_mobile"
+    ],
+    "items": [
+      {
+        "title": "Oferta",
+        "url": "/oferta/",
+        "children": [
+          {
+            "title": "Cena stała",
+            "url": "/oferta/cena-stala/"
+          },
+          {
+            "title": "Cena indeksowana TGE",
+            "url": "/oferta/#cena-indeksowana-tge"
+          },
+          {
+            "title": "Model transzowy",
+            "url": "/oferta/#model-transzowy"
+          },
+          {
+            "title": "Umowa dla MŚP",
+            "url": "/oferta/#umowa-kompleksowa-msp"
+          },
+          {
+            "title": "Biometan (wkrótce)",
+            "url": "/oferta/#biometan"
+          }
+        ]
+      },
+      {
+        "title": "Ceny orientacyjne",
+        "url": "/#ceny-orientacyjne"
+      },
+      {
+        "title": "Narzędzia",
+        "url": "/wgraj-fakture/",
+        "children": [
+          {
+            "title": "Wgraj fakturę",
+            "url": "/wgraj-fakture/"
+          },
+          {
+            "title": "Kalkulator wypowiedzenia",
+            "url": "/kontakt/"
+          },
+          {
+            "title": "Analiza umowy",
+            "url": "/kontakt/"
+          },
+          {
+            "title": "Dla agentów AI",
+            "url": "/kontakt/"
+          }
+        ]
+      },
+      {
+        "title": "Wiedza",
+        "url": "/wiedza/"
+      },
+      {
+        "title": "Dla doradców",
+        "url": "/kontakt/"
+      },
+      {
+        "title": "O nas",
+        "url": "/kontakt/"
+      },
+      {
+        "title": "Kontakt",
+        "url": "/kontakt/"
+      }
+    ]
+  },
+  {
+    "slug": "gdp-legal",
+    "locations": [
+      "footer"
+    ],
+    "items": [
+      {
+        "title": "Polityka prywatności",
+        "url": "/polityka-prywatnosci/"
+      }
+    ]
+  }
+]

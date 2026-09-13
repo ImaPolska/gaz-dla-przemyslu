@@ -1,0 +1,324 @@
+{
+  "header_placements": {
+    "current_section": "type-1",
+    "sections": [
+      {
+        "id": "type-1",
+        "mode": "placements",
+        "items": [
+          {
+            "id": "logo",
+            "values": {
+              "has_site_title": "yes",
+              "has_tagline": "no",
+              "custom_logo": ""
+            }
+          },
+          {
+            "id": "menu",
+            "values": {
+              "menu": "blocksy_location"
+            }
+          },
+          {
+            "id": "mobile-menu",
+            "values": {
+              "menu": "blocksy_location"
+            }
+          },
+          {
+            "id": "button",
+            "values": {
+              "header_button_text": "Wgraj fakturę",
+              "header_button_link": "/wgraj-fakture/",
+              "header_button_size": "small"
+            }
+          },
+          {
+            "id": "middle-row",
+            "values": {
+              "headerRowHeight": {
+                "desktop": 88,
+                "tablet": 72,
+                "mobile": 72
+              }
+            }
+          }
+        ],
+        "settings": {},
+        "desktop": [
+          {
+            "id": "top-row",
+            "placements": [
+              {
+                "id": "start",
+                "items": []
+              },
+              {
+                "id": "middle",
+                "items": []
+              },
+              {
+                "id": "end",
+                "items": []
+              },
+              {
+                "id": "start-middle",
+                "items": []
+              },
+              {
+                "id": "end-middle",
+                "items": []
+              }
+            ]
+          },
+          {
+            "id": "middle-row",
+            "placements": [
+              {
+                "id": "start",
+                "items": [
+                  "logo"
+                ]
+              },
+              {
+                "id": "middle",
+                "items": [
+                  "menu"
+                ]
+              },
+              {
+                "id": "end",
+                "items": [
+                  "button"
+                ]
+              },
+              {
+                "id": "start-middle",
+                "items": []
+              },
+              {
+                "id": "end-middle",
+                "items": []
+              }
+            ]
+          },
+          {
+            "id": "bottom-row",
+            "placements": [
+              {
+                "id": "start",
+                "items": []
+              },
+              {
+                "id": "middle",
+                "items": []
+              },
+              {
+                "id": "end",
+                "items": []
+              },
+              {
+                "id": "start-middle",
+                "items": []
+              },
+              {
+                "id": "end-middle",
+                "items": []
+              }
+            ]
+          },
+          {
+            "id": "offcanvas",
+            "placements": [
+              {
+                "id": "start",
+                "items": []
+              }
+            ]
+          }
+        ],
+        "mobile": [
+          {
+            "id": "top-row",
+            "placements": [
+              {
+                "id": "start",
+                "items": []
+              },
+              {
+                "id": "middle",
+                "items": []
+              },
+              {
+                "id": "end",
+                "items": []
+              },
+              {
+                "id": "start-middle",
+                "items": []
+              },
+              {
+                "id": "end-middle",
+                "items": []
+              }
+            ]
+          },
+          {
+            "id": "middle-row",
+            "placements": [
+              {
+                "id": "start",
+                "items": [
+                  "logo"
+                ]
+              },
+              {
+                "id": "middle",
+                "items": []
+              },
+              {
+                "id": "end",
+                "items": [
+                  "button",
+                  "trigger"
+                ]
+              },
+              {
+                "id": "start-middle",
+                "items": []
+              },
+              {
+                "id": "end-middle",
+                "items": []
+              }
+            ]
+          },
+          {
+            "id": "bottom-row",
+            "placements": [
+              {
+                "id": "start",
+                "items": []
+              },
+              {
+                "id": "middle",
+                "items": []
+              },
+              {
+                "id": "end",
+                "items": []
+              },
+              {
+                "id": "start-middle",
+                "items": []
+              },
+              {
+                "id": "end-middle",
+                "items": []
+              }
+            ]
+          },
+          {
+            "id": "offcanvas",
+            "placements": [
+              {
+                "id": "start",
+                "items": [
+                  "mobile-menu"
+                ]
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  "footer_placements": {
+    "current_section": "type-1",
+    "sections": [
+      {
+        "id": "type-1",
+        "mode": "columns",
+        "rows": [
+          {
+            "id": "top-row",
+            "columns": [
+              [
+                "widget-area-1"
+              ],
+              [
+                "widget-area-2"
+              ],
+              [
+                "widget-area-3"
+              ],
+              [
+                "widget-area-4"
+              ]
+            ]
+          },
+          {
+            "id": "middle-row",
+            "columns": [
+              [
+                "widget-area-5"
+              ]
+            ]
+          },
+          {
+            "id": "bottom-row",
+            "columns": [
+              [
+                "widget-area-6",
+                "copyright"
+              ]
+            ]
+          }
+        ],
+        "items": [
+          {
+            "id": "top-row",
+            "values": {
+              "items_per_row": "4",
+              "4_columns_layout": {
+                "desktop": "repeat(4, 1fr)",
+                "tablet": "repeat(2, 1fr)",
+                "mobile": "initial"
+              }
+            }
+          },
+          {
+            "id": "middle-row",
+            "values": {
+              "items_per_row": "1"
+            }
+          },
+          {
+            "id": "bottom-row",
+            "values": {
+              "items_per_row": "1"
+            }
+          },
+          {
+            "id": "copyright",
+            "values": {
+              "copyright_text": "© {current_year} Gaz dla Przemysłu"
+            }
+          }
+        ],
+        "settings": {}
+      }
+    ]
+  },
+  "rootTypography": {
+    "family": "System Default",
+    "variation": "n4",
+    "size": "16px",
+    "line-height": "1.65",
+    "letter-spacing": "0em",
+    "text-transform": "none",
+    "text-decoration": "none"
+  },
+  "gdp_mobile_cta_label": "Oferta w 24 h"
+}

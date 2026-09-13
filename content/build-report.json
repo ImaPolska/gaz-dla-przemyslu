@@ -1,0 +1,586 @@
+{
+  "scope": "P1.1 only; identical content for A/B/C",
+  "source_specification": "gazdlaprzemyslu_etap1_instrukcja_agenta.md, sections 1.3, 5, 7, 8, 9, 10, 16; scoped to P1.1",
+  "technical_timestamp": "2000-01-01 00:00:00",
+  "timestamp_note": "Import bookkeeping only. Visible dates remain [[data]]. Native theme date/author metadata must be disabled.",
+  "validation_scope": "Source structural checks only. Gutenberg save validation, rendered accessibility and runtime checks are separate.",
+  "notes": [
+    "Home Query Loop requests three posts; only two placeholder market posts exist.",
+    "No starter knowledge articles are included in P1.1.",
+    "FAQ answers support per-instance paragraph pattern overrides. Questions use native Details summary and remain globally editable in the synced pattern, rather than claiming unsupported summary overrides.",
+    "Existing IDs can be remapped by an importer. Remap nested core/block refs.",
+    "All main CTAs point to /kontakt/ and never upload or submit data.",
+    "ct_page_title=no is set for pages and posts to avoid duplicate visible titles.",
+    "Wiedza content is a supporting stub. If set as page_for_posts, WordPress uses the theme archive instead of this page's post_content."
+  ],
+  "items": [
+    {
+      "file": "content/patterns/upload.html",
+      "blocks": {
+        "core/button": 1,
+        "core/buttons": 1,
+        "core/group": 2,
+        "core/heading": 1,
+        "core/paragraph": 9
+      },
+      "h1_count": 0,
+      "top_sections": [
+        "Slot: upload faktury"
+      ],
+      "refs": [],
+      "placeholders": [
+        "[[Miejsce na plik faktury: pole nieaktywne]]",
+        "[[adres e-mail]]",
+        "[[numer telefonu]]",
+        "[[NIP firmy]]",
+        "[[treść zgody dostarczy zleceniodawca]]"
+      ],
+      "sha256": "4c31bdce3848730d8fab7759a8497ff567603f551eed677a6e4b214378407188",
+      "import_id": 101,
+      "post_type": "wp_block",
+      "slug": "upload",
+      "title": "Slot: upload faktury",
+      "parent_import_id": 0,
+      "public_path": "/?post_type=wp_block&name=upload"
+    },
+    {
+      "file": "content/patterns/disclaimer.html",
+      "blocks": {
+        "core/group": 1,
+        "core/paragraph": 1
+      },
+      "h1_count": 0,
+      "top_sections": [
+        "Zastrzeżenie cen"
+      ],
+      "refs": [],
+      "placeholders": [],
+      "sha256": "0be8b7125a7c33bd3b4dc5c725378c109bf1f567a25d76f9f5beca984dcc13ac",
+      "import_id": 102,
+      "post_type": "wp_block",
+      "slug": "disclaimer",
+      "title": "Zastrzeżenie cen",
+      "parent_import_id": 0,
+      "public_path": "/?post_type=wp_block&name=disclaimer"
+    },
+    {
+      "file": "content/patterns/final-cta.html",
+      "blocks": {
+        "core/button": 1,
+        "core/buttons": 1,
+        "core/group": 3,
+        "core/heading": 1,
+        "core/paragraph": 3
+      },
+      "h1_count": 0,
+      "top_sections": [
+        "CTA: wgraj fakturę"
+      ],
+      "refs": [],
+      "placeholders": [],
+      "sha256": "bece4f99bfa98e080fe4b1dc901d6714b79ee591774266fd74980ba7862bc1ae",
+      "import_id": 103,
+      "post_type": "wp_block",
+      "slug": "final-cta",
+      "title": "CTA: wgraj fakturę",
+      "parent_import_id": 0,
+      "public_path": "/?post_type=wp_block&name=final-cta"
+    },
+    {
+      "file": "content/patterns/pricing.html",
+      "blocks": {
+        "core/block": 1,
+        "core/group": 1,
+        "core/paragraph": 2,
+        "core/table": 1
+      },
+      "h1_count": 0,
+      "top_sections": [
+        "Slot: tabela cen"
+      ],
+      "refs": [
+        102
+      ],
+      "placeholders": [
+        "[[data]]",
+        "[[ ]]",
+        "[[ ]]",
+        "[[ ]]",
+        "[[ ]]",
+        "[[indeks + składnik ceny]]",
+        "[[ ]]",
+        "[[ ]]",
+        "[[ ]]",
+        "[[ ]]"
+      ],
+      "sha256": "2841e264f80c0ef7f1c058eab88455dbd3413263af6fe5123f9649e117a7be3c",
+      "import_id": 104,
+      "post_type": "wp_block",
+      "slug": "pricing",
+      "title": "Slot: tabela cen",
+      "parent_import_id": 0,
+      "public_path": "/?post_type=wp_block&name=pricing"
+    },
+    {
+      "file": "content/patterns/segments.html",
+      "blocks": {
+        "core/group": 4,
+        "core/heading": 3,
+        "core/paragraph": 12
+      },
+      "h1_count": 0,
+      "top_sections": [
+        "Wzorzec: segmenty"
+      ],
+      "refs": [],
+      "placeholders": [
+        "[[X]]",
+        "[[X]]",
+        "[[do uzgodnienia]]"
+      ],
+      "sha256": "3228019d7d2bd1092a72371ec08321ad4857423c988a2fd4e32f02466d62c2a6",
+      "import_id": 105,
+      "post_type": "wp_block",
+      "slug": "segments",
+      "title": "Wzorzec: segmenty",
+      "parent_import_id": 0,
+      "public_path": "/?post_type=wp_block&name=segments"
+    },
+    {
+      "file": "content/patterns/trust.html",
+      "blocks": {
+        "core/group": 5,
+        "core/paragraph": 8
+      },
+      "h1_count": 0,
+      "top_sections": [
+        "Pasek zaufania"
+      ],
+      "refs": [],
+      "placeholders": [
+        "[[ ]]",
+        "[[ ]]"
+      ],
+      "sha256": "cc7868001ed34d11bf4ef8ac5a907ef1cc5f24e553d327fa2fabe6d3a5457e9f",
+      "import_id": 106,
+      "post_type": "wp_block",
+      "slug": "trust",
+      "title": "Pasek zaufania",
+      "parent_import_id": 0,
+      "public_path": "/?post_type=wp_block&name=trust"
+    },
+    {
+      "file": "content/patterns/faq-product.html",
+      "blocks": {
+        "core/details": 6,
+        "core/group": 1,
+        "core/paragraph": 6
+      },
+      "h1_count": 0,
+      "top_sections": [
+        "FAQ: produkt"
+      ],
+      "refs": [],
+      "placeholders": [],
+      "sha256": "d7f9decb215c791535ade19de4dd5a4e7c70b6d3e8e2eacd2d3cfd80e83f0d4e",
+      "import_id": 107,
+      "post_type": "wp_block",
+      "slug": "faq-product",
+      "title": "FAQ: produkt",
+      "parent_import_id": 0,
+      "public_path": "/?post_type=wp_block&name=faq-product"
+    },
+    {
+      "file": "content/pages/start.html",
+      "blocks": {
+        "core/block": 5,
+        "core/button": 2,
+        "core/buttons": 1,
+        "core/details": 6,
+        "core/group": 19,
+        "core/heading": 12,
+        "core/paragraph": 38,
+        "core/post-template": 1,
+        "core/post-title": 1,
+        "core/query": 1,
+        "core/query-no-results": 1
+      },
+      "h1_count": 1,
+      "top_sections": [
+        "Otwarcie: gaz dla Twojej firmy",
+        "Podmiot i dane do potwierdzenia",
+        "Dla kogo kupujesz gaz",
+        "Jak to działa",
+        "Pasma cen orientacyjnych",
+        "Komentarze rynkowe",
+        "Narzędzia do sprawdzenia umowy",
+        "Pytania przed pierwszą rozmową",
+        "Następny krok: Twoja faktura"
+      ],
+      "refs": [
+        101,
+        106,
+        105,
+        104,
+        103
+      ],
+      "placeholders": [
+        "[[data]]",
+        "[[tytuł komentarza]]",
+        "[[krótka odpowiedź: co zmieniło się na rynku i co to oznacza dla kupującego gaz]]",
+        "[[data]]",
+        "[[komentarz: treść do opracowania i zatwierdzenia]]",
+        "[[Komentarze rynkowe zostaną dodane po zatwierdzeniu treści.]]",
+        "[[X]]",
+        "[[data]]",
+        "[[imię i nazwisko, stanowisko]]",
+        "[[linki do źródeł]]"
+      ],
+      "sha256": "7faf8bbc7a82205db7c1b84eaa25e6c283a6fb0d4fbdaaab0db13c93094f9d79",
+      "import_id": 201,
+      "post_type": "page",
+      "slug": "start",
+      "title": "Start",
+      "parent_import_id": 0,
+      "public_path": "/"
+    },
+    {
+      "file": "content/pages/oferta.html",
+      "blocks": {
+        "core/block": 2,
+        "core/group": 2,
+        "core/heading": 2,
+        "core/list": 1,
+        "core/list-item": 5,
+        "core/paragraph": 5
+      },
+      "h1_count": 1,
+      "top_sections": [
+        "Oferta: strona pomocnicza",
+        "Następny krok: wybór modelu"
+      ],
+      "refs": [
+        102,
+        103
+      ],
+      "placeholders": [
+        "[[warunki do potwierdzenia]]",
+        "[[warunki do potwierdzenia]]",
+        "[[zakres do potwierdzenia]]",
+        "[[data]]",
+        "[[ ]]",
+        "[[zatwierdzone warunki produktów]]"
+      ],
+      "sha256": "739c84de16d0df8fe59faaba17150926810addabf4c044232f800d135356be13",
+      "import_id": 202,
+      "post_type": "page",
+      "slug": "oferta",
+      "title": "Oferta",
+      "parent_import_id": 0,
+      "public_path": "/oferta/"
+    },
+    {
+      "file": "content/pages/cena-stala.html",
+      "blocks": {
+        "core/block": 4,
+        "core/button": 2,
+        "core/buttons": 1,
+        "core/group": 14,
+        "core/heading": 11,
+        "core/list": 3,
+        "core/list-item": 12,
+        "core/paragraph": 19,
+        "core/table": 1
+      },
+      "h1_count": 1,
+      "top_sections": [
+        "Otwarcie: cena stała",
+        "Dla kogo cena stała",
+        "Jak działa cena stała",
+        "Ryzyka i ograniczenia",
+        "Przykład liczbowy: dane do uzupełnienia",
+        "Pytania o cenę stałą",
+        "Następny krok: zapytaj o cenę stałą"
+      ],
+      "refs": [
+        102,
+        102,
+        107,
+        103
+      ],
+      "placeholders": [
+        "[[ ]]",
+        "[[ ]]",
+        "[[ ]]",
+        "[[ ]]",
+        "[[zakres warunków oraz ograniczeń]]",
+        "[[ ]]",
+        "[[ ]]",
+        "[[ ]]",
+        "[[ ]]",
+        "[[ ]]",
+        "[[do potwierdzenia]]",
+        "[[data]]",
+        "[[imię i nazwisko, stanowisko]]",
+        "[[warunki produktu PBM: dokument do zatwierdzenia]]",
+        "[[linki do źródeł po weryfikacji merytorycznej i prawnej]]"
+      ],
+      "sha256": "7b1bd4d9545596e3bee6881bb0e3db5aa50edcae2412330ad013d8ed3d947715",
+      "import_id": 203,
+      "post_type": "page",
+      "slug": "cena-stala",
+      "title": "Cena stała",
+      "parent_import_id": 202,
+      "public_path": "/oferta/cena-stala/"
+    },
+    {
+      "file": "content/pages/kontakt.html",
+      "blocks": {
+        "core/block": 1,
+        "core/group": 2,
+        "core/heading": 2,
+        "core/list": 1,
+        "core/list-item": 6,
+        "core/paragraph": 4
+      },
+      "h1_count": 1,
+      "top_sections": [
+        "Kontakt: strona pomocnicza",
+        "Formularz kontaktowy: demonstracja"
+      ],
+      "refs": [
+        101
+      ],
+      "placeholders": [
+        "[[adres siedziby]]",
+        "[[adres e-mail]]",
+        "[[numer telefonu]]",
+        "[[godziny]]",
+        "[[NIP, KRS, kapitał zakładowy]]",
+        "[[Miejsce na mapę: bez osadzenia zewnętrznego]]"
+      ],
+      "sha256": "112f7fd0afe37904500dad4710fc9bbdfe8e1e19d5ddc0d7d311baeb80fc881b",
+      "import_id": 204,
+      "post_type": "page",
+      "slug": "kontakt",
+      "title": "Kontakt",
+      "parent_import_id": 0,
+      "public_path": "/kontakt/"
+    },
+    {
+      "file": "content/pages/wiedza.html",
+      "blocks": {
+        "core/group": 1,
+        "core/heading": 2,
+        "core/list": 1,
+        "core/list-item": 2,
+        "core/paragraph": 3
+      },
+      "h1_count": 1,
+      "top_sections": [
+        "Wiedza: strona pomocnicza"
+      ],
+      "refs": [],
+      "placeholders": [
+        "[[tytuł komentarza]]",
+        "[[tytuł komentarza]]",
+        "[[data]]"
+      ],
+      "sha256": "587f3c403f0f98b4fd71431270dbd1bcfb451cdee23db5415621016bf1331d61",
+      "import_id": 205,
+      "post_type": "page",
+      "slug": "wiedza",
+      "title": "Wiedza",
+      "parent_import_id": 0,
+      "public_path": "/wiedza/"
+    },
+    {
+      "file": "content/pages/wgraj-fakture.html",
+      "blocks": {
+        "core/block": 1,
+        "core/group": 3,
+        "core/heading": 2,
+        "core/list": 1,
+        "core/list-item": 3,
+        "core/paragraph": 4
+      },
+      "h1_count": 1,
+      "top_sections": [
+        "Wgraj fakturę: strona pomocnicza",
+        "Upload faktury: demonstracja",
+        "Zakres danych i bezpieczeństwo: zapowiedź"
+      ],
+      "refs": [
+        101
+      ],
+      "placeholders": [
+        "[[dostarczy zleceniodawca]]"
+      ],
+      "sha256": "3127b58fdf904dc63e3aa371fb75af874dafbb83ccb6ffa7ca0051052bbbd94f",
+      "import_id": 206,
+      "post_type": "page",
+      "slug": "wgraj-fakture",
+      "title": "Wgraj fakturę",
+      "parent_import_id": 0,
+      "public_path": "/wgraj-fakture/"
+    },
+    {
+      "file": "content/pages/polityka-prywatnosci.html",
+      "blocks": {
+        "core/group": 1,
+        "core/heading": 6,
+        "core/paragraph": 6
+      },
+      "h1_count": 1,
+      "top_sections": [
+        "Polityka prywatności: placeholder"
+      ],
+      "refs": [],
+      "placeholders": [
+        "[[treść dostarczy zleceniodawca]]",
+        "[[treść dostarczy zleceniodawca]]",
+        "[[treść dostarczy zleceniodawca]]",
+        "[[treść dostarczy zleceniodawca]]",
+        "[[treść dostarczy zleceniodawca; slot CMP: etap późniejszy]]"
+      ],
+      "sha256": "b8c236a5a70d6abcf9d8fed33607f4e78be8112b2737536209c7ae5985bd6843",
+      "import_id": 207,
+      "post_type": "page",
+      "slug": "polityka-prywatnosci",
+      "title": "Polityka prywatności",
+      "parent_import_id": 0,
+      "public_path": "/polityka-prywatnosci/"
+    },
+    {
+      "file": "content/posts/komentarz-rynkowy-szablon.html",
+      "blocks": {
+        "core/group": 2,
+        "core/heading": 4,
+        "core/paragraph": 8
+      },
+      "h1_count": 1,
+      "top_sections": [
+        "Nagłówek komentarza: szablon",
+        "Treść komentarza: placeholder"
+      ],
+      "refs": [],
+      "placeholders": [
+        "[[tytuł komentarza]]",
+        "[[krótka odpowiedź na pytanie kupującego gaz: do uzupełnienia, nie więcej niż limit słów z briefu]]",
+        "[[data]]",
+        "[[data]]",
+        "[[imię i nazwisko, stanowisko]]",
+        "[[komentarz]]",
+        "[[komentarz]]",
+        "[[nazwa źródła, data, link: do uzupełnienia po weryfikacji]]"
+      ],
+      "sha256": "ec3d2814251c259d7597b41cf361673780b227ceb5b38380788f69ee7feee4d2",
+      "import_id": 301,
+      "post_type": "post",
+      "slug": "komentarz-rynkowy-szablon",
+      "title": "[[tytuł komentarza]]",
+      "parent_import_id": 0,
+      "public_path": "/komentarz-rynkowy-szablon/"
+    },
+    {
+      "file": "content/posts/perspektywa-rynku-szablon.html",
+      "blocks": {
+        "core/group": 2,
+        "core/heading": 4,
+        "core/paragraph": 8
+      },
+      "h1_count": 1,
+      "top_sections": [
+        "Perspektywa rynku: szablon",
+        "Perspektywa rynku: treść do uzupełnienia"
+      ],
+      "refs": [],
+      "placeholders": [
+        "[[tytuł komentarza]]",
+        "[[krótka odpowiedź na pytanie o perspektywę rynku: do uzupełnienia]]",
+        "[[data]]",
+        "[[data]]",
+        "[[imię i nazwisko, stanowisko]]",
+        "[[komentarz]]",
+        "[[komentarz]]",
+        "[[nazwa źródła, data, link: do uzupełnienia po weryfikacji]]"
+      ],
+      "sha256": "4b1b656b91763cf6ed6a300709b4a887fd641b15d5c285daaf50d8dcaf2b0f3a",
+      "import_id": 302,
+      "post_type": "post",
+      "slug": "perspektywa-rynku-szablon",
+      "title": "[[tytuł komentarza]]",
+      "parent_import_id": 0,
+      "public_path": "/perspektywa-rynku-szablon/"
+    }
+  ],
+  "wxr_sha256": "697f1a21f05042c1e833c00de26b600f3371838b1301ae0fdf2f52e3fe6f68d8",
+  "item_counts": {
+    "wp_block": 7,
+    "page": 7,
+    "post": 2
+  },
+  "css_classes": [
+    "gdp-article-body",
+    "gdp-article-hero",
+    "gdp-audience-card",
+    "gdp-audience-grid",
+    "gdp-author",
+    "gdp-consent",
+    "gdp-contact",
+    "gdp-contact-slot",
+    "gdp-data-note",
+    "gdp-disclaimer",
+    "gdp-eyebrow",
+    "gdp-faq",
+    "gdp-faq-list",
+    "gdp-field",
+    "gdp-fields",
+    "gdp-file-slot",
+    "gdp-final",
+    "gdp-final-action",
+    "gdp-final-copy",
+    "gdp-final-inner",
+    "gdp-hero",
+    "gdp-hero-copy",
+    "gdp-hero-grid",
+    "gdp-hero-market",
+    "gdp-hero-upload",
+    "gdp-lead",
+    "gdp-legal-stub",
+    "gdp-market",
+    "gdp-market-card",
+    "gdp-market-query",
+    "gdp-numeric",
+    "gdp-prices",
+    "gdp-pricing-table",
+    "gdp-process",
+    "gdp-process-grid",
+    "gdp-product-audience",
+    "gdp-product-copy",
+    "gdp-product-example",
+    "gdp-product-faq",
+    "gdp-product-hero",
+    "gdp-product-hero-grid",
+    "gdp-product-mechanism",
+    "gdp-product-risks",
+    "gdp-product-summary",
+    "gdp-prototype-note",
+    "gdp-section",
+    "gdp-segment-card",
+    "gdp-segment-grid",
+    "gdp-segments",
+    "gdp-small",
+    "gdp-step",
+    "gdp-stub-hero",
+    "gdp-threshold",
+    "gdp-tools",
+    "gdp-trust",
+    "gdp-trust-grid",
+    "gdp-trust-item",
+    "gdp-upload",
+    "gdp-upload-info",
+    "gdp-upload-section"
+  ],
+  "result": "PASS (structural source checks)"
+}
