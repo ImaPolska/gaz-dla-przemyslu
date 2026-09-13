@@ -3,7 +3,7 @@ require_once '/wordpress/wp-load.php';
 require_once ABSPATH . 'wp-admin/includes/plugin.php';
 $report = [
     'counts' => ['core/html' => 0, 'core/freeform' => 0, 'core/shortcode' => 0, 'shortcode' => 0, 'non_core' => 0],
-    'pages' => [], 'issues' => [],
+    'pages' => [], 'issues' => [], 'objects' => [], 'documented_exceptions' => [],
     'wp' => get_bloginfo('version'), 'php' => PHP_VERSION,
     'stylesheet' => get_stylesheet(), 'parent' => get_template(),
     'parent_version' => wp_get_theme('blocksy')->get('Version'),
@@ -43,11 +43,17 @@ foreach (get_posts(['post_type' => ['page','post','wp_block'], 'numberposts' => 
     $clean = preg_replace('/\[\[.*?\]\]/s', '', $post->post_content);
     preg_match_all('/(?<!\[)\[\/?[a-z_][a-z0-9_-]*(?:\s[^\]]*)?\/?\](?!\])/i', $clean, $shortcodes);
     $report['counts']['shortcode'] += count($shortcodes[0]);
-    if ($post->post_type === 'page') {
+    $report['objects'][] = ['id'=>$post->ID,'source_id'=>get_post_meta($post->ID,'_gdp_import_id',true),'type'=>$post->post_type,'slug'=>$post->post_name];
+    if (in_array($post->post_type, ['page','post'], true)) {
         $h1 = preg_match_all('/<h1(?:\s|>)/i', $expand($blocks));
+        if ($post->post_name === 'archiwum-kategorii' && str_contains($post->post_content, 'wp:query-title')) { $h1++; }
         $locks = true;
         foreach ($blocks as $block) {
             if (!$block['blockName'] && trim($block['innerHTML'] ?? '') === '') { continue; }
+            if ($post->post_type === 'post' && ($block['attrs']['metadata']['name'] ?? '') === 'Treść artykułu' && ($block['attrs']['templateLock'] ?? null) === false) {
+                $report['documented_exceptions'][] = $post->post_name . ': editable article prose required by section 14';
+                continue;
+            }
             if ($block['blockName'] !== 'core/group' || ($block['attrs']['templateLock'] ?? '') !== 'contentOnly' || empty($block['attrs']['metadata']['name'])) {
                 $locks = false;
             }

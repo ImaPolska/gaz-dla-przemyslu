@@ -15,6 +15,13 @@ $wp_ns = 'http://wordpress.org/export/1.2/';
 $content_ns = 'http://purl.org/rss/1.0/modules/content/';
 $map = [];
 $pending = [];
+foreach ($xml->channel->children($wp_ns)->category as $category) {
+    $slug = (string) $category->category_nicename;
+    if (!get_term_by('slug', $slug, 'category')) {
+        $term = wp_insert_term((string) $category->cat_name, 'category', ['slug' => $slug]);
+        if (is_wp_error($term)) { throw new RuntimeException($term->get_error_message()); }
+    }
+}
 foreach (get_posts(['post_type' => ['post', 'page'], 'numberposts' => -1, 'post_status' => 'any']) as $post) {
     wp_delete_post($post->ID, true);
 }
@@ -54,7 +61,7 @@ foreach ($xml->channel->item as $item) {
                 if (is_wp_error($new)) { throw new RuntimeException($new->get_error_message()); }
                 $term_id = $new['term_id'];
             } else { $term_id = $term->term_id; }
-            wp_set_post_categories($id, [(int) $term_id], true);
+            wp_set_post_categories($id, [(int) $term_id], false);
         }
     }
 }

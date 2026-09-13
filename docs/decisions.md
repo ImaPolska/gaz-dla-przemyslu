@@ -31,3 +31,11 @@
 - [Treść dla demonstracji](https://wordpress.github.io/wordpress-playground/guides/providing-content-for-your-demo/)
 - [Diagnostyka](https://wordpress.github.io/wordpress-playground/blueprints/troubleshoot-and-debug/)
 - [Dokumentacja Blocksy](https://creativethemes.com/blocksy/docs/)
+# Wybór kierunku C i P1.2
+
+- 2026-09-13: zleceniodawca napisał „Wybieram kierunek C”. `main` rozwija wyłącznie C; tagi `etap1-A`, `etap1-B`, `etap1-C` pozostają niezmienione.
+- Wszystkie adresy produktów i narzędzi zastępują skróty P1.1. CTA w nagłówku prowadzi do `/wgraj-fakture/`, a przyciski atrap do `/kontakt/`.
+- `/wiedza/` pozostaje stroną wpisów WordPress. `home.php` renderuje jej `post_content`, dzięki czemu wyszukiwarka, kategorie i Query Loop pozostają edytowalnymi blokami core.
+- Permalinki w opcji WordPress pozostają `/%postname%/`; routing i filtr odnośnika wpisu dodają prefiks `/wiedza/` wymagany mapą. `/komentarz-rynkowy/` jest rzeczywistym archiwum kategorii, nie osobną listą ręczną.
+- Jedyny wyjątek od blokady wnętrza sekcji dotyczy prozy artykułu. Sekcja 14 wymaga dodawania akapitu i tabeli przez Redaktora; nagłówki i CTA pozostają sekcjami układu. Zakres wyjątku podlega testowi.
+- Brak własnego konta publikacyjnego nadal blokuje wymagane publiczne repo i link Playground. Nie proszę o dostępy zleceniodawcy, nie używam innego hostingu podglądu i nie uznaję lokalnego testu za publiczny link.

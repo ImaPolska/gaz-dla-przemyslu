@@ -30,12 +30,13 @@ for file in sorted((root/'theme/gdp-child/patterns').glob('*.php')):
 
 text=f"""# Otwarte pozycje
 
-Stan P1.1, 2026-09-13. **{len(rows)} wystąpień** `[[ ]]` w kanonicznych źródłach: treść HTML, konfiguracja widgetów i wzorce startowe. To nie jest liczba niezależnych pytań. Wspólny wzorzec liczony jest raz w źródle, a nie ponownie na każdej stronie; WXR, ZIP i trzy blueprinty nie są ponownie liczone.
+Stan P1.2, 2026-09-13. **{len(rows)} wystąpień** `[[ ]]` w kanonicznych źródłach: treść HTML, konfiguracja widgetów i wzorce startowe. To nie jest liczba niezależnych pytań. Wspólny wzorzec liczony jest raz w źródle, a nie ponownie na każdej stronie; WXR, ZIP i blueprinty nie są ponownie liczone.
 
 ## Decyzja teraz
 
-- Wybór kierunku A, B, C lub kombinacji. Nie rekomendujemy żadnego.
-- Publiczne repo oraz trzy publiczne linki pozostają niedostarczone: środowisko nie ma konta agenta do publikacji. Nie prosimy o dostęp do infrastruktury, kont, domeny, poczty ani HubSpot.
+- Wybrano C. Na odbiorze P1.2: uwagi do pełnej mapy i treści.
+- Jaki próg `[[X]]` GWh/rok ma rozdzielać segment MŚP i przemysłowy? Do decyzji pozostaje placeholder.
+- Publiczne repo oraz link Playground pozostają niedostarczone: środowisko nie ma konta agenta do publikacji. Nie prosimy o dostęp do infrastruktury, kont, domeny, poczty ani HubSpot.
 
 ## Grupy danych do uzupełnienia później
 
@@ -46,7 +47,7 @@ Stan P1.1, 2026-09-13. **{len(rows)} wystąpień** `[[ ]]` w kanonicznych źród
 - Parametry produktów i cennika: do zatwierdzenia; niczego nie wypełniono fikcyjnymi danymi. Lista produktów przyjęta domyślnie z briefu.
 - Zgody, polityka, regulamin: treści zleceniodawcy, finalizacja prawna poza P1.1.
 - Zdjęcia aktywów: opcjonalnie P1.3; obecnie brak zdjęć i zewnętrznych osadzeń.
-- Wzorce startowe z placeholderami: do rozwinięcia w P1.2, nie są ukończonymi artykułami.
+- Wzorce startowe celowo zawierają pola do uzupełnienia przy tworzeniu nowej treści.
 
 ## Rejestr wystąpień
 

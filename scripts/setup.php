@@ -40,7 +40,7 @@ update_option('timezone_string', 'Europe/Warsaw');
 update_option('show_avatars', 0);
 update_option('permalink_structure', '/%postname%/');
 update_option('blog_public', 0);
-foreach (get_posts(['post_type' => 'page', 'numberposts' => -1]) as $post) {
+foreach (get_posts(['post_type' => ['page','post'], 'numberposts' => -1]) as $post) {
     update_post_meta($post->ID, 'blocksy_meta', ['hero_enabled' => 'no', 'page_structure_type' => 'type-4', 'content_style' => 'wide', 'vertical_spacing' => 'top:bottom']);
 }
 $widgets_data = json_decode(file_get_contents('/tmp/widgets.json'), true, 512, JSON_THROW_ON_ERROR);
