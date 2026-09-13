@@ -1,16 +1,18 @@
 /*
-Theme Name: Gaz dla Przemysłu — A: Przemysłowy
+Theme Name: Gaz dla Przemysłu — B: Energetyczny
 Template: blocksy
-Version: 0.1.0-A
+Version: 0.1.0-B
 Text Domain: gdp-child
 Requires at least: 6.6
 Requires PHP: 8.3
 License: GPL-2.0-or-later
 */
-@font-face{font-family:'IBM Plex Sans';font-style:normal;font-weight:100 900;font-display:swap;src:url('assets/fonts/ibm-plex-sans-latin-ext-wght-normal.woff2') format('woff2');unicode-range:U+0100-02BA,U+02BD-02C5,U+02C7-02CC,U+02CE-02D7,U+02DD-02FF,U+0304,U+0308,U+0329,U+1D00-1DBF,U+1E00-1E9F,U+1EF2-1EFF,U+2020,U+20A0-20AB,U+20AD-20C0,U+2113,U+2C60-2C7F,U+A720-A7FF;}
-@font-face{font-family:'IBM Plex Sans';font-style:normal;font-weight:100 900;font-display:swap;src:url('assets/fonts/ibm-plex-sans-latin-wght-normal.woff2') format('woff2');unicode-range:U+0000-00FF,U+0131,U+0152-0153,U+02BB-02BC,U+02C6,U+02DA,U+02DC,U+0304,U+0308,U+0329,U+2000-206F,U+20AC,U+2122,U+2191,U+2193,U+2212,U+2215,U+FEFF,U+FFFD;}
+@font-face{font-family:'Manrope';font-style:normal;font-weight:100 900;font-display:swap;src:url('assets/fonts/manrope-latin-ext-wght-normal.woff2') format('woff2');unicode-range:U+0100-02BA,U+02BD-02C5,U+02C7-02CC,U+02CE-02D7,U+02DD-02FF,U+0304,U+0308,U+0329,U+1D00-1DBF,U+1E00-1E9F,U+1EF2-1EFF,U+2020,U+20A0-20AB,U+20AD-20C0,U+2113,U+2C60-2C7F,U+A720-A7FF;}
+@font-face{font-family:'Manrope';font-style:normal;font-weight:100 900;font-display:swap;src:url('assets/fonts/manrope-latin-wght-normal.woff2') format('woff2');unicode-range:U+0000-00FF,U+0131,U+0152-0153,U+02BB-02BC,U+02C6,U+02DA,U+02DC,U+0304,U+0308,U+0329,U+2000-206F,U+20AC,U+2122,U+2191,U+2193,U+2212,U+2215,U+FEFF,U+FFFD;}
+@font-face{font-family:'Source Sans 3';font-style:normal;font-weight:100 900;font-display:swap;src:url('assets/fonts/source-sans-3-latin-ext-wght-normal.woff2') format('woff2');unicode-range:U+0100-02BA,U+02BD-02C5,U+02C7-02CC,U+02CE-02D7,U+02DD-02FF,U+0304,U+0308,U+0329,U+1D00-1DBF,U+1E00-1E9F,U+1EF2-1EFF,U+2020,U+20A0-20AB,U+20AD-20C0,U+2113,U+2C60-2C7F,U+A720-A7FF;}
+@font-face{font-family:'Source Sans 3';font-style:normal;font-weight:100 900;font-display:swap;src:url('assets/fonts/source-sans-3-latin-wght-normal.woff2') format('woff2');unicode-range:U+0000-00FF,U+0131,U+0152-0153,U+02BB-02BC,U+02C6,U+02DA,U+02DC,U+0304,U+0308,U+0329,U+2000-206F,U+20AC,U+2122,U+2191,U+2193,U+2212,U+2215,U+FEFF,U+FFFD;}
 
-:root{--gdp-radius:0px;}
+:root{--gdp-radius:14px;}
 /* Shared geometry; built into gdp-child/style.css, never inserted into content. */
 html { scroll-padding-top: 110px; }
 body { background: var(--wp--preset--color--base); color: var(--wp--preset--color--contrast); }
@@ -160,9 +162,26 @@ body.page .entry-content > .gdp-section { width:100%; max-width:none; margin-inl
  #header .ct-container { width:calc(100% - 32px); }
 }
 @media(prefers-reduced-motion:reduce) { * { scroll-behavior:auto !important; transition:none !important; } }
-/* A: industrial, technical, precise. */
-.gdp-hero h1 { max-width:570px; }
-.gdp-hero .gdp-eyebrow { color:var(--wp--preset--color--primary); }
-.gdp-hero-market { border-top:2px solid var(--wp--preset--color--contrast); }
-.gdp-numeric td:not(:first-child) { font-family:ui-monospace,monospace; }
-.gdp-trust { background:#fff; }
+/* B: dark hero and geometric headings, one turquoise accent. */
+#header,.gdp-hero,.gdp-product-hero { background:#0c2433; color:#fff; border-color:#395362; }
+#header { --theme-text-color:#fff; --theme-link-initial-color:#fff; --theme-palette-color-3:#fff; --theme-palette-color-4:#fff; }
+#header [data-row] { background:transparent !important; }
+#header .site-title a,#header .menu > li > a,#header .ct-header-trigger { color:#fff; }
+#header .ct-button,.gdp-hero .gdp-hero-copy .wp-block-button__link,.gdp-product-hero .wp-block-button__link { background:#65d9da; color:#0c2433; }
+.gdp-hero { min-height:780px; padding-block:68px; }
+.gdp-hero-grid { grid-template-columns:1.15fr 1fr; }
+.gdp-hero .gdp-hero-copy { padding-top:26px; }
+.gdp-hero .gdp-eyebrow { color:#88e1df; }
+.gdp-hero .gdp-hero-market { border-color:#49616f; }
+.gdp-hero .gdp-hero-market a { color:#88e1df; }
+.entry-content .gdp-hero .wp-block-button.is-style-outline > .wp-block-button__link:not(.has-text-color),.entry-content .gdp-product-hero .wp-block-button.is-style-outline > .wp-block-button__link:not(.has-text-color) { color:#fff; border-color:#79919e; background:transparent; }
+.gdp-upload { box-shadow:0 18px 60px #0002; border:0; }
+.gdp-upload .gdp-eyebrow { color:var(--wp--preset--color--primary); }
+.gdp-segment-grid { gap:24px; }
+.gdp-segment-grid > *, .gdp-segment-grid > * + * { padding:28px; border:1px solid var(--wp--preset--color--line); border-radius:14px; }
+.gdp-prices .wp-block-table { border:1px solid var(--wp--preset--color--line); border-radius:14px; background:#fff; }
+@media(max-width:689px) {
+ .gdp-hero { padding-block:36px; min-height:0; }
+ .gdp-hero .gdp-hero-copy { padding-top:0; }
+ .gdp-section h1 { font-size:38px; }
+}
