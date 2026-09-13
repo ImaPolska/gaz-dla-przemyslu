@@ -9,5 +9,9 @@
 - Widoki 1440×900 i 360×800 obu stron na każdym kierunku: dwanaście zrzutów; pomocniczo 768×1024.
 - Brak overflow strony, CTA nad linią zgięcia; tabela przewija się we własnym kontenerze.
 - Fonty i zasoby frontendu tylko z własnego hosta; oddzielić zasoby startowe instalatora.
-- Dodatkowe przypadki: bardzo wąski viewport oraz wejście bezpośrednio na permalink produktu po świeżym starcie.
+- Bezpośrednie wejście na permalink produktu sprawdzono po świeżym starcie. Najmniejszy testowany viewport ma 360 px; węższych nie deklarujemy jako zaliczonych.
 - Nie zaliczać publicznego linku na podstawie lokalnego CLI. Publiczny link wymaga świeżego uruchomienia playground.wordpress.net z rzeczywistym publicznym blueprint-url na tagu.
+
+## Wynik końcowy
+
+Lokalny zakres P1.1 przeszedł według `docs/qa/browser-runtime.json`, `schema.json`, `php-logs.json` oraz `gutenberg-serialization.json`. Publiczny test nie został wykonany. Pełny axe-core, wszystkie strony mapy oraz test edycji z sekcji 14 pozostają do P1.2.

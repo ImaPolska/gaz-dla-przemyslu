@@ -1,0 +1,17 @@
+
+WordPress Playground CLI
+
+PHP 8.3  WordPress latest
+Extensions intl
+Blueprint /home/user/workspace/gaz-dla-przemyslu/.runtime/test-C
+
+Worker count (1) is below the recommended threshold (6). Running fewer than 6 workers may increase the likelihood of deadlock due to workers blocking on file locks.
+Native temp dir for VFS root: /tmp/node-playground-cli-site-3270--3270-pWtDRxDjsocV
+Mount before WP install: /home -> /tmp/node-playground-cli-site-3270--3270-pWtDRxDjsocV/home
+Mount before WP install: /tmp -> /tmp/node-playground-cli-site-3270--3270-pWtDRxDjsocV/tmp
+Mount before WP install: /tools -> /tmp/node-playground-cli-site-3270--3270-pWtDRxDjsocV/tools
+Mount before WP install: /wordpress -> /tmp/node-playground-cli-site-3270--3270-pWtDRxDjsocV/wordpress
+Resolved WordPress release URL: https://downloads.w.org/release/wordpress-7.1.zip
+
+Ready! WordPress is running on http://127.0.0.1:9402 (1 worker)
+

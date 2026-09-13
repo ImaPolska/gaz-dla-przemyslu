@@ -1,0 +1,8 @@
+{
+  "direction": "B",
+  "debugLogExists": false,
+  "debugLogBytes": 0,
+  "phpIssueLines": 0,
+  "runtimeCSSMatchesBuiltTheme": true,
+  "note": "WP_DEBUG and WP_DEBUG_LOG verified true in browser-runtime.json; absent debug.log means no messages logged, not disabled debugging."
+}

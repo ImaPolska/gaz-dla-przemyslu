@@ -159,6 +159,12 @@
         },
         "pages": [
           {
+            "slug": "polityka-prywatnosci",
+            "id": 17,
+            "h1": 1,
+            "sections_locked_named": true
+          },
+          {
             "slug": "start",
             "id": 11,
             "h1": 1,
@@ -193,12 +199,6 @@
             "id": 16,
             "h1": 1,
             "sections_locked_named": true
-          },
-          {
-            "slug": "polityka-prywatnosci",
-            "id": 17,
-            "h1": 1,
-            "sections_locked_named": true
           }
         ],
         "issues": [],
@@ -206,6 +206,12 @@
         "php": "8.3.33",
         "stylesheet": "gdp-child",
         "parent": "blocksy",
+        "parent_version": "2.1.57",
+        "debug": {
+          "enabled": true,
+          "log": true,
+          "display": false
+        },
         "plugins": [],
         "mu_runtime": [],
         "palette_matches": true,
@@ -381,6 +387,24 @@
         },
         "pages": [
           {
+            "slug": "wiedza",
+            "id": 15,
+            "h1": 1,
+            "sections_locked_named": true
+          },
+          {
+            "slug": "wgraj-fakture",
+            "id": 16,
+            "h1": 1,
+            "sections_locked_named": true
+          },
+          {
+            "slug": "polityka-prywatnosci",
+            "id": 17,
+            "h1": 1,
+            "sections_locked_named": true
+          },
+          {
             "slug": "start",
             "id": 11,
             "h1": 1,
@@ -403,24 +427,6 @@
             "id": 14,
             "h1": 1,
             "sections_locked_named": true
-          },
-          {
-            "slug": "wiedza",
-            "id": 15,
-            "h1": 1,
-            "sections_locked_named": true
-          },
-          {
-            "slug": "wgraj-fakture",
-            "id": 16,
-            "h1": 1,
-            "sections_locked_named": true
-          },
-          {
-            "slug": "polityka-prywatnosci",
-            "id": 17,
-            "h1": 1,
-            "sections_locked_named": true
           }
         ],
         "issues": [],
@@ -428,6 +434,12 @@
         "php": "8.3.33",
         "stylesheet": "gdp-child",
         "parent": "blocksy",
+        "parent_version": "2.1.57",
+        "debug": {
+          "enabled": true,
+          "log": true,
+          "display": false
+        },
         "plugins": [],
         "mu_runtime": [],
         "palette_matches": true,
@@ -603,6 +615,18 @@
         },
         "pages": [
           {
+            "slug": "wgraj-fakture",
+            "id": 16,
+            "h1": 1,
+            "sections_locked_named": true
+          },
+          {
+            "slug": "polityka-prywatnosci",
+            "id": 17,
+            "h1": 1,
+            "sections_locked_named": true
+          },
+          {
             "slug": "start",
             "id": 11,
             "h1": 1,
@@ -631,18 +655,6 @@
             "id": 15,
             "h1": 1,
             "sections_locked_named": true
-          },
-          {
-            "slug": "wgraj-fakture",
-            "id": 16,
-            "h1": 1,
-            "sections_locked_named": true
-          },
-          {
-            "slug": "polityka-prywatnosci",
-            "id": 17,
-            "h1": 1,
-            "sections_locked_named": true
           }
         ],
         "issues": [],
@@ -650,6 +662,12 @@
         "php": "8.3.33",
         "stylesheet": "gdp-child",
         "parent": "blocksy",
+        "parent_version": "2.1.57",
+        "debug": {
+          "enabled": true,
+          "log": true,
+          "display": false
+        },
         "plugins": [],
         "mu_runtime": [],
         "palette_matches": true,
