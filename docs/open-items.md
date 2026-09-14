@@ -1,19 +1,19 @@
 # Otwarte pozycje
 
-Stan P1.2, 2026-09-13. **400 wystąpień** `[[ ]]` w kanonicznych źródłach: treść HTML, konfiguracja widgetów i wzorce startowe. To nie jest liczba niezależnych pytań. Wspólny wzorzec liczony jest raz w źródle, a nie ponownie na każdej stronie; WXR, ZIP i blueprinty nie są ponownie liczone.
+Stan P1.2, 2026-09-14. **400 wystąpień** `[[ ]]` w kanonicznych źródłach: treść HTML, konfiguracja widgetów i wzorce startowe. To nie jest liczba niezależnych pytań. Wspólny wzorzec liczony jest raz w źródle, a nie ponownie na każdej stronie; WXR, ZIP i blueprinty nie są ponownie liczone.
 
 ## Decyzja teraz
 
 - Wybrano C. Na odbiorze P1.2: uwagi do pełnej mapy i treści.
-- Jaki próg `[[X]]` GWh/rok ma rozdzielać segment MŚP i przemysłowy? Do decyzji pozostaje placeholder.
-- Publiczne repo oraz link Playground pozostają niedostarczone: środowisko nie ma konta agenta do publikacji. Nie prosimy o dostęp do infrastruktury, kont, domeny, poczty ani HubSpot.
+- Próg `[[X]]` GWh/rok pozostaje placeholderem zgodnie z decyzją zleceniodawcy z 14.09.2026. Nie wymaga odpowiedzi teraz.
+- Zleceniodawca zatwierdził publikację w publicznym repozytorium [ImaPolska/gaz-dla-przemyslu](https://github.com/ImaPolska/gaz-dla-przemyslu). Nie korzystano z hostingu, domeny, poczty ani HubSpot.
 
 ## Grupy danych do uzupełnienia później
 
 - Logo i kolory firmowe: P1.3; teraz obowiązują palety robocze.
 - Dane rejestrowe PBM, adresy kontaktowe i numer koncesji OPG: P1.3.
 - Autorzy, daty i zatwierdzone komentarze rynkowe: P1.3.
-- Próg segmentacji `[[X]]` GWh/rok: P1.2.
+- Próg segmentacji `[[X]]` GWh/rok: pozostaje placeholderem; bez zmiany.
 - Parametry produktów i cennika: do zatwierdzenia; niczego nie wypełniono fikcyjnymi danymi. Lista produktów przyjęta domyślnie z briefu.
 - Zgody, polityka, regulamin: treści zleceniodawcy, finalizacja prawna w etapie 3.
 - Zdjęcia aktywów: opcjonalnie P1.3; obecnie brak zdjęć i zewnętrznych osadzeń.

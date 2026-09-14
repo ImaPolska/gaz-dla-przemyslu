@@ -1,0 +1,200 @@
+{
+  "key": "B",
+  "url": "https://playground.wordpress.net/?blueprint-url=https://raw.githubusercontent.com/ImaPolska/gaz-dla-przemyslu/etap1-B/dist/etap1-B.zip",
+  "started": "2026-09-14T05:47:51.705Z",
+  "errors": [],
+  "resources": [
+    {
+      "url": "https://raw.githubusercontent.com/ImaPolska/gaz-dla-przemyslu/etap1-B/dist/etap1-B.zip",
+      "status": 200,
+      "cors": "*"
+    }
+  ],
+  "initialH1": "Gaz dla Twojej firmy. Warunki pod kontrolą.",
+  "initialFrame": "https://playground.wordpress.net/scope:happy-vintage-village/",
+  "ready": "2026-09-14T05:48:37.195Z",
+  "runtime": {
+    "audit": {
+      "counts": {
+        "core/html": 0,
+        "core/freeform": 0,
+        "core/shortcode": 0,
+        "shortcode": 0,
+        "non_core": 0
+      },
+      "pages": [
+        {
+          "slug": "start",
+          "id": 11,
+          "h1": 1,
+          "sections_locked_named": true
+        },
+        {
+          "slug": "oferta",
+          "id": 12,
+          "h1": 1,
+          "sections_locked_named": true
+        },
+        {
+          "slug": "cena-stala",
+          "id": 13,
+          "h1": 1,
+          "sections_locked_named": true
+        },
+        {
+          "slug": "kontakt",
+          "id": 14,
+          "h1": 1,
+          "sections_locked_named": true
+        },
+        {
+          "slug": "wiedza",
+          "id": 15,
+          "h1": 1,
+          "sections_locked_named": true
+        },
+        {
+          "slug": "wgraj-fakture",
+          "id": 16,
+          "h1": 1,
+          "sections_locked_named": true
+        },
+        {
+          "slug": "polityka-prywatnosci",
+          "id": 17,
+          "h1": 1,
+          "sections_locked_named": true
+        },
+        {
+          "slug": "komentarz-rynkowy-szablon",
+          "id": 18,
+          "h1": 1,
+          "sections_locked_named": true
+        },
+        {
+          "slug": "perspektywa-rynku-szablon",
+          "id": 19,
+          "h1": 1,
+          "sections_locked_named": true
+        }
+      ],
+      "issues": [],
+      "objects": [
+        {
+          "id": 11,
+          "source_id": "201",
+          "type": "page",
+          "slug": "start"
+        },
+        {
+          "id": 12,
+          "source_id": "202",
+          "type": "page",
+          "slug": "oferta"
+        },
+        {
+          "id": 13,
+          "source_id": "203",
+          "type": "page",
+          "slug": "cena-stala"
+        },
+        {
+          "id": 14,
+          "source_id": "204",
+          "type": "page",
+          "slug": "kontakt"
+        },
+        {
+          "id": 15,
+          "source_id": "205",
+          "type": "page",
+          "slug": "wiedza"
+        },
+        {
+          "id": 16,
+          "source_id": "206",
+          "type": "page",
+          "slug": "wgraj-fakture"
+        },
+        {
+          "id": 17,
+          "source_id": "207",
+          "type": "page",
+          "slug": "polityka-prywatnosci"
+        },
+        {
+          "id": 18,
+          "source_id": "301",
+          "type": "post",
+          "slug": "komentarz-rynkowy-szablon"
+        },
+        {
+          "id": 19,
+          "source_id": "302",
+          "type": "post",
+          "slug": "perspektywa-rynku-szablon"
+        },
+        {
+          "id": 4,
+          "source_id": "101",
+          "type": "wp_block",
+          "slug": "upload"
+        },
+        {
+          "id": 5,
+          "source_id": "102",
+          "type": "wp_block",
+          "slug": "disclaimer"
+        },
+        {
+          "id": 6,
+          "source_id": "103",
+          "type": "wp_block",
+          "slug": "final-cta"
+        },
+        {
+          "id": 7,
+          "source_id": "104",
+          "type": "wp_block",
+          "slug": "pricing"
+        },
+        {
+          "id": 8,
+          "source_id": "105",
+          "type": "wp_block",
+          "slug": "segments"
+        },
+        {
+          "id": 9,
+          "source_id": "106",
+          "type": "wp_block",
+          "slug": "trust"
+        },
+        {
+          "id": 10,
+          "source_id": "107",
+          "type": "wp_block",
+          "slug": "faq-product"
+        }
+      ],
+      "documented_exceptions": [],
+      "wp": "7.1",
+      "php": "8.3.33",
+      "stylesheet": "gdp-child",
+      "parent": "blocksy",
+      "parent_version": "2.1.57",
+      "debug": {
+        "enabled": true,
+        "log": true,
+        "display": false
+      },
+      "plugins": [],
+      "mu_runtime": [],
+      "palette_matches": true,
+      "pass": true
+    },
+    "debugLog": ""
+  },
+  "noManualIntervention": true,
+  "productH1": "Cena stała. Jasny punkt odniesienia dla budżetu."
+}

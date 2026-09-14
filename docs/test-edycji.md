@@ -1,6 +1,6 @@
 # P1.2 · Instrukcja testu edycji
 
-Kierunek C, pakiet `etap1-v0.1`. Test wykonano lokalnie w WordPress Playground, na kontach prototypu, bez dostępu do infrastruktury PBM. Publiczny link Playground pozostaje niedostarczony; poniższa instrukcja nie oznacza zaliczenia tego wymagania.
+Kierunek C, pakiet `etap1-v0.1`. Operacje edycji sprawdzono lokalnie 13.09.2026; 14.09 dodatkowo sprawdzono automatyczny start [publicznego prototypu C](https://playground.wordpress.net/?blueprint-url=https://raw.githubusercontent.com/ImaPolska/gaz-dla-przemyslu/etap1-v0.1-public/blueprints/public/main.json). Test nadal wymaga wykonania przez zleceniodawcę i nie oznacza akceptacji etapu 1.
 
 ## Przygotowanie
 
@@ -67,7 +67,7 @@ W teście sekcja została zapisana poniżej „Pasma cen orientacyjnych”, po c
 
 Operacje zmiany nagłówka, dodania treści oraz przesunięcia sekcji przez Administratora wykonano w rzeczywistym interfejsie Gutenberg. Kontrolę blokad Redaktora uzupełniono odczytem stanu edytora i próbą zapisu przez REST; propagację i nadpisania sprawdzono programowo.
 
-Wyniki maszynowe znajdują się w `qa/p12-editor.json` i `qa/p12-gutenberg.json`. Nie wykonano testu z udziałem zleceniodawcy ani testu publicznego linku; nie oznaczamy całego etapu 1 jako zaakceptowanego.
+Wyniki maszynowe znajdują się w `qa/p12-editor.json` i `qa/p12-gutenberg.json`; osobny test publicznego linku zapisano w `qa/public/main.json`. Nie wykonano testu z udziałem zleceniodawcy; nie oznaczamy całego etapu 1 jako zaakceptowanego.
 
 ## Nowa strona ze startera
 

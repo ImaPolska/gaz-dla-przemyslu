@@ -45,3 +45,12 @@
 - FAQ używa core/details. Filtr wspieranych atrybutów dodaje `summary` do natywnych Block Bindings; test zapisu i renderowania pytania, odpowiedzi oraz obu pól CTA zaliczony.
 - Tabela testowa 3×3 składa się z nagłówka i dwóch wierszy danych. Redaktor tworzy trzy kolumny, dwa wiersze i włącza „Header section”; nie wybiera kolorów ani stylów.
 - Nowy `auto-draft` Redaktora dopuszcza wstawienie starterów GDP. Pierwszy zapis wymaga nazwanych grup `contentOnly`; po zapisie blokada kolejności włącza się również w interfejsie. Nie znosi to ochrony istniejących stron.
+
+## 2026-09-14 · Publikacja zatwierdzona przez zleceniodawcę
+
+- Zleceniodawca polecił pozostawić `[[X]]` bez zmian. Próg segmentacji nie wymaga teraz odpowiedzi.
+- Zleceniodawca połączył konto GitHub `ImaPolska` i zatwierdził publiczne repo `ImaPolska/gaz-dla-przemyslu`, obejmujące kod, treści robocze, dokumentację, zrzuty i historię Git.
+- Zgoda dotyczy GitHuba i linków Playground. Nie udziela dostępu do hostingu, domeny, poczty ani HubSpot; nadal nie rozpoczynamy etapu 2.
+- Nie przepisujemy tagów A/B/C ani `etap1-v0.1`. Publiczny plik `blueprints/public/main.json` otrzymuje dodatkowy tag `etap1-v0.1-public`; odwołuje się do niezmienionych zasobów z `etap1-v0.1`.
+- Kierunki A/B/C udostępniamy jako istniejące Blueprint Bundle ZIP na oryginalnych tagach, bez dalszego rozwoju.
+- Test HTTP w przeglądarkowym Playground uwzględnia przekierowanie 301 strony głównej do jej kanonicznego adresu z prefiksem `scope:`. Końcowy status wynosi 200; rejestr zachowuje przekierowanie.

@@ -1,0 +1,821 @@
+{
+  "key": "main",
+  "url": "https://playground.wordpress.net/?blueprint-url=https://raw.githubusercontent.com/ImaPolska/gaz-dla-przemyslu/etap1-v0.1-public/blueprints/public/main.json",
+  "started": "2026-09-14T05:46:35.416Z",
+  "errors": [],
+  "resources": [
+    {
+      "url": "https://raw.githubusercontent.com/ImaPolska/gaz-dla-przemyslu/etap1-v0.1-public/blueprints/public/main.json",
+      "status": 200,
+      "cors": "*"
+    },
+    {
+      "url": "https://raw.githubusercontent.com/ImaPolska/gaz-dla-przemyslu/etap1-v0.1/dist/main/gdp-child.zip",
+      "status": 200,
+      "cors": "*"
+    },
+    {
+      "url": "https://raw.githubusercontent.com/ImaPolska/gaz-dla-przemyslu/etap1-v0.1/dist/main/site.wxr",
+      "status": 200,
+      "cors": "*"
+    }
+  ],
+  "initialH1": "Gaz dla Twojej firmy. Warunki pod kontrolą.",
+  "initialFrame": "https://playground.wordpress.net/scope:creative-glamorous-school/",
+  "ready": "2026-09-14T05:47:03.436Z",
+  "runtime": {
+    "audit": {
+      "counts": {
+        "core/html": 0,
+        "core/freeform": 0,
+        "core/shortcode": 0,
+        "shortcode": 0,
+        "non_core": 0
+      },
+      "pages": [
+        {
+          "slug": "sprzedaz-rezerwowa-gazu",
+          "id": 44,
+          "h1": 1,
+          "sections_locked_named": true
+        },
+        {
+          "slug": "cena-stala-czy-indeksowana-tge",
+          "id": 45,
+          "h1": 1,
+          "sections_locked_named": true
+        },
+        {
+          "slug": "art-4j-ust-3b-ms-p-kary",
+          "id": 46,
+          "h1": 1,
+          "sections_locked_named": true
+        },
+        {
+          "slug": "oferta",
+          "id": 15,
+          "h1": 1,
+          "sections_locked_named": true
+        },
+        {
+          "slug": "cena-stala",
+          "id": 16,
+          "h1": 1,
+          "sections_locked_named": true
+        },
+        {
+          "slug": "kontakt",
+          "id": 17,
+          "h1": 1,
+          "sections_locked_named": true
+        },
+        {
+          "slug": "wiedza",
+          "id": 18,
+          "h1": 1,
+          "sections_locked_named": true
+        },
+        {
+          "slug": "wgraj-fakture",
+          "id": 19,
+          "h1": 1,
+          "sections_locked_named": true
+        },
+        {
+          "slug": "polityka-prywatnosci",
+          "id": 20,
+          "h1": 1,
+          "sections_locked_named": true
+        },
+        {
+          "slug": "cena-indeksowana-tge",
+          "id": 21,
+          "h1": 1,
+          "sections_locked_named": true
+        },
+        {
+          "slug": "model-transzowy",
+          "id": 22,
+          "h1": 1,
+          "sections_locked_named": true
+        },
+        {
+          "slug": "umowa-kompleksowa-msp",
+          "id": 23,
+          "h1": 1,
+          "sections_locked_named": true
+        },
+        {
+          "slug": "biometan",
+          "id": 24,
+          "h1": 1,
+          "sections_locked_named": true
+        },
+        {
+          "slug": "ceny-orientacyjne",
+          "id": 25,
+          "h1": 1,
+          "sections_locked_named": true
+        },
+        {
+          "slug": "kalkulator-wypowiedzenia",
+          "id": 26,
+          "h1": 1,
+          "sections_locked_named": true
+        },
+        {
+          "slug": "analiza-umowy",
+          "id": 27,
+          "h1": 1,
+          "sections_locked_named": true
+        },
+        {
+          "slug": "dla-kogo",
+          "id": 28,
+          "h1": 1,
+          "sections_locked_named": true
+        },
+        {
+          "slug": "przemysl",
+          "id": 29,
+          "h1": 1,
+          "sections_locked_named": true
+        },
+        {
+          "slug": "msp",
+          "id": 30,
+          "h1": 1,
+          "sections_locked_named": true
+        },
+        {
+          "slug": "dla-doradcow",
+          "id": 31,
+          "h1": 1,
+          "sections_locked_named": true
+        },
+        {
+          "slug": "dla-agentow-ai",
+          "id": 32,
+          "h1": 1,
+          "sections_locked_named": true
+        },
+        {
+          "slug": "komentarz-rynkowy",
+          "id": 33,
+          "h1": 1,
+          "sections_locked_named": true
+        },
+        {
+          "slug": "o-nas",
+          "id": 34,
+          "h1": 1,
+          "sections_locked_named": true
+        },
+        {
+          "slug": "dokumenty",
+          "id": 35,
+          "h1": 1,
+          "sections_locked_named": true
+        },
+        {
+          "slug": "regulamin",
+          "id": 36,
+          "h1": 1,
+          "sections_locked_named": true
+        },
+        {
+          "slug": "blad-404",
+          "id": 37,
+          "h1": 1,
+          "sections_locked_named": true
+        },
+        {
+          "slug": "archiwum-kategorii",
+          "id": 38,
+          "h1": 1,
+          "sections_locked_named": true
+        },
+        {
+          "slug": "wyniki-wyszukiwania",
+          "id": 39,
+          "h1": 1,
+          "sections_locked_named": true
+        },
+        {
+          "slug": "komentarz-rynkowy-szablon",
+          "id": 40,
+          "h1": 1,
+          "sections_locked_named": true
+        },
+        {
+          "slug": "perspektywa-rynku-szablon",
+          "id": 41,
+          "h1": 1,
+          "sections_locked_named": true
+        },
+        {
+          "slug": "jak-zmienic-sprzedawce-gazu-w-firmie",
+          "id": 42,
+          "h1": 1,
+          "sections_locked_named": true
+        },
+        {
+          "slug": "okres-wypowiedzenia-klauzula-prolongacyjna",
+          "id": 43,
+          "h1": 1,
+          "sections_locked_named": true
+        },
+        {
+          "slug": "start",
+          "id": 14,
+          "h1": 1,
+          "sections_locked_named": true
+        }
+      ],
+      "issues": [],
+      "objects": [
+        {
+          "id": 44,
+          "source_id": "305",
+          "type": "post",
+          "slug": "sprzedaz-rezerwowa-gazu"
+        },
+        {
+          "id": 45,
+          "source_id": "306",
+          "type": "post",
+          "slug": "cena-stala-czy-indeksowana-tge"
+        },
+        {
+          "id": 46,
+          "source_id": "307",
+          "type": "post",
+          "slug": "art-4j-ust-3b-ms-p-kary"
+        },
+        {
+          "id": 15,
+          "source_id": "202",
+          "type": "page",
+          "slug": "oferta"
+        },
+        {
+          "id": 16,
+          "source_id": "203",
+          "type": "page",
+          "slug": "cena-stala"
+        },
+        {
+          "id": 17,
+          "source_id": "204",
+          "type": "page",
+          "slug": "kontakt"
+        },
+        {
+          "id": 18,
+          "source_id": "205",
+          "type": "page",
+          "slug": "wiedza"
+        },
+        {
+          "id": 19,
+          "source_id": "206",
+          "type": "page",
+          "slug": "wgraj-fakture"
+        },
+        {
+          "id": 20,
+          "source_id": "207",
+          "type": "page",
+          "slug": "polityka-prywatnosci"
+        },
+        {
+          "id": 21,
+          "source_id": "208",
+          "type": "page",
+          "slug": "cena-indeksowana-tge"
+        },
+        {
+          "id": 22,
+          "source_id": "209",
+          "type": "page",
+          "slug": "model-transzowy"
+        },
+        {
+          "id": 23,
+          "source_id": "210",
+          "type": "page",
+          "slug": "umowa-kompleksowa-msp"
+        },
+        {
+          "id": 24,
+          "source_id": "211",
+          "type": "page",
+          "slug": "biometan"
+        },
+        {
+          "id": 25,
+          "source_id": "212",
+          "type": "page",
+          "slug": "ceny-orientacyjne"
+        },
+        {
+          "id": 26,
+          "source_id": "213",
+          "type": "page",
+          "slug": "kalkulator-wypowiedzenia"
+        },
+        {
+          "id": 27,
+          "source_id": "214",
+          "type": "page",
+          "slug": "analiza-umowy"
+        },
+        {
+          "id": 28,
+          "source_id": "215",
+          "type": "page",
+          "slug": "dla-kogo"
+        },
+        {
+          "id": 29,
+          "source_id": "216",
+          "type": "page",
+          "slug": "przemysl"
+        },
+        {
+          "id": 30,
+          "source_id": "217",
+          "type": "page",
+          "slug": "msp"
+        },
+        {
+          "id": 31,
+          "source_id": "218",
+          "type": "page",
+          "slug": "dla-doradcow"
+        },
+        {
+          "id": 32,
+          "source_id": "219",
+          "type": "page",
+          "slug": "dla-agentow-ai"
+        },
+        {
+          "id": 33,
+          "source_id": "220",
+          "type": "page",
+          "slug": "komentarz-rynkowy"
+        },
+        {
+          "id": 34,
+          "source_id": "221",
+          "type": "page",
+          "slug": "o-nas"
+        },
+        {
+          "id": 35,
+          "source_id": "222",
+          "type": "page",
+          "slug": "dokumenty"
+        },
+        {
+          "id": 36,
+          "source_id": "223",
+          "type": "page",
+          "slug": "regulamin"
+        },
+        {
+          "id": 37,
+          "source_id": "224",
+          "type": "page",
+          "slug": "blad-404"
+        },
+        {
+          "id": 38,
+          "source_id": "225",
+          "type": "page",
+          "slug": "archiwum-kategorii"
+        },
+        {
+          "id": 39,
+          "source_id": "226",
+          "type": "page",
+          "slug": "wyniki-wyszukiwania"
+        },
+        {
+          "id": 40,
+          "source_id": "301",
+          "type": "post",
+          "slug": "komentarz-rynkowy-szablon"
+        },
+        {
+          "id": 41,
+          "source_id": "302",
+          "type": "post",
+          "slug": "perspektywa-rynku-szablon"
+        },
+        {
+          "id": 42,
+          "source_id": "303",
+          "type": "post",
+          "slug": "jak-zmienic-sprzedawce-gazu-w-firmie"
+        },
+        {
+          "id": 43,
+          "source_id": "304",
+          "type": "post",
+          "slug": "okres-wypowiedzenia-klauzula-prolongacyjna"
+        },
+        {
+          "id": 14,
+          "source_id": "201",
+          "type": "page",
+          "slug": "start"
+        },
+        {
+          "id": 4,
+          "source_id": "101",
+          "type": "wp_block",
+          "slug": "upload"
+        },
+        {
+          "id": 5,
+          "source_id": "102",
+          "type": "wp_block",
+          "slug": "disclaimer"
+        },
+        {
+          "id": 6,
+          "source_id": "103",
+          "type": "wp_block",
+          "slug": "final-cta"
+        },
+        {
+          "id": 7,
+          "source_id": "104",
+          "type": "wp_block",
+          "slug": "pricing"
+        },
+        {
+          "id": 8,
+          "source_id": "105",
+          "type": "wp_block",
+          "slug": "segments"
+        },
+        {
+          "id": 9,
+          "source_id": "106",
+          "type": "wp_block",
+          "slug": "trust"
+        },
+        {
+          "id": 10,
+          "source_id": "107",
+          "type": "wp_block",
+          "slug": "faq-product"
+        },
+        {
+          "id": 11,
+          "source_id": "108",
+          "type": "wp_block",
+          "slug": "calculator"
+        },
+        {
+          "id": 12,
+          "source_id": "109",
+          "type": "wp_block",
+          "slug": "analysis"
+        },
+        {
+          "id": 13,
+          "source_id": "110",
+          "type": "wp_block",
+          "slug": "advisor"
+        }
+      ],
+      "documented_exceptions": [
+        "sprzedaz-rezerwowa-gazu: editable article prose required by section 14",
+        "cena-stala-czy-indeksowana-tge: editable article prose required by section 14",
+        "art-4j-ust-3b-ms-p-kary: editable article prose required by section 14",
+        "jak-zmienic-sprzedawce-gazu-w-firmie: editable article prose required by section 14",
+        "okres-wypowiedzenia-klauzula-prolongacyjna: editable article prose required by section 14"
+      ],
+      "wp": "7.1",
+      "php": "8.3.33",
+      "stylesheet": "gdp-child",
+      "parent": "blocksy",
+      "parent_version": "2.1.57",
+      "debug": {
+        "enabled": true,
+        "log": true,
+        "display": false
+      },
+      "plugins": [],
+      "mu_runtime": [],
+      "palette_matches": true,
+      "pass": true
+    },
+    "debugLog": ""
+  },
+  "noManualIntervention": true,
+  "routes": [
+    {
+      "path": "/",
+      "expected": 200,
+      "redirects": [
+        {
+          "status": 301,
+          "location": "https://playground.wordpress.net/scope:creative-glamorous-school/"
+        }
+      ],
+      "status": 200,
+      "h1": 1
+    },
+    {
+      "path": "/oferta/",
+      "expected": 200,
+      "redirects": [],
+      "status": 200,
+      "h1": 1
+    },
+    {
+      "path": "/oferta/cena-stala/",
+      "expected": 200,
+      "redirects": [],
+      "status": 200,
+      "h1": 1
+    },
+    {
+      "path": "/kontakt/",
+      "expected": 200,
+      "redirects": [],
+      "status": 200,
+      "h1": 1
+    },
+    {
+      "path": "/wiedza/",
+      "expected": 200,
+      "redirects": [],
+      "status": 200,
+      "h1": 1
+    },
+    {
+      "path": "/wgraj-fakture/",
+      "expected": 200,
+      "redirects": [],
+      "status": 200,
+      "h1": 1
+    },
+    {
+      "path": "/polityka-prywatnosci/",
+      "expected": 200,
+      "redirects": [],
+      "status": 200,
+      "h1": 1
+    },
+    {
+      "path": "/oferta/cena-indeksowana-tge/",
+      "expected": 200,
+      "redirects": [],
+      "status": 200,
+      "h1": 1
+    },
+    {
+      "path": "/oferta/model-transzowy/",
+      "expected": 200,
+      "redirects": [],
+      "status": 200,
+      "h1": 1
+    },
+    {
+      "path": "/oferta/umowa-kompleksowa-msp/",
+      "expected": 200,
+      "redirects": [],
+      "status": 200,
+      "h1": 1
+    },
+    {
+      "path": "/oferta/biometan/",
+      "expected": 200,
+      "redirects": [],
+      "status": 200,
+      "h1": 1
+    },
+    {
+      "path": "/ceny-orientacyjne/",
+      "expected": 200,
+      "redirects": [],
+      "status": 200,
+      "h1": 1
+    },
+    {
+      "path": "/kalkulator-wypowiedzenia/",
+      "expected": 200,
+      "redirects": [],
+      "status": 200,
+      "h1": 1
+    },
+    {
+      "path": "/analiza-umowy/",
+      "expected": 200,
+      "redirects": [],
+      "status": 200,
+      "h1": 1
+    },
+    {
+      "path": "/dla-kogo/",
+      "expected": 200,
+      "redirects": [],
+      "status": 200,
+      "h1": 1
+    },
+    {
+      "path": "/dla-kogo/przemysl/",
+      "expected": 200,
+      "redirects": [],
+      "status": 200,
+      "h1": 1
+    },
+    {
+      "path": "/dla-kogo/msp/",
+      "expected": 200,
+      "redirects": [],
+      "status": 200,
+      "h1": 1
+    },
+    {
+      "path": "/dla-doradcow/",
+      "expected": 200,
+      "redirects": [],
+      "status": 200,
+      "h1": 1
+    },
+    {
+      "path": "/dla-agentow-ai/",
+      "expected": 200,
+      "redirects": [],
+      "status": 200,
+      "h1": 1
+    },
+    {
+      "path": "/komentarz-rynkowy/",
+      "expected": 200,
+      "redirects": [],
+      "status": 200,
+      "h1": 1
+    },
+    {
+      "path": "/o-nas/",
+      "expected": 200,
+      "redirects": [],
+      "status": 200,
+      "h1": 1
+    },
+    {
+      "path": "/dokumenty/",
+      "expected": 200,
+      "redirects": [],
+      "status": 200,
+      "h1": 1
+    },
+    {
+      "path": "/regulamin/",
+      "expected": 200,
+      "redirects": [],
+      "status": 200,
+      "h1": 1
+    },
+    {
+      "path": "/blad-404/",
+      "expected": 200,
+      "redirects": [],
+      "status": 200,
+      "h1": 1
+    },
+    {
+      "path": "/archiwum-kategorii/",
+      "expected": 200,
+      "redirects": [],
+      "status": 200,
+      "h1": 1
+    },
+    {
+      "path": "/wyniki-wyszukiwania/",
+      "expected": 200,
+      "redirects": [],
+      "status": 200,
+      "h1": 1
+    },
+    {
+      "path": "/wiedza/komentarz-rynkowy-szablon/",
+      "expected": 200,
+      "redirects": [],
+      "status": 200,
+      "h1": 1
+    },
+    {
+      "path": "/wiedza/perspektywa-rynku-szablon/",
+      "expected": 200,
+      "redirects": [],
+      "status": 200,
+      "h1": 1
+    },
+    {
+      "path": "/wiedza/jak-zmienic-sprzedawce-gazu-w-firmie/",
+      "expected": 200,
+      "redirects": [],
+      "status": 200,
+      "h1": 1
+    },
+    {
+      "path": "/wiedza/okres-wypowiedzenia-klauzula-prolongacyjna/",
+      "expected": 200,
+      "redirects": [],
+      "status": 200,
+      "h1": 1
+    },
+    {
+      "path": "/wiedza/sprzedaz-rezerwowa-gazu/",
+      "expected": 200,
+      "redirects": [],
+      "status": 200,
+      "h1": 1
+    },
+    {
+      "path": "/wiedza/cena-stala-czy-indeksowana-tge/",
+      "expected": 200,
+      "redirects": [],
+      "status": 200,
+      "h1": 1
+    },
+    {
+      "path": "/wiedza/art-4j-ust-3b-ms-p-kary/",
+      "expected": 200,
+      "redirects": [],
+      "status": 200,
+      "h1": 1
+    },
+    {
+      "path": "/category/zmiana-sprzedawcy/",
+      "expected": 200,
+      "redirects": [],
+      "status": 200,
+      "h1": 1
+    },
+    {
+      "path": "/category/umowy-i-wypowiedzenia/",
+      "expected": 200,
+      "redirects": [],
+      "status": 200,
+      "h1": 1
+    },
+    {
+      "path": "/category/ceny-i-rynek/",
+      "expected": 200,
+      "redirects": [],
+      "status": 200,
+      "h1": 1
+    },
+    {
+      "path": "/category/biometan-i-raportowanie/",
+      "expected": 200,
+      "redirects": [],
+      "status": 200,
+      "h1": 1
+    },
+    {
+      "path": "/category/sprzedaz-rezerwowa/",
+      "expected": 200,
+      "redirects": [],
+      "status": 200,
+      "h1": 1
+    },
+    {
+      "path": "/nieistniejacy-adres-p12/",
+      "expected": 404,
+      "redirects": [],
+      "status": 404,
+      "h1": 1
+    },
+    {
+      "path": "/?s=sprzedawca",
+      "expected": 200,
+      "redirects": [],
+      "status": 200,
+      "h1": 1
+    },
+    {
+      "path": "/?s=gdpbraktestowegoslowa",
+      "expected": 200,
+      "redirects": [],
+      "status": 200,
+      "h1": 1
+    }
+  ],
+  "productH1": "Cena stała. Jasny punkt odniesienia dla budżetu.",
+  "cta": {
+    "url": "https://playground.wordpress.net/scope:creative-glamorous-school/wgraj-fakture/",
+    "h1": "Jedna faktura. Konkretne pytania o zakup gazu."
+  },
+  "finalDebugLog": ""
+}

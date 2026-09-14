@@ -25,3 +25,13 @@
 - Zarejestrowano 400 kanonicznych wystąpień placeholderów; bez danych cenowych, koncesji czy fikcyjnych klientów.
 - Dołączono audyt, zrzuty w trzech rozdzielczościach, instrukcję edycji i odtwarzalny Blueprint Bundle.
 - Nadal nie dostarczono publicznego repo ani linku Playground. Nie deklaruje się pełnego odbioru P1.2 ani akceptacji etapu 1.
+
+## 2026-09-14 · Publiczne udostępnienie P1.2
+
+- Po zatwierdzeniu przez zleceniodawcę utworzono publiczne repozytorium na koncie ImaPolska.
+- Opublikowano oryginalne tagi A/B/C i `etap1-v0.1`, bez przepisywania historii.
+- Dodano tag `etap1-v0.1-public` z publicznym punktem uruchomienia JSON. Nie zmieniono treści, motywu, konfiguracji ani progu `[[X]]`.
+- Sprawdzono cztery dokładne publiczne linki w świeżych kontekstach: wszystkie uruchamiają stronę główną bez interwencji.
+- Pełny C: 41 adresów, prawidłowe końcowe statusy, jeden H1; kanoniczne przekierowanie strony głównej odnotowane.
+- Wszystkie cztery instancje: zero wtyczek, zakazanych bloków, błędów JavaScript i zapisów debug.log. Sprawdzono też strony ceny stałej i wykonano 16 nowych zrzutów.
+- Uaktualniono raport, instrukcję i rejestr otwartych pozycji. Odbiór przez zleceniodawcę nadal pozostaje punktem kontrolnym P1.2.

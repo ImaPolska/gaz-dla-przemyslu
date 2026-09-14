@@ -4,9 +4,15 @@ Wybrany kierunek C: redakcyjny, ciepłe tło, butelkowa zieleń, Source Serif 4 
 
 ## Stan dostarczenia
 
-Publiczne repozytorium oraz wymagany link `playground.wordpress.net/?blueprint-url=...` nie zostały dostarczone. Agent nie ma własnego konta publikacyjnego. Nie użyto infrastruktury ani kont zleceniodawcy. Lokalny test CLI nie jest dowodem uruchomienia publicznego linku.
+14.09.2026, po połączeniu GitHuba i wyraźnej zgodzie zleceniodawcy, opublikowano repozytorium [ImaPolska/gaz-dla-przemyslu](https://github.com/ImaPolska/gaz-dla-przemyslu). Nie korzystano z hostingu, domeny, poczty ani HubSpot; `[[X]]` pozostaje placeholderem zgodnie z decyzją zleceniodawcy.
+
+**[Uruchom pełny prototyp C w WordPress Playground](https://playground.wordpress.net/?blueprint-url=https://raw.githubusercontent.com/ImaPolska/gaz-dla-przemyslu/etap1-v0.1-public/blueprints/public/main.json)**.
+
+Dokładny link sprawdzono w świeżym kontekście przeglądarki: automatyczny start do strony głównej, bez ręcznego importu i kliknięcia Run. Treść i motyw pochodzą z niezmienionego `etap1-v0.1`; nowy tag `etap1-v0.1-public` zawiera tylko publiczny punkt uruchomienia i dokumentację publikacji.
 
 `dist/etap1-v0.1.zip` jest odtwarzalnym Blueprint Bundle: `blueprint.json`, `gdp-child.zip` i `site.wxr`. `blueprints/main.json` wykorzystuje zasoby `bundled`, dlatego sam JSON bez towarzyszących zasobów nie jest przenośnym publicznym adresem uruchomienia.
+
+Do uruchamiania przez publiczny URL służy `blueprints/public/main.json`. `scripts/public-blueprints.mjs` odtwarza ten plik z tagu v0.1, zamieniając wyłącznie zasoby `bundled` na publiczne URL przypięte do tego tagu.
 
 ## Odtworzenie lokalne
 
@@ -34,7 +40,7 @@ npm ci
 python3 scripts/build.py
 ```
 
-Tagi `etap1-A/B/C` zachowują P1.1. `main` i `etap1-v0.1` obejmują wybrane C oraz pełną mapę P1.2. Są to rzeczywiste tagi lokalnego Git, nie opublikowanego remote.
+Tagi `etap1-A/B/C` zachowują P1.1. `main` i `etap1-v0.1` obejmują wybrane C oraz pełną mapę P1.2; wszystkie te tagi są publiczne i nie zostały przepisane.
 
 ## Architektura
 
@@ -80,6 +86,12 @@ W drugim terminalu: `npx playwright install chromium`, następnie `node scripts/
 
 ## Publikacja i kolejne etapy
 
-Po uzyskaniu legalnej możliwości publikacji na własnym koncie agenta trzeba opublikować zasoby, przygotować URL-owy blueprint wskazujący pliki na tagu i przetestować dokładny link Playground aż do wyrenderowanej strony głównej. Bundle ani zrzut lokalny nie zastępują tego testu.
+Publiczne linki historycznych kierunków, również sprawdzone bez interwencji:
+
+- [A w Playground](https://playground.wordpress.net/?blueprint-url=https://raw.githubusercontent.com/ImaPolska/gaz-dla-przemyslu/etap1-A/dist/etap1-A.zip).
+- [B w Playground](https://playground.wordpress.net/?blueprint-url=https://raw.githubusercontent.com/ImaPolska/gaz-dla-przemyslu/etap1-B/dist/etap1-B.zip).
+- [C z P1.1 w Playground](https://playground.wordpress.net/?blueprint-url=https://raw.githubusercontent.com/ImaPolska/gaz-dla-przemyslu/etap1-C/dist/etap1-C.zip).
+
+Wyniki publicznych testów: `docs/qa/public/*.json`; zrzuty: `docs/screenshots/public/`. Starsze raporty z 13.09 opisują stan sprzed publikacji i nie zostały przedstawione jako nowe testy.
 
 P1.2 jest punktem na uwagi. P1.3 obejmie uzgodnione poprawki. Dopiero pisemna akceptacja P1.4 i odrębne nadanie dostępów umożliwiają etap 2. Nie wykonano wdrożenia, konfiguracji infrastruktury ani instalacji wtyczek. Procedura odtworzenia na hostingu jest osobnym elementem zamknięcia P1.4.
