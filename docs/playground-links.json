@@ -1,0 +1,6 @@
+{
+  "main": "https://playground.wordpress.net/?blueprint-url=https://raw.githubusercontent.com/ImaPolska/gaz-dla-przemyslu/etap1-v0.1-public/blueprints/public/main.json",
+  "A": "https://playground.wordpress.net/?blueprint-url=https://raw.githubusercontent.com/ImaPolska/gaz-dla-przemyslu/etap1-A/dist/etap1-A.zip",
+  "B": "https://playground.wordpress.net/?blueprint-url=https://raw.githubusercontent.com/ImaPolska/gaz-dla-przemyslu/etap1-B/dist/etap1-B.zip",
+  "C": "https://playground.wordpress.net/?blueprint-url=https://raw.githubusercontent.com/ImaPolska/gaz-dla-przemyslu/etap1-C/dist/etap1-C.zip"
+}
